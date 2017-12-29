@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WatchTube for Apple Watch Extension/New Group/WatchConnectivity.swift"
+            timestampString = "536191788.864265"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "158"
+            endingLineNumber = "158"
+            landmarkName = "sendMessage(message:replyHandler:errorHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WatchTube for Apple Watch Extension/New Group/WatchConnectivity.swift"
+            timestampString = "536191788.864699"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
+            landmarkName = "session(session:didReceiveMessage:replyHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WatchTube_for_Apple_Watch_Extension.WatchSessionManager.session(session: __ObjC.WCSession, didReceiveMessage: Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, replyHandler: (Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "WatchTube for Apple Watch Extension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Flo/Documents/App/WatchTube/WatchTube%20for%20Apple%20Watch%20Extension/New%20Group/WatchConnectivity.swift"
+                  timestampString = "536191789.164986"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "168"
+                  endingLineNumber = "168"
+                  offsetFromSymbolStart = "45">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in WatchTube_for_Apple_Watch_Extension.WatchSessionManager.session(session: __ObjC.WCSession, didReceiveMessage: Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, replyHandler: (Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "WatchTube for Apple Watch Extension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Flo/Documents/App/WatchTube/WatchTube%20for%20Apple%20Watch%20Extension/New%20Group/WatchConnectivity.swift"
+                  timestampString = "536191789.167586"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "170"
+                  endingLineNumber = "170"
+                  offsetFromSymbolStart = "3">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -1,0 +1,6 @@
+framework module Pods_WatchTube_for_Apple_Watch_Extension {
+  umbrella header "Pods-WatchTube for Apple Watch Extension-umbrella.h"
+
+  export *
+  module * { export * }
+}

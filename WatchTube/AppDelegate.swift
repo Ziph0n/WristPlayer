@@ -7,15 +7,26 @@
 //
 
 import UIKit
+import WatchConnectivity
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
 
     var window: UIWindow?
+    var session: WCSession!
 
-
+    static var staticSession: WCSession!
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        if (WCSession.isSupported()) {
+            session = WCSession.default
+            session.delegate = self
+            session.activate()
+            AppDelegate.staticSession = session
+        }
+        
         return true
     }
 
@@ -25,6 +36,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
+        print("background")
+        ViewController.shouldPlayAgain = true
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            ViewController.shouldPlayAgain = false
+        }
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
     }
@@ -41,6 +57,57 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        
+    }
+    
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+        
+    }
+    
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
+        var replyValues = Dictionary<String, AnyObject>()
+        replyValues["status"] = "appdelegate" as AnyObject
+        
+        print(message)
+        
+        if let action = message["action"] as? String {
+            if action == "start" {
+                let id = message["id"] as! String
+                DispatchQueue.main.async {
+                    ViewController.loadVideo(id: id)
+                }
+            }
+        }
+        
+        replyHandler(replyValues)
+    }
+    
+    func session(_ session: WCSession, didReceiveMessageData messageData: Data) {
+        print(messageData)
+    }
+    
+    class func sendStopMessageToWatch() {
+        let applicationData = ["action": "stop"]
+        AppDelegate.staticSession.sendMessage(applicationData, replyHandler: { (data) in
+            print(data)
+        }) { (error) in
+            print(error)
+        }
+    }
+    
+    class func sendStartMessageToWatch() {
+        let applicationData = ["action": "start"]
+        AppDelegate.staticSession.sendMessage(applicationData, replyHandler: { (data) in
+            print(data)
+        }) { (error) in
+            print(error)
+        }
+    }
 
 }
 

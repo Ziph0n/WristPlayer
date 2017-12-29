@@ -7,12 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37AD5B0A2D4ADAB344C480A1 /* Pods_WatchTube_for_Apple_Watch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5948CEC036F002FCC09D3DD /* Pods_WatchTube_for_Apple_Watch_Extension.framework */; };
+		4720AE3B46826F2115192F54 /* Pods_WatchTube.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1001801B59E0E2F1CE17FFC /* Pods_WatchTube.framework */; };
+		55C8010D463330E05B1CB8F0 /* Pods_WatchTubeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5237424E56BAF181C8DA3734 /* Pods_WatchTubeTests.framework */; };
+		5C1906E91FF5365A00E7AD40 /* MainInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1906E81FF5365A00E7AD40 /* MainInterfaceController.swift */; };
+		5C1906EB1FF53EB300E7AD40 /* GoogleService-Info (3).plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C1906EA1FF53EB300E7AD40 /* GoogleService-Info (3).plist */; };
+		5C1906EC1FF53EB300E7AD40 /* GoogleService-Info (3).plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C1906EA1FF53EB300E7AD40 /* GoogleService-Info (3).plist */; };
+		5C1906ED1FF53EB300E7AD40 /* GoogleService-Info (3).plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C1906EA1FF53EB300E7AD40 /* GoogleService-Info (3).plist */; };
+		5C1906EE1FF53EB300E7AD40 /* GoogleService-Info (3).plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C1906EA1FF53EB300E7AD40 /* GoogleService-Info (3).plist */; };
+		5C1906F41FF5531600E7AD40 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1906F31FF5531600E7AD40 /* Video.swift */; };
+		5C1906F61FF5548C00E7AD40 /* VideoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1906F51FF5548C00E7AD40 /* VideoRow.swift */; };
+		5C1906F91FF5982B00E7AD40 /* NowPlayingInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1906F81FF5982B00E7AD40 /* NowPlayingInterfaceController.swift */; };
+		5C1906FB1FF598FB00E7AD40 /* WatchConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1906FA1FF598FB00E7AD40 /* WatchConnectivity.swift */; };
+		5C1906FC1FF5A12500E7AD40 /* WatchConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1906FA1FF598FB00E7AD40 /* WatchConnectivity.swift */; };
 		5CCC523E1FF4FA03004B12E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCC523D1FF4FA03004B12E4 /* AppDelegate.swift */; };
 		5CCC52401FF4FA03004B12E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCC523F1FF4FA03004B12E4 /* ViewController.swift */; };
 		5CCC52431FF4FA03004B12E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CCC52411FF4FA03004B12E4 /* Main.storyboard */; };
 		5CCC52451FF4FA03004B12E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CCC52441FF4FA03004B12E4 /* Assets.xcassets */; };
 		5CCC52481FF4FA03004B12E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CCC52461FF4FA03004B12E4 /* LaunchScreen.storyboard */; };
 		5CCC52531FF4FA03004B12E4 /* WatchTubeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCC52521FF4FA03004B12E4 /* WatchTubeTests.swift */; };
+		5CCC52631FF4FA3E004B12E4 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CCC52611FF4FA3E004B12E4 /* Interface.storyboard */; };
+		5CCC52651FF4FA3E004B12E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CCC52641FF4FA3E004B12E4 /* Assets.xcassets */; };
+		5CCC526C1FF4FA3E004B12E4 /* WatchTube for Apple Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5CCC526B1FF4FA3E004B12E4 /* WatchTube for Apple Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5CCC52711FF4FA3E004B12E4 /* VideoListInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCC52701FF4FA3E004B12E4 /* VideoListInterfaceController.swift */; };
+		5CCC52731FF4FA3E004B12E4 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCC52721FF4FA3E004B12E4 /* ExtensionDelegate.swift */; };
+		5CCC52751FF4FA3E004B12E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CCC52741FF4FA3E004B12E4 /* Assets.xcassets */; };
+		5CCC52791FF4FA3E004B12E4 /* WatchTube for Apple Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5CCC525F1FF4FA3E004B12E4 /* WatchTube for Apple Watch.app */; };
+		EC81BD7017BEC0976A07F6A6 /* Pods_WatchTube_for_Apple_Watch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF4B5FAE0A0D503A2F5D21B6 /* Pods_WatchTube_for_Apple_Watch.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,9 +44,59 @@
 			remoteGlobalIDString = 5CCC52391FF4FA03004B12E4;
 			remoteInfo = WatchTube;
 		};
+		5CCC526D1FF4FA3E004B12E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CCC52321FF4FA03004B12E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CCC526A1FF4FA3E004B12E4;
+			remoteInfo = "WatchTube for Apple Watch Extension";
+		};
+		5CCC52771FF4FA3E004B12E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CCC52321FF4FA03004B12E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CCC525E1FF4FA3E004B12E4;
+			remoteInfo = "WatchTube for Apple Watch";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5CCC527D1FF4FA3E004B12E4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5CCC526C1FF4FA3E004B12E4 /* WatchTube for Apple Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CCC52811FF4FA3E004B12E4 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				5CCC52791FF4FA3E004B12E4 /* WatchTube for Apple Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2B88E6F43F9A117C4261F1C3 /* Pods-WatchTube for Apple Watch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchTube for Apple Watch Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchTube for Apple Watch Extension/Pods-WatchTube for Apple Watch Extension.release.xcconfig"; sourceTree = "<group>"; };
+		3829EAB7430D160EA4BD3E41 /* Pods-WatchTube.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchTube.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchTube/Pods-WatchTube.release.xcconfig"; sourceTree = "<group>"; };
+		5237424E56BAF181C8DA3734 /* Pods_WatchTubeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchTubeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5699DD6299FEAAA2594A634D /* Pods-WatchTube for Apple Watch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchTube for Apple Watch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchTube for Apple Watch/Pods-WatchTube for Apple Watch.debug.xcconfig"; sourceTree = "<group>"; };
+		57132618834042D799912854 /* Pods-WatchTubeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchTubeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchTubeTests/Pods-WatchTubeTests.release.xcconfig"; sourceTree = "<group>"; };
+		5C1906E81FF5365A00E7AD40 /* MainInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInterfaceController.swift; sourceTree = "<group>"; };
+		5C1906EA1FF53EB300E7AD40 /* GoogleService-Info (3).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (3).plist"; sourceTree = "<group>"; };
+		5C1906F31FF5531600E7AD40 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		5C1906F51FF5548C00E7AD40 /* VideoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRow.swift; sourceTree = "<group>"; };
+		5C1906F81FF5982B00E7AD40 /* NowPlayingInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingInterfaceController.swift; sourceTree = "<group>"; };
+		5C1906FA1FF598FB00E7AD40 /* WatchConnectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivity.swift; sourceTree = "<group>"; };
 		5CCC523A1FF4FA03004B12E4 /* WatchTube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchTube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CCC523D1FF4FA03004B12E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CCC523F1FF4FA03004B12E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,13 +107,38 @@
 		5CCC524E1FF4FA03004B12E4 /* WatchTubeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchTubeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CCC52521FF4FA03004B12E4 /* WatchTubeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchTubeTests.swift; sourceTree = "<group>"; };
 		5CCC52541FF4FA03004B12E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CCC525F1FF4FA3E004B12E4 /* WatchTube for Apple Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchTube for Apple Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CCC52621FF4FA3E004B12E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		5CCC52641FF4FA3E004B12E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5CCC52661FF4FA3E004B12E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CCC526B1FF4FA3E004B12E4 /* WatchTube for Apple Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchTube for Apple Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CCC52701FF4FA3E004B12E4 /* VideoListInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListInterfaceController.swift; sourceTree = "<group>"; };
+		5CCC52721FF4FA3E004B12E4 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		5CCC52741FF4FA3E004B12E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5CCC52761FF4FA3E004B12E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EB849BE6CE90D1B5310F894 /* Pods-WatchTube for Apple Watch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchTube for Apple Watch Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchTube for Apple Watch Extension/Pods-WatchTube for Apple Watch Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		74C6006F2D3857FCB9973737 /* Pods-WatchTube for Apple Watch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchTube for Apple Watch.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchTube for Apple Watch/Pods-WatchTube for Apple Watch.release.xcconfig"; sourceTree = "<group>"; };
+		8411E67050E94A14530E7790 /* Pods-WatchTube.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchTube.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchTube/Pods-WatchTube.debug.xcconfig"; sourceTree = "<group>"; };
+		AF4B5FAE0A0D503A2F5D21B6 /* Pods_WatchTube_for_Apple_Watch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchTube_for_Apple_Watch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1001801B59E0E2F1CE17FFC /* Pods_WatchTube.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchTube.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5948CEC036F002FCC09D3DD /* Pods_WatchTube_for_Apple_Watch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchTube_for_Apple_Watch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F70A1BB3E18E5C94A6D7E73A /* Pods-WatchTubeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchTubeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchTubeTests/Pods-WatchTubeTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5267BEBAB2A23BA469E299F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC81BD7017BEC0976A07F6A6 /* Pods_WatchTube_for_Apple_Watch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5CCC52371FF4FA03004B12E4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4720AE3B46826F2115192F54 /* Pods_WatchTube.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +146,60 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55C8010D463330E05B1CB8F0 /* Pods_WatchTubeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CCC52681FF4FA3E004B12E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37AD5B0A2D4ADAB344C480A1 /* Pods_WatchTube_for_Apple_Watch_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C1906EF1FF552DA00E7AD40 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				5CCC52701FF4FA3E004B12E4 /* VideoListInterfaceController.swift */,
+				5C1906E81FF5365A00E7AD40 /* MainInterfaceController.swift */,
+				5C1906F81FF5982B00E7AD40 /* NowPlayingInterfaceController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		5C1906F21FF5530500E7AD40 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5C1906F31FF5531600E7AD40 /* Video.swift */,
+				5C1906FA1FF598FB00E7AD40 /* WatchConnectivity.swift */,
+			);
+			name = Models;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		5C1906F71FF5549900E7AD40 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5C1906F51FF5548C00E7AD40 /* VideoRow.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		5CCC52311FF4FA03004B12E4 = {
 			isa = PBXGroup;
 			children = (
+				5C1906EA1FF53EB300E7AD40 /* GoogleService-Info (3).plist */,
 				5CCC523C1FF4FA03004B12E4 /* WatchTube */,
 				5CCC52511FF4FA03004B12E4 /* WatchTubeTests */,
+				5CCC52601FF4FA3E004B12E4 /* WatchTube for Apple Watch */,
+				5CCC526F1FF4FA3E004B12E4 /* WatchTube for Apple Watch Extension */,
 				5CCC523B1FF4FA03004B12E4 /* Products */,
+				883184C6BFD1AC5CE579E4AC /* Pods */,
+				B7C3A133063728E720FA651D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +208,8 @@
 			children = (
 				5CCC523A1FF4FA03004B12E4 /* WatchTube.app */,
 				5CCC524E1FF4FA03004B12E4 /* WatchTubeTests.xctest */,
+				5CCC525F1FF4FA3E004B12E4 /* WatchTube for Apple Watch.app */,
+				5CCC526B1FF4FA3E004B12E4 /* WatchTube for Apple Watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,6 +236,55 @@
 			path = WatchTubeTests;
 			sourceTree = "<group>";
 		};
+		5CCC52601FF4FA3E004B12E4 /* WatchTube for Apple Watch */ = {
+			isa = PBXGroup;
+			children = (
+				5CCC52611FF4FA3E004B12E4 /* Interface.storyboard */,
+				5CCC52641FF4FA3E004B12E4 /* Assets.xcassets */,
+				5CCC52661FF4FA3E004B12E4 /* Info.plist */,
+			);
+			path = "WatchTube for Apple Watch";
+			sourceTree = "<group>";
+		};
+		5CCC526F1FF4FA3E004B12E4 /* WatchTube for Apple Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5C1906F71FF5549900E7AD40 /* Views */,
+				5C1906F21FF5530500E7AD40 /* Models */,
+				5C1906EF1FF552DA00E7AD40 /* Scenes */,
+				5CCC52721FF4FA3E004B12E4 /* ExtensionDelegate.swift */,
+				5CCC52741FF4FA3E004B12E4 /* Assets.xcassets */,
+				5CCC52761FF4FA3E004B12E4 /* Info.plist */,
+			);
+			path = "WatchTube for Apple Watch Extension";
+			sourceTree = "<group>";
+		};
+		883184C6BFD1AC5CE579E4AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8411E67050E94A14530E7790 /* Pods-WatchTube.debug.xcconfig */,
+				3829EAB7430D160EA4BD3E41 /* Pods-WatchTube.release.xcconfig */,
+				5699DD6299FEAAA2594A634D /* Pods-WatchTube for Apple Watch.debug.xcconfig */,
+				74C6006F2D3857FCB9973737 /* Pods-WatchTube for Apple Watch.release.xcconfig */,
+				5EB849BE6CE90D1B5310F894 /* Pods-WatchTube for Apple Watch Extension.debug.xcconfig */,
+				2B88E6F43F9A117C4261F1C3 /* Pods-WatchTube for Apple Watch Extension.release.xcconfig */,
+				F70A1BB3E18E5C94A6D7E73A /* Pods-WatchTubeTests.debug.xcconfig */,
+				57132618834042D799912854 /* Pods-WatchTubeTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B7C3A133063728E720FA651D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1001801B59E0E2F1CE17FFC /* Pods_WatchTube.framework */,
+				AF4B5FAE0A0D503A2F5D21B6 /* Pods_WatchTube_for_Apple_Watch.framework */,
+				C5948CEC036F002FCC09D3DD /* Pods_WatchTube_for_Apple_Watch_Extension.framework */,
+				5237424E56BAF181C8DA3734 /* Pods_WatchTubeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,13 +292,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5CCC52571FF4FA03004B12E4 /* Build configuration list for PBXNativeTarget "WatchTube" */;
 			buildPhases = (
+				A9CEE9A5CD5B805DA747D758 /* [CP] Check Pods Manifest.lock */,
 				5CCC52361FF4FA03004B12E4 /* Sources */,
 				5CCC52371FF4FA03004B12E4 /* Frameworks */,
 				5CCC52381FF4FA03004B12E4 /* Resources */,
+				5CCC52811FF4FA3E004B12E4 /* Embed Watch Content */,
+				937D82FA3D3E3A8699F41034 /* [CP] Embed Pods Frameworks */,
+				A81F19E4D337E0A03B1C6FE6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5CCC52781FF4FA3E004B12E4 /* PBXTargetDependency */,
 			);
 			name = WatchTube;
 			productName = WatchTube;
@@ -120,9 +314,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5CCC525A1FF4FA03004B12E4 /* Build configuration list for PBXNativeTarget "WatchTubeTests" */;
 			buildPhases = (
+				79F861AE98011CF3C1E0FFCF /* [CP] Check Pods Manifest.lock */,
 				5CCC524A1FF4FA03004B12E4 /* Sources */,
 				5CCC524B1FF4FA03004B12E4 /* Frameworks */,
 				5CCC524C1FF4FA03004B12E4 /* Resources */,
+				3A263835381F9432317BBFE6 /* [CP] Embed Pods Frameworks */,
+				FC934D7BE8D9415BBFC31A4B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,6 +330,46 @@
 			productName = WatchTubeTests;
 			productReference = 5CCC524E1FF4FA03004B12E4 /* WatchTubeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5CCC525E1FF4FA3E004B12E4 /* WatchTube for Apple Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CCC527E1FF4FA3E004B12E4 /* Build configuration list for PBXNativeTarget "WatchTube for Apple Watch" */;
+			buildPhases = (
+				FCEF4D7F4A5F00BF910364B1 /* [CP] Check Pods Manifest.lock */,
+				5CCC525D1FF4FA3E004B12E4 /* Resources */,
+				5CCC527D1FF4FA3E004B12E4 /* Embed App Extensions */,
+				5267BEBAB2A23BA469E299F3 /* Frameworks */,
+				20D679AF8F4CB5F1ABBED6D0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5CCC526E1FF4FA3E004B12E4 /* PBXTargetDependency */,
+			);
+			name = "WatchTube for Apple Watch";
+			productName = "WatchTube for Apple Watch";
+			productReference = 5CCC525F1FF4FA3E004B12E4 /* WatchTube for Apple Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		5CCC526A1FF4FA3E004B12E4 /* WatchTube for Apple Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CCC527A1FF4FA3E004B12E4 /* Build configuration list for PBXNativeTarget "WatchTube for Apple Watch Extension" */;
+			buildPhases = (
+				8D9B45CA0F2D860C2F7D68A7 /* [CP] Check Pods Manifest.lock */,
+				5CCC52671FF4FA3E004B12E4 /* Sources */,
+				5CCC52681FF4FA3E004B12E4 /* Frameworks */,
+				5CCC52691FF4FA3E004B12E4 /* Resources */,
+				BDAB79731FADAB41FF3C21DD /* [CP] Embed Pods Frameworks */,
+				539FA55D5957AB6B05CF5D6D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchTube for Apple Watch Extension";
+			productName = "WatchTube for Apple Watch Extension";
+			productReference = 5CCC526B1FF4FA3E004B12E4 /* WatchTube for Apple Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -147,11 +384,24 @@
 					5CCC52391FF4FA03004B12E4 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					5CCC524D1FF4FA03004B12E4 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 5CCC52391FF4FA03004B12E4;
+					};
+					5CCC525E1FF4FA3E004B12E4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					5CCC526A1FF4FA3E004B12E4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -170,6 +420,8 @@
 			targets = (
 				5CCC52391FF4FA03004B12E4 /* WatchTube */,
 				5CCC524D1FF4FA03004B12E4 /* WatchTubeTests */,
+				5CCC525E1FF4FA3E004B12E4 /* WatchTube for Apple Watch */,
+				5CCC526A1FF4FA3E004B12E4 /* WatchTube for Apple Watch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -180,6 +432,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CCC52481FF4FA03004B12E4 /* LaunchScreen.storyboard in Resources */,
+				5C1906EB1FF53EB300E7AD40 /* GoogleService-Info (3).plist in Resources */,
 				5CCC52451FF4FA03004B12E4 /* Assets.xcassets in Resources */,
 				5CCC52431FF4FA03004B12E4 /* Main.storyboard in Resources */,
 			);
@@ -189,16 +442,236 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C1906EC1FF53EB300E7AD40 /* GoogleService-Info (3).plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CCC525D1FF4FA3E004B12E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CCC52651FF4FA3E004B12E4 /* Assets.xcassets in Resources */,
+				5C1906ED1FF53EB300E7AD40 /* GoogleService-Info (3).plist in Resources */,
+				5CCC52631FF4FA3E004B12E4 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CCC52691FF4FA3E004B12E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CCC52751FF4FA3E004B12E4 /* Assets.xcassets in Resources */,
+				5C1906EE1FF53EB300E7AD40 /* GoogleService-Info (3).plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20D679AF8F4CB5F1ABBED6D0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatchTube for Apple Watch/Pods-WatchTube for Apple Watch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A263835381F9432317BBFE6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatchTubeTests/Pods-WatchTubeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		539FA55D5957AB6B05CF5D6D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatchTube for Apple Watch Extension/Pods-WatchTube for Apple Watch Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79F861AE98011CF3C1E0FFCF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WatchTubeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D9B45CA0F2D860C2F7D68A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WatchTube for Apple Watch Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		937D82FA3D3E3A8699F41034 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WatchTube/Pods-WatchTube-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-iOS/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/youtube-ios-player-helper/youtube_ios_player_helper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/youtube_ios_player_helper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatchTube/Pods-WatchTube-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A81F19E4D337E0A03B1C6FE6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WatchTube/Pods-WatchTube-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatchTube/Pods-WatchTube-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9CEE9A5CD5B805DA747D758 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WatchTube-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDAB79731FADAB41FF3C21DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WatchTube for Apple Watch Extension/Pods-WatchTube for Apple Watch Extension-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-watchOS/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatchTube for Apple Watch Extension/Pods-WatchTube for Apple Watch Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC934D7BE8D9415BBFC31A4B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatchTubeTests/Pods-WatchTubeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCEF4D7F4A5F00BF910364B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WatchTube for Apple Watch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5CCC52361FF4FA03004B12E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C1906FC1FF5A12500E7AD40 /* WatchConnectivity.swift in Sources */,
 				5CCC52401FF4FA03004B12E4 /* ViewController.swift in Sources */,
 				5CCC523E1FF4FA03004B12E4 /* AppDelegate.swift in Sources */,
 			);
@@ -212,6 +685,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5CCC52671FF4FA3E004B12E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C1906E91FF5365A00E7AD40 /* MainInterfaceController.swift in Sources */,
+				5C1906F91FF5982B00E7AD40 /* NowPlayingInterfaceController.swift in Sources */,
+				5C1906F41FF5531600E7AD40 /* Video.swift in Sources */,
+				5CCC52731FF4FA3E004B12E4 /* ExtensionDelegate.swift in Sources */,
+				5C1906FB1FF598FB00E7AD40 /* WatchConnectivity.swift in Sources */,
+				5C1906F61FF5548C00E7AD40 /* VideoRow.swift in Sources */,
+				5CCC52711FF4FA3E004B12E4 /* VideoListInterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -219,6 +706,16 @@
 			isa = PBXTargetDependency;
 			target = 5CCC52391FF4FA03004B12E4 /* WatchTube */;
 			targetProxy = 5CCC524F1FF4FA03004B12E4 /* PBXContainerItemProxy */;
+		};
+		5CCC526E1FF4FA3E004B12E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CCC526A1FF4FA3E004B12E4 /* WatchTube for Apple Watch Extension */;
+			targetProxy = 5CCC526D1FF4FA3E004B12E4 /* PBXContainerItemProxy */;
+		};
+		5CCC52781FF4FA3E004B12E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CCC525E1FF4FA3E004B12E4 /* WatchTube for Apple Watch */;
+			targetProxy = 5CCC52771FF4FA3E004B12E4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -237,6 +734,14 @@
 				5CCC52471FF4FA03004B12E4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5CCC52611FF4FA3E004B12E4 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CCC52621FF4FA3E004B12E4 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -351,11 +856,13 @@
 		};
 		5CCC52581FF4FA03004B12E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8411E67050E94A14530E7790 /* Pods-WatchTube.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 94CJ9CKQCS;
+				DEVELOPMENT_TEAM = E7PYUL633W;
 				INFOPLIST_FILE = WatchTube/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ziph0n.WatchTube;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -366,11 +873,13 @@
 		};
 		5CCC52591FF4FA03004B12E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3829EAB7430D160EA4BD3E41 /* Pods-WatchTube.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 94CJ9CKQCS;
+				DEVELOPMENT_TEAM = E7PYUL633W;
 				INFOPLIST_FILE = WatchTube/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ziph0n.WatchTube;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -381,6 +890,7 @@
 		};
 		5CCC525B1FF4FA03004B12E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F70A1BB3E18E5C94A6D7E73A /* Pods-WatchTubeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -398,6 +908,7 @@
 		};
 		5CCC525C1FF4FA03004B12E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57132618834042D799912854 /* Pods-WatchTubeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -410,6 +921,84 @@
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatchTube.app/WatchTube";
+			};
+			name = Release;
+		};
+		5CCC527B1FF4FA3E004B12E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EB849BE6CE90D1B5310F894 /* Pods-WatchTube for Apple Watch Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E7PYUL633W;
+				INFOPLIST_FILE = "WatchTube for Apple Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ziph0n.WatchTube.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		5CCC527C1FF4FA3E004B12E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B88E6F43F9A117C4261F1C3 /* Pods-WatchTube for Apple Watch Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E7PYUL633W;
+				INFOPLIST_FILE = "WatchTube for Apple Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ziph0n.WatchTube.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		5CCC527F1FF4FA3E004B12E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5699DD6299FEAAA2594A634D /* Pods-WatchTube for Apple Watch.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E7PYUL633W;
+				IBSC_MODULE = WatchTube_for_Apple_Watch_Extension;
+				INFOPLIST_FILE = "WatchTube for Apple Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ziph0n.WatchTube.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		5CCC52801FF4FA3E004B12E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74C6006F2D3857FCB9973737 /* Pods-WatchTube for Apple Watch.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E7PYUL633W;
+				IBSC_MODULE = WatchTube_for_Apple_Watch_Extension;
+				INFOPLIST_FILE = "WatchTube for Apple Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ziph0n.WatchTube.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Release;
 		};
@@ -439,6 +1028,24 @@
 			buildConfigurations = (
 				5CCC525B1FF4FA03004B12E4 /* Debug */,
 				5CCC525C1FF4FA03004B12E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CCC527A1FF4FA3E004B12E4 /* Build configuration list for PBXNativeTarget "WatchTube for Apple Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CCC527B1FF4FA3E004B12E4 /* Debug */,
+				5CCC527C1FF4FA3E004B12E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CCC527E1FF4FA3E004B12E4 /* Build configuration list for PBXNativeTarget "WatchTube for Apple Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CCC527F1FF4FA3E004B12E4 /* Debug */,
+				5CCC52801FF4FA3E004B12E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

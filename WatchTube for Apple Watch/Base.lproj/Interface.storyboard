@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3di-nC-4Ab">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13756"/>
+    </dependencies>
+    <scenes>
+        <!--Main Interface Controller-->
+        <scene sceneID="3zw-kU-4qT">
+            <objects>
+                <controller id="3di-nC-4Ab" userLabel="Main Interface Controller" customClass="MainInterfaceController" customModule="WatchTube_for_Apple_Watch_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Search Video" id="WCD-w0-2zX">
+                            <connections>
+                                <action selector="searchVideoButtonTapped" destination="3di-nC-4Ab" id="p0X-6G-xdD"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-255" y="288"/>
+        </scene>
+        <!--Video List Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="VideoListInterfaceController" id="AgC-eL-Hgc" userLabel="Video List Interface Controller" customClass="VideoListInterfaceController" customModule="WatchTube_for_Apple_Watch_Extension">
+                    <items>
+                        <table alignment="left" id="drm-UP-5sF">
+                            <items>
+                                <tableRow identifier="VideoRow" id="dhr-vW-W5o" customClass="VideoRow" customModule="WatchTube_for_Apple_Watch_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="2cj-fB-aRj">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="TbT-GJ-XVI">
+                                                <fontDescription key="font" type="system" pointSize="13"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="titleLabel" destination="TbT-GJ-XVI" id="QfP-yR-tn8"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="videoTableRow" destination="drm-UP-5sF" id="hnC-j8-t6u"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+        <!--Now Playing Interface Controller-->
+        <scene sceneID="8wu-9q-G55">
+            <objects>
+                <controller id="wPJ-Mn-7xG" userLabel="Now Playing Interface Controller">
+                    <items>
+                        <label alignment="left" text="Label" id="BXF-dh-C8G"/>
+                        <group width="1" height="70" alignment="center" verticalAlignment="center" id="x1t-MY-Wq4">
+                            <items>
+                                <button alignment="center" id="ezr-Io-7Vu" userLabel="Play Button">
+                                    <group key="contentGroup" width="30" height="50" alignment="left" id="HFA-nZ-81v">
+                                        <items>
+                                            <imageView width="30" height="50" alignment="left" image="Play" contentMode="scaleAspectFit" id="Qog-o4-05V"/>
+                                        </items>
+                                    </group>
+                                </button>
+                            </items>
+                        </group>
+                        <slider width="1" alignment="left" verticalAlignment="bottom" value="1" maximum="3" steps="3" id="gqe-LQ-bdp"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="385" y="288"/>
+        </scene>
+    </scenes>
+</document>
