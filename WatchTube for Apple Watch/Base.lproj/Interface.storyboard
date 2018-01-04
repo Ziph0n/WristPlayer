@@ -11,24 +11,34 @@
         <!--Main Interface Controller-->
         <scene sceneID="3zw-kU-4qT">
             <objects>
-                <controller id="3di-nC-4Ab" userLabel="Main Interface Controller" customClass="MainInterfaceController" customModule="WatchTube_for_Apple_Watch_Extension">
+                <controller title="Home" id="3di-nC-4Ab" userLabel="Main Interface Controller" customClass="MainInterfaceController" customModule="WatchTube_for_Apple_Watch_Extension">
                     <items>
+                        <button width="1" alignment="left" title="Now Playing" id="A0I-nJ-zHi">
+                            <connections>
+                                <action selector="nowPlayingButtonTapped" destination="3di-nC-4Ab" id="pdx-cn-4zj"/>
+                            </connections>
+                        </button>
                         <button width="1" alignment="left" title="Search Video" id="WCD-w0-2zX">
                             <connections>
                                 <action selector="searchVideoButtonTapped" destination="3di-nC-4Ab" id="p0X-6G-xdD"/>
                             </connections>
                         </button>
+                        <button width="1" alignment="left" title="My Playlists" id="D7T-7Q-TDN">
+                            <connections>
+                                <action selector="myPlaylistsButtonTapped" destination="3di-nC-4Ab" id="sgQ-Kz-oxK"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-255" y="288"/>
+            <point key="canvasLocation" x="-212" y="288"/>
         </scene>
         <!--Video List Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller identifier="VideoListInterfaceController" id="AgC-eL-Hgc" userLabel="Video List Interface Controller" customClass="VideoListInterfaceController" customModule="WatchTube_for_Apple_Watch_Extension">
+                <controller identifier="VideoListInterfaceController" title="Search" id="AgC-eL-Hgc" userLabel="Video List Interface Controller" customClass="VideoListInterfaceController" customModule="WatchTube_for_Apple_Watch_Extension">
                     <items>
-                        <table alignment="left" id="drm-UP-5sF">
+                        <table alignment="left" hidden="YES" id="drm-UP-5sF">
                             <items>
                                 <tableRow identifier="VideoRow" id="dhr-vW-W5o" customClass="VideoRow" customModule="WatchTube_for_Apple_Watch_Extension">
                                     <group key="rootItem" width="1" alignment="left" id="2cj-fB-aRj">
@@ -44,19 +54,57 @@
                                 </tableRow>
                             </items>
                         </table>
+                        <imageView alignment="center" verticalAlignment="center" image="Activity1" id="TOT-Og-Eb6" userLabel="Activity Image"/>
                     </items>
                     <connections>
+                        <outlet property="activityImage" destination="TOT-Og-Eb6" id="Hnw-Fb-wSr"/>
                         <outlet property="videoTableRow" destination="drm-UP-5sF" id="hnC-j8-t6u"/>
                     </connections>
                 </controller>
             </objects>
+            <point key="canvasLocation" x="50" y="288"/>
+        </scene>
+        <!--Playlist List Interface Controller-->
+        <scene sceneID="4fV-K9-P7w">
+            <objects>
+                <controller identifier="PlaylistListInterfaceController" title="My Playlists" id="ReF-JV-BK3" userLabel="Playlist List Interface Controller" customClass="PlaylistListInterfaceController" customModule="WatchTube_for_Apple_Watch_Extension">
+                    <items>
+                        <table alignment="left" hidden="YES" id="Ynv-ZK-ayV" userLabel="Playlist Table Row">
+                            <items>
+                                <tableRow identifier="PlaylistRow" id="2PO-tV-YY2" userLabel="PlaylistRow" customClass="PlaylistRow" customModule="WatchTube_for_Apple_Watch_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="xlu-0K-jua">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="3GL-y3-Crk">
+                                                <fontDescription key="font" type="system" pointSize="13"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="titleLabel" destination="3GL-y3-Crk" id="2Dm-zq-GIK"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <imageView alignment="center" verticalAlignment="center" image="Activity1" id="nVq-7K-eHh" userLabel="Activity Image"/>
+                        <label alignment="center" verticalAlignment="center" hidden="YES" text="Open WatchTube on your iPhone and sign in with your Google account" textAlignment="center" numberOfLines="0" id="47B-EV-itj" userLabel="Not Logged In Label"/>
+                    </items>
+                    <connections>
+                        <outlet property="activityImage" destination="nVq-7K-eHh" id="vkq-d1-XHd"/>
+                        <outlet property="notLoggedInLabel" destination="47B-EV-itj" id="VZN-X4-mJT"/>
+                        <outlet property="playlistTableRow" destination="Ynv-ZK-ayV" id="VEy-eD-jO1"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="50" y="598"/>
         </scene>
         <!--Now Playing Interface Controller-->
         <scene sceneID="8wu-9q-G55">
             <objects>
-                <controller id="wPJ-Mn-7xG" userLabel="Now Playing Interface Controller">
+                <controller identifier="NowPlayingInterfaceController" title="Now Playing" id="wPJ-Mn-7xG" userLabel="Now Playing Interface Controller" customClass="NowPlayingInterfaceController" customModule="WatchTube_for_Apple_Watch_Extension">
                     <items>
-                        <label alignment="left" text="Label" id="BXF-dh-C8G"/>
+                        <label alignment="left" text="Label" id="BXF-dh-C8G">
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                        </label>
                         <group width="1" height="70" alignment="center" verticalAlignment="center" id="x1t-MY-Wq4">
                             <items>
                                 <button alignment="center" id="ezr-Io-7Vu" userLabel="Play Button">
@@ -65,14 +113,26 @@
                                             <imageView width="30" height="50" alignment="left" image="Play" contentMode="scaleAspectFit" id="Qog-o4-05V"/>
                                         </items>
                                     </group>
+                                    <connections>
+                                        <action selector="playButtonTapped" destination="wPJ-Mn-7xG" id="YCP-Se-Yeh"/>
+                                    </connections>
                                 </button>
                             </items>
                         </group>
-                        <slider width="1" alignment="left" verticalAlignment="bottom" value="1" maximum="3" steps="3" id="gqe-LQ-bdp"/>
+                        <slider width="1" alignment="left" verticalAlignment="bottom" continuous="YES" value="100" maximum="100" steps="100" id="gqe-LQ-bdp">
+                            <connections>
+                                <action selector="sliderValueDidChange:" destination="wPJ-Mn-7xG" id="qzU-hy-cph"/>
+                            </connections>
+                        </slider>
                     </items>
+                    <connections>
+                        <outlet property="playImage" destination="Qog-o4-05V" id="LOw-7k-ZnB"/>
+                        <outlet property="slider" destination="gqe-LQ-bdp" id="lbM-lV-o3l"/>
+                        <outlet property="titleLabel" destination="BXF-dh-C8G" id="mlS-Tv-BJd"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="385" y="288"/>
+            <point key="canvasLocation" x="311" y="288"/>
         </scene>
     </scenes>
 </document>

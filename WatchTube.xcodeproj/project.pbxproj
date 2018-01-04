@@ -10,16 +10,52 @@
 		37AD5B0A2D4ADAB344C480A1 /* Pods_WatchTube_for_Apple_Watch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5948CEC036F002FCC09D3DD /* Pods_WatchTube_for_Apple_Watch_Extension.framework */; };
 		4720AE3B46826F2115192F54 /* Pods_WatchTube.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1001801B59E0E2F1CE17FFC /* Pods_WatchTube.framework */; };
 		55C8010D463330E05B1CB8F0 /* Pods_WatchTubeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5237424E56BAF181C8DA3734 /* Pods_WatchTubeTests.framework */; };
+		5C1748321FF79BC4000DE209 /* Activity25@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C1748141FF79BC0000DE209 /* Activity25@2x.png */; };
+		5C1748331FF79BC4000DE209 /* Activity7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C1748151FF79BC0000DE209 /* Activity7@2x.png */; };
+		5C1748341FF79BC4000DE209 /* Activity10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C1748161FF79BC0000DE209 /* Activity10@2x.png */; };
+		5C1748351FF79BC4000DE209 /* Activity14@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C1748171FF79BC0000DE209 /* Activity14@2x.png */; };
+		5C1748361FF79BC4000DE209 /* Activity6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C1748181FF79BC0000DE209 /* Activity6@2x.png */; };
+		5C1748371FF79BC4000DE209 /* Activity21@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C1748191FF79BC0000DE209 /* Activity21@2x.png */; };
+		5C1748381FF79BC4000DE209 /* Activity22@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C17481A1FF79BC0000DE209 /* Activity22@2x.png */; };
+		5C1748391FF79BC4000DE209 /* Activity29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C17481B1FF79BC0000DE209 /* Activity29@2x.png */; };
+		5C17483A1FF79BC4000DE209 /* Activity5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C17481C1FF79BC1000DE209 /* Activity5@2x.png */; };
+		5C17483B1FF79BC4000DE209 /* Activity24@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C17481D1FF79BC1000DE209 /* Activity24@2x.png */; };
+		5C17483C1FF79BC4000DE209 /* Activity27@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C17481E1FF79BC1000DE209 /* Activity27@2x.png */; };
+		5C17483D1FF79BC4000DE209 /* Activity8@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C17481F1FF79BC1000DE209 /* Activity8@2x.png */; };
+		5C17483E1FF79BC4000DE209 /* Activity19@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C1748201FF79BC1000DE209 /* Activity19@2x.png */; };
+		5C17483F1FF79BC4000DE209 /* Activity11@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C1748211FF79BC1000DE209 /* Activity11@2x.png */; };
+		5C1748401FF79BC4000DE209 /* Activity28@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C1748221FF79BC1000DE209 /* Activity28@2x.png */; };
+		5C1748411FF79BC4000DE209 /* Activity2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C1748231FF79BC1000DE209 /* Activity2@2x.png */; };
+		5C1748421FF79BC4000DE209 /* Activity30@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C1748241FF79BC2000DE209 /* Activity30@2x.png */; };
+		5C1748431FF79BC4000DE209 /* Activity3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C1748251FF79BC2000DE209 /* Activity3@2x.png */; };
+		5C1748441FF79BC4000DE209 /* Activity16@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C1748261FF79BC2000DE209 /* Activity16@2x.png */; };
+		5C1748451FF79BC4000DE209 /* Activity17@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C1748271FF79BC2000DE209 /* Activity17@2x.png */; };
+		5C1748461FF79BC4000DE209 /* Activity18@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C1748281FF79BC2000DE209 /* Activity18@2x.png */; };
+		5C1748471FF79BC4000DE209 /* Activity23@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C1748291FF79BC2000DE209 /* Activity23@2x.png */; };
+		5C1748481FF79BC4000DE209 /* Activity13@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C17482A1FF79BC2000DE209 /* Activity13@2x.png */; };
+		5C1748491FF79BC4000DE209 /* Activity1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C17482B1FF79BC3000DE209 /* Activity1@2x.png */; };
+		5C17484A1FF79BC4000DE209 /* Activity9@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C17482C1FF79BC3000DE209 /* Activity9@2x.png */; };
+		5C17484B1FF79BC4000DE209 /* Activity12@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C17482D1FF79BC3000DE209 /* Activity12@2x.png */; };
+		5C17484C1FF79BC4000DE209 /* Activity20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C17482E1FF79BC3000DE209 /* Activity20@2x.png */; };
+		5C17484D1FF79BC4000DE209 /* Activity4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C17482F1FF79BC3000DE209 /* Activity4@2x.png */; };
+		5C17484E1FF79BC4000DE209 /* Activity26@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C1748301FF79BC4000DE209 /* Activity26@2x.png */; };
+		5C17484F1FF79BC4000DE209 /* Activity15@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C1748311FF79BC4000DE209 /* Activity15@2x.png */; };
+		5C1748511FF7B795000DE209 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1748501FF7B795000DE209 /* AccountViewController.swift */; };
+		5C1748531FF7C00F000DE209 /* PlaylistListInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1748521FF7C00F000DE209 /* PlaylistListInterfaceController.swift */; };
+		5C1748551FF7C697000DE209 /* PlaylistRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1748541FF7C697000DE209 /* PlaylistRow.swift */; };
+		5C1748571FF7C6A3000DE209 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1748561FF7C6A3000DE209 /* Playlist.swift */; };
+		5C1748591FF7CC59000DE209 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1748581FF7CC59000DE209 /* User.swift */; };
 		5C1906E91FF5365A00E7AD40 /* MainInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1906E81FF5365A00E7AD40 /* MainInterfaceController.swift */; };
-		5C1906EB1FF53EB300E7AD40 /* GoogleService-Info (3).plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C1906EA1FF53EB300E7AD40 /* GoogleService-Info (3).plist */; };
-		5C1906EC1FF53EB300E7AD40 /* GoogleService-Info (3).plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C1906EA1FF53EB300E7AD40 /* GoogleService-Info (3).plist */; };
-		5C1906ED1FF53EB300E7AD40 /* GoogleService-Info (3).plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C1906EA1FF53EB300E7AD40 /* GoogleService-Info (3).plist */; };
-		5C1906EE1FF53EB300E7AD40 /* GoogleService-Info (3).plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C1906EA1FF53EB300E7AD40 /* GoogleService-Info (3).plist */; };
+		5C1906EB1FF53EB300E7AD40 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C1906EA1FF53EB300E7AD40 /* GoogleService-Info.plist */; };
+		5C1906EC1FF53EB300E7AD40 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C1906EA1FF53EB300E7AD40 /* GoogleService-Info.plist */; };
+		5C1906ED1FF53EB300E7AD40 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C1906EA1FF53EB300E7AD40 /* GoogleService-Info.plist */; };
+		5C1906EE1FF53EB300E7AD40 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C1906EA1FF53EB300E7AD40 /* GoogleService-Info.plist */; };
 		5C1906F41FF5531600E7AD40 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1906F31FF5531600E7AD40 /* Video.swift */; };
 		5C1906F61FF5548C00E7AD40 /* VideoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1906F51FF5548C00E7AD40 /* VideoRow.swift */; };
 		5C1906F91FF5982B00E7AD40 /* NowPlayingInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1906F81FF5982B00E7AD40 /* NowPlayingInterfaceController.swift */; };
-		5C1906FB1FF598FB00E7AD40 /* WatchConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1906FA1FF598FB00E7AD40 /* WatchConnectivity.swift */; };
-		5C1906FC1FF5A12500E7AD40 /* WatchConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1906FA1FF598FB00E7AD40 /* WatchConnectivity.swift */; };
+		5C225CCD1FF65DAF0014A853 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C225CCC1FF65DAF0014A853 /* WatchSessionManager.swift */; };
+		5C225CD11FF665E80014A853 /* iPhoneSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C225CD01FF665E80014A853 /* iPhoneSessionManager.swift */; };
+		5C225CD31FF66E980014A853 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C225CD21FF66E980014A853 /* Settings.swift */; };
 		5CCC523E1FF4FA03004B12E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCC523D1FF4FA03004B12E4 /* AppDelegate.swift */; };
 		5CCC52401FF4FA03004B12E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCC523F1FF4FA03004B12E4 /* ViewController.swift */; };
 		5CCC52431FF4FA03004B12E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CCC52411FF4FA03004B12E4 /* Main.storyboard */; };
@@ -91,12 +127,50 @@
 		5237424E56BAF181C8DA3734 /* Pods_WatchTubeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchTubeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5699DD6299FEAAA2594A634D /* Pods-WatchTube for Apple Watch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchTube for Apple Watch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchTube for Apple Watch/Pods-WatchTube for Apple Watch.debug.xcconfig"; sourceTree = "<group>"; };
 		57132618834042D799912854 /* Pods-WatchTubeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchTubeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchTubeTests/Pods-WatchTubeTests.release.xcconfig"; sourceTree = "<group>"; };
+		5C0E5F071FF8449100094588 /* WatchTube.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WatchTube.entitlements; sourceTree = "<group>"; };
+		5C1748141FF79BC0000DE209 /* Activity25@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity25@2x.png"; sourceTree = "<group>"; };
+		5C1748151FF79BC0000DE209 /* Activity7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity7@2x.png"; sourceTree = "<group>"; };
+		5C1748161FF79BC0000DE209 /* Activity10@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity10@2x.png"; sourceTree = "<group>"; };
+		5C1748171FF79BC0000DE209 /* Activity14@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity14@2x.png"; sourceTree = "<group>"; };
+		5C1748181FF79BC0000DE209 /* Activity6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity6@2x.png"; sourceTree = "<group>"; };
+		5C1748191FF79BC0000DE209 /* Activity21@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity21@2x.png"; sourceTree = "<group>"; };
+		5C17481A1FF79BC0000DE209 /* Activity22@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity22@2x.png"; sourceTree = "<group>"; };
+		5C17481B1FF79BC0000DE209 /* Activity29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity29@2x.png"; sourceTree = "<group>"; };
+		5C17481C1FF79BC1000DE209 /* Activity5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity5@2x.png"; sourceTree = "<group>"; };
+		5C17481D1FF79BC1000DE209 /* Activity24@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity24@2x.png"; sourceTree = "<group>"; };
+		5C17481E1FF79BC1000DE209 /* Activity27@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity27@2x.png"; sourceTree = "<group>"; };
+		5C17481F1FF79BC1000DE209 /* Activity8@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity8@2x.png"; sourceTree = "<group>"; };
+		5C1748201FF79BC1000DE209 /* Activity19@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity19@2x.png"; sourceTree = "<group>"; };
+		5C1748211FF79BC1000DE209 /* Activity11@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity11@2x.png"; sourceTree = "<group>"; };
+		5C1748221FF79BC1000DE209 /* Activity28@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity28@2x.png"; sourceTree = "<group>"; };
+		5C1748231FF79BC1000DE209 /* Activity2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity2@2x.png"; sourceTree = "<group>"; };
+		5C1748241FF79BC2000DE209 /* Activity30@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity30@2x.png"; sourceTree = "<group>"; };
+		5C1748251FF79BC2000DE209 /* Activity3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity3@2x.png"; sourceTree = "<group>"; };
+		5C1748261FF79BC2000DE209 /* Activity16@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity16@2x.png"; sourceTree = "<group>"; };
+		5C1748271FF79BC2000DE209 /* Activity17@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity17@2x.png"; sourceTree = "<group>"; };
+		5C1748281FF79BC2000DE209 /* Activity18@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity18@2x.png"; sourceTree = "<group>"; };
+		5C1748291FF79BC2000DE209 /* Activity23@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity23@2x.png"; sourceTree = "<group>"; };
+		5C17482A1FF79BC2000DE209 /* Activity13@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity13@2x.png"; sourceTree = "<group>"; };
+		5C17482B1FF79BC3000DE209 /* Activity1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity1@2x.png"; sourceTree = "<group>"; };
+		5C17482C1FF79BC3000DE209 /* Activity9@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity9@2x.png"; sourceTree = "<group>"; };
+		5C17482D1FF79BC3000DE209 /* Activity12@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity12@2x.png"; sourceTree = "<group>"; };
+		5C17482E1FF79BC3000DE209 /* Activity20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity20@2x.png"; sourceTree = "<group>"; };
+		5C17482F1FF79BC3000DE209 /* Activity4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity4@2x.png"; sourceTree = "<group>"; };
+		5C1748301FF79BC4000DE209 /* Activity26@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity26@2x.png"; sourceTree = "<group>"; };
+		5C1748311FF79BC4000DE209 /* Activity15@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity15@2x.png"; sourceTree = "<group>"; };
+		5C1748501FF7B795000DE209 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		5C1748521FF7C00F000DE209 /* PlaylistListInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistListInterfaceController.swift; sourceTree = "<group>"; };
+		5C1748541FF7C697000DE209 /* PlaylistRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistRow.swift; sourceTree = "<group>"; };
+		5C1748561FF7C6A3000DE209 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		5C1748581FF7CC59000DE209 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5C1906E81FF5365A00E7AD40 /* MainInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInterfaceController.swift; sourceTree = "<group>"; };
-		5C1906EA1FF53EB300E7AD40 /* GoogleService-Info (3).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (3).plist"; sourceTree = "<group>"; };
+		5C1906EA1FF53EB300E7AD40 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5C1906F31FF5531600E7AD40 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		5C1906F51FF5548C00E7AD40 /* VideoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRow.swift; sourceTree = "<group>"; };
 		5C1906F81FF5982B00E7AD40 /* NowPlayingInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingInterfaceController.swift; sourceTree = "<group>"; };
-		5C1906FA1FF598FB00E7AD40 /* WatchConnectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivity.swift; sourceTree = "<group>"; };
+		5C225CCC1FF65DAF0014A853 /* WatchSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
+		5C225CD01FF665E80014A853 /* iPhoneSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneSessionManager.swift; sourceTree = "<group>"; };
+		5C225CD21FF66E980014A853 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		5CCC523A1FF4FA03004B12E4 /* WatchTube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchTube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CCC523D1FF4FA03004B12E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CCC523F1FF4FA03004B12E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -161,12 +235,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C1748131FF79B9B000DE209 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5C17482B1FF79BC3000DE209 /* Activity1@2x.png */,
+				5C1748231FF79BC1000DE209 /* Activity2@2x.png */,
+				5C1748251FF79BC2000DE209 /* Activity3@2x.png */,
+				5C17482F1FF79BC3000DE209 /* Activity4@2x.png */,
+				5C17481C1FF79BC1000DE209 /* Activity5@2x.png */,
+				5C1748181FF79BC0000DE209 /* Activity6@2x.png */,
+				5C1748151FF79BC0000DE209 /* Activity7@2x.png */,
+				5C17481F1FF79BC1000DE209 /* Activity8@2x.png */,
+				5C17482C1FF79BC3000DE209 /* Activity9@2x.png */,
+				5C1748161FF79BC0000DE209 /* Activity10@2x.png */,
+				5C1748211FF79BC1000DE209 /* Activity11@2x.png */,
+				5C17482D1FF79BC3000DE209 /* Activity12@2x.png */,
+				5C17482A1FF79BC2000DE209 /* Activity13@2x.png */,
+				5C1748171FF79BC0000DE209 /* Activity14@2x.png */,
+				5C1748311FF79BC4000DE209 /* Activity15@2x.png */,
+				5C1748261FF79BC2000DE209 /* Activity16@2x.png */,
+				5C1748271FF79BC2000DE209 /* Activity17@2x.png */,
+				5C1748281FF79BC2000DE209 /* Activity18@2x.png */,
+				5C1748201FF79BC1000DE209 /* Activity19@2x.png */,
+				5C17482E1FF79BC3000DE209 /* Activity20@2x.png */,
+				5C1748191FF79BC0000DE209 /* Activity21@2x.png */,
+				5C17481A1FF79BC0000DE209 /* Activity22@2x.png */,
+				5C1748291FF79BC2000DE209 /* Activity23@2x.png */,
+				5C17481D1FF79BC1000DE209 /* Activity24@2x.png */,
+				5C1748141FF79BC0000DE209 /* Activity25@2x.png */,
+				5C1748301FF79BC4000DE209 /* Activity26@2x.png */,
+				5C17481E1FF79BC1000DE209 /* Activity27@2x.png */,
+				5C1748221FF79BC1000DE209 /* Activity28@2x.png */,
+				5C17481B1FF79BC0000DE209 /* Activity29@2x.png */,
+				5C1748241FF79BC2000DE209 /* Activity30@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		5C1906EF1FF552DA00E7AD40 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
 				5CCC52701FF4FA3E004B12E4 /* VideoListInterfaceController.swift */,
 				5C1906E81FF5365A00E7AD40 /* MainInterfaceController.swift */,
 				5C1906F81FF5982B00E7AD40 /* NowPlayingInterfaceController.swift */,
+				5C1748521FF7C00F000DE209 /* PlaylistListInterfaceController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -175,7 +287,10 @@
 			isa = PBXGroup;
 			children = (
 				5C1906F31FF5531600E7AD40 /* Video.swift */,
-				5C1906FA1FF598FB00E7AD40 /* WatchConnectivity.swift */,
+				5C225CCC1FF65DAF0014A853 /* WatchSessionManager.swift */,
+				5C225CD21FF66E980014A853 /* Settings.swift */,
+				5C1748561FF7C6A3000DE209 /* Playlist.swift */,
+				5C1748581FF7CC59000DE209 /* User.swift */,
 			);
 			name = Models;
 			path = "New Group";
@@ -185,14 +300,31 @@
 			isa = PBXGroup;
 			children = (
 				5C1906F51FF5548C00E7AD40 /* VideoRow.swift */,
+				5C1748541FF7C697000DE209 /* PlaylistRow.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		5C225CCE1FF665C40014A853 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				5CCC523F1FF4FA03004B12E4 /* ViewController.swift */,
+				5C1748501FF7B795000DE209 /* AccountViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		5C225CCF1FF665D30014A853 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5C225CD01FF665E80014A853 /* iPhoneSessionManager.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		5CCC52311FF4FA03004B12E4 = {
 			isa = PBXGroup;
 			children = (
-				5C1906EA1FF53EB300E7AD40 /* GoogleService-Info (3).plist */,
 				5CCC523C1FF4FA03004B12E4 /* WatchTube */,
 				5CCC52511FF4FA03004B12E4 /* WatchTubeTests */,
 				5CCC52601FF4FA3E004B12E4 /* WatchTube for Apple Watch */,
@@ -217,8 +349,11 @@
 		5CCC523C1FF4FA03004B12E4 /* WatchTube */ = {
 			isa = PBXGroup;
 			children = (
+				5C0E5F071FF8449100094588 /* WatchTube.entitlements */,
+				5C225CCF1FF665D30014A853 /* Models */,
+				5C225CCE1FF665C40014A853 /* Scenes */,
 				5CCC523D1FF4FA03004B12E4 /* AppDelegate.swift */,
-				5CCC523F1FF4FA03004B12E4 /* ViewController.swift */,
+				5C1906EA1FF53EB300E7AD40 /* GoogleService-Info.plist */,
 				5CCC52411FF4FA03004B12E4 /* Main.storyboard */,
 				5CCC52441FF4FA03004B12E4 /* Assets.xcassets */,
 				5CCC52461FF4FA03004B12E4 /* LaunchScreen.storyboard */,
@@ -249,6 +384,7 @@
 		5CCC526F1FF4FA3E004B12E4 /* WatchTube for Apple Watch Extension */ = {
 			isa = PBXGroup;
 			children = (
+				5C1748131FF79B9B000DE209 /* Images */,
 				5C1906F71FF5549900E7AD40 /* Views */,
 				5C1906F21FF5530500E7AD40 /* Models */,
 				5C1906EF1FF552DA00E7AD40 /* Scenes */,
@@ -299,6 +435,7 @@
 				5CCC52811FF4FA3E004B12E4 /* Embed Watch Content */,
 				937D82FA3D3E3A8699F41034 /* [CP] Embed Pods Frameworks */,
 				A81F19E4D337E0A03B1C6FE6 /* [CP] Copy Pods Resources */,
+				5C0E5F081FFAB03700094588 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -388,6 +525,9 @@
 							com.apple.BackgroundModes = {
 								enabled = 1;
 							};
+							com.apple.Push = {
+								enabled = 1;
+							};
 						};
 					};
 					5CCC524D1FF4FA03004B12E4 = {
@@ -432,7 +572,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CCC52481FF4FA03004B12E4 /* LaunchScreen.storyboard in Resources */,
-				5C1906EB1FF53EB300E7AD40 /* GoogleService-Info (3).plist in Resources */,
+				5C1906EB1FF53EB300E7AD40 /* GoogleService-Info.plist in Resources */,
 				5CCC52451FF4FA03004B12E4 /* Assets.xcassets in Resources */,
 				5CCC52431FF4FA03004B12E4 /* Main.storyboard in Resources */,
 			);
@@ -442,7 +582,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C1906EC1FF53EB300E7AD40 /* GoogleService-Info (3).plist in Resources */,
+				5C1906EC1FF53EB300E7AD40 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,7 +591,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CCC52651FF4FA3E004B12E4 /* Assets.xcassets in Resources */,
-				5C1906ED1FF53EB300E7AD40 /* GoogleService-Info (3).plist in Resources */,
+				5C1906ED1FF53EB300E7AD40 /* GoogleService-Info.plist in Resources */,
 				5CCC52631FF4FA3E004B12E4 /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,8 +600,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C17483C1FF79BC4000DE209 /* Activity27@2x.png in Resources */,
+				5C17484F1FF79BC4000DE209 /* Activity15@2x.png in Resources */,
+				5C1748481FF79BC4000DE209 /* Activity13@2x.png in Resources */,
+				5C17483A1FF79BC4000DE209 /* Activity5@2x.png in Resources */,
+				5C1748391FF79BC4000DE209 /* Activity29@2x.png in Resources */,
+				5C1748421FF79BC4000DE209 /* Activity30@2x.png in Resources */,
+				5C1748401FF79BC4000DE209 /* Activity28@2x.png in Resources */,
+				5C1748351FF79BC4000DE209 /* Activity14@2x.png in Resources */,
+				5C17483D1FF79BC4000DE209 /* Activity8@2x.png in Resources */,
+				5C1748361FF79BC4000DE209 /* Activity6@2x.png in Resources */,
+				5C1748441FF79BC4000DE209 /* Activity16@2x.png in Resources */,
+				5C1748321FF79BC4000DE209 /* Activity25@2x.png in Resources */,
+				5C17483E1FF79BC4000DE209 /* Activity19@2x.png in Resources */,
+				5C17483B1FF79BC4000DE209 /* Activity24@2x.png in Resources */,
+				5C1748411FF79BC4000DE209 /* Activity2@2x.png in Resources */,
+				5C1748451FF79BC4000DE209 /* Activity17@2x.png in Resources */,
+				5C1748461FF79BC4000DE209 /* Activity18@2x.png in Resources */,
+				5C1748341FF79BC4000DE209 /* Activity10@2x.png in Resources */,
+				5C17484E1FF79BC4000DE209 /* Activity26@2x.png in Resources */,
+				5C1748471FF79BC4000DE209 /* Activity23@2x.png in Resources */,
+				5C17484B1FF79BC4000DE209 /* Activity12@2x.png in Resources */,
+				5C1748431FF79BC4000DE209 /* Activity3@2x.png in Resources */,
+				5C1748491FF79BC4000DE209 /* Activity1@2x.png in Resources */,
+				5C1748331FF79BC4000DE209 /* Activity7@2x.png in Resources */,
 				5CCC52751FF4FA3E004B12E4 /* Assets.xcassets in Resources */,
-				5C1906EE1FF53EB300E7AD40 /* GoogleService-Info (3).plist in Resources */,
+				5C1748381FF79BC4000DE209 /* Activity22@2x.png in Resources */,
+				5C17484C1FF79BC4000DE209 /* Activity20@2x.png in Resources */,
+				5C17484A1FF79BC4000DE209 /* Activity9@2x.png in Resources */,
+				5C17483F1FF79BC4000DE209 /* Activity11@2x.png in Resources */,
+				5C1748371FF79BC4000DE209 /* Activity21@2x.png in Resources */,
+				5C17484D1FF79BC4000DE209 /* Activity4@2x.png in Resources */,
+				5C1906EE1FF53EB300E7AD40 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +682,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatchTube for Apple Watch Extension/Pods-WatchTube for Apple Watch Extension-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		5C0E5F081FFAB03700094588 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" a8263f826b5b1dfeb1e2c5eaee19c1964ebfcce8 a576780e9fc446d87d4f60f6e487b3cc9bab7873feedfb60e07e3e8e1704c00e";
 		};
 		79F861AE98011CF3C1E0FFCF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -671,8 +854,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C1906FC1FF5A12500E7AD40 /* WatchConnectivity.swift in Sources */,
+				5C225CD11FF665E80014A853 /* iPhoneSessionManager.swift in Sources */,
 				5CCC52401FF4FA03004B12E4 /* ViewController.swift in Sources */,
+				5C1748511FF7B795000DE209 /* AccountViewController.swift in Sources */,
 				5CCC523E1FF4FA03004B12E4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -689,13 +873,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C1748531FF7C00F000DE209 /* PlaylistListInterfaceController.swift in Sources */,
 				5C1906E91FF5365A00E7AD40 /* MainInterfaceController.swift in Sources */,
+				5C1748551FF7C697000DE209 /* PlaylistRow.swift in Sources */,
 				5C1906F91FF5982B00E7AD40 /* NowPlayingInterfaceController.swift in Sources */,
+				5C225CD31FF66E980014A853 /* Settings.swift in Sources */,
 				5C1906F41FF5531600E7AD40 /* Video.swift in Sources */,
 				5CCC52731FF4FA3E004B12E4 /* ExtensionDelegate.swift in Sources */,
-				5C1906FB1FF598FB00E7AD40 /* WatchConnectivity.swift in Sources */,
 				5C1906F61FF5548C00E7AD40 /* VideoRow.swift in Sources */,
+				5C1748591FF7CC59000DE209 /* User.swift in Sources */,
+				5C1748571FF7C6A3000DE209 /* Playlist.swift in Sources */,
 				5CCC52711FF4FA3E004B12E4 /* VideoListInterfaceController.swift in Sources */,
+				5C225CCD1FF65DAF0014A853 /* WatchSessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -859,15 +1048,16 @@
 			baseConfigurationReference = 8411E67050E94A14530E7790 /* Pods-WatchTube.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WatchTube/WatchTube.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E7PYUL633W;
 				INFOPLIST_FILE = WatchTube/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ziph0n.WatchTube;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ziph0n.WatchTubeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -876,15 +1066,16 @@
 			baseConfigurationReference = 3829EAB7430D160EA4BD3E41 /* Pods-WatchTube.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WatchTube/WatchTube.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E7PYUL633W;
 				INFOPLIST_FILE = WatchTube/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ziph0n.WatchTube;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ziph0n.WatchTubeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -933,7 +1124,7 @@
 				DEVELOPMENT_TEAM = E7PYUL633W;
 				INFOPLIST_FILE = "WatchTube for Apple Watch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ziph0n.WatchTube.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ziph0n.WatchTubeApp.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -952,7 +1143,7 @@
 				DEVELOPMENT_TEAM = E7PYUL633W;
 				INFOPLIST_FILE = "WatchTube for Apple Watch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ziph0n.WatchTube.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ziph0n.WatchTubeApp.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -966,13 +1157,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5699DD6299FEAAA2594A634D /* Pods-WatchTube for Apple Watch.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E7PYUL633W;
 				IBSC_MODULE = WatchTube_for_Apple_Watch_Extension;
 				INFOPLIST_FILE = "WatchTube for Apple Watch/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ziph0n.WatchTube.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ziph0n.WatchTubeApp.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -986,13 +1177,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 74C6006F2D3857FCB9973737 /* Pods-WatchTube for Apple Watch.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E7PYUL633W;
 				IBSC_MODULE = WatchTube_for_Apple_Watch_Extension;
 				INFOPLIST_FILE = "WatchTube for Apple Watch/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ziph0n.WatchTube.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ziph0n.WatchTubeApp.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;

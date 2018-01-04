@@ -7,24 +7,36 @@
 //
 
 import UIKit
-import WatchConnectivity
+import GoogleSignIn
+import Fabric
+import Crashlytics
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
     var window: UIWindow?
-    var session: WCSession!
-
-    static var staticSession: WCSession!
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        if (WCSession.isSupported()) {
-            session = WCSession.default
-            session.delegate = self
-            session.activate()
-            AppDelegate.staticSession = session
+        Fabric.with([Crashlytics.self])
+        
+        iPhoneSessionManager.sharedManager.startSession()
+        
+        UIApplication.shared.statusBarStyle = .lightContent
+
+        GIDSignIn.sharedInstance().clientID = "349820541673-eheg9h9maqsl8p7nl3h4q1lisknjb2cb.apps.googleusercontent.com"
+        
+        let scope = "https://www.googleapis.com/auth/youtube.readonly"
+        let currentScopes = GIDSignIn.sharedInstance().scopes! as NSArray
+        GIDSignIn.sharedInstance().scopes = currentScopes.adding(scope)
+        
+        GIDSignIn.sharedInstance().delegate = self
+        
+        GIDSignIn.sharedInstance().signInSilently()
+
+        if !GIDSignIn.sharedInstance().hasAuthInKeychain() {
+            iPhoneSessionManager.sharedManager.sendUserNotLoggedIn()
         }
         
         return true
@@ -36,7 +48,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
-        print("background")
         ViewController.shouldPlayAgain = true
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
             ViewController.shouldPlayAgain = false
@@ -56,58 +67,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-        
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        return GIDSignIn.sharedInstance().handle(url,
+                                                 sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String,
+                                                 annotation: options[UIApplicationOpenURLOptionsKey.annotation])
     }
     
-    func sessionDidBecomeInactive(_ session: WCSession) {
-        
-    }
-    
-    func sessionDidDeactivate(_ session: WCSession) {
-        
-    }
-    
-    func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
-        var replyValues = Dictionary<String, AnyObject>()
-        replyValues["status"] = "appdelegate" as AnyObject
-        
-        print(message)
-        
-        if let action = message["action"] as? String {
-            if action == "start" {
-                let id = message["id"] as! String
-                DispatchQueue.main.async {
-                    ViewController.loadVideo(id: id)
-                }
-            }
-        }
-        
-        replyHandler(replyValues)
-    }
-    
-    func session(_ session: WCSession, didReceiveMessageData messageData: Data) {
-        print(messageData)
-    }
-    
-    class func sendStopMessageToWatch() {
-        let applicationData = ["action": "stop"]
-        AppDelegate.staticSession.sendMessage(applicationData, replyHandler: { (data) in
-            print(data)
-        }) { (error) in
-            print(error)
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        if (error == nil) {
+            let accessToken = user.authentication.accessToken
+            iPhoneSessionManager.sharedManager.sendAccessToken(accessToken: accessToken!)
+        } else {
+            print("\(error.localizedDescription)")
         }
     }
     
-    class func sendStartMessageToWatch() {
-        let applicationData = ["action": "start"]
-        AppDelegate.staticSession.sendMessage(applicationData, replyHandler: { (data) in
-            print(data)
-        }) { (error) in
-            print(error)
-        }
+    func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
+        // Perform any operations when the user disconnects from app here.
+        // ...
     }
-
 }
 

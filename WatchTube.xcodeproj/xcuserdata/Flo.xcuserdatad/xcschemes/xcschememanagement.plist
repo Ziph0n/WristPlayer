@@ -12,7 +12,25 @@
 		<key>WatchTube.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>11</integer>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>5CCC52391FF4FA03004B12E4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5CCC524D1FF4FA03004B12E4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5CCC525E1FF4FA3E004B12E4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

@@ -8,10 +8,12 @@ target 'WatchTube' do
   # Pods for WatchTube
 
   pod ‘youtube-ios-player-helper’
-  pod 'Google/SignIn'
+  pod 'GoogleSignIn'
   pod 'GoogleAPIClientForREST/YouTube'
   pod 'Alamofire'
-
+  pod 'Fabric'
+  pod 'Crashlytics'
+  
   target 'WatchTubeTests' do
     inherit! :search_paths
     # Pods for testing
