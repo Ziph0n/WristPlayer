@@ -22,7 +22,7 @@ class NowPlayingInterfaceController: WKInterfaceController {
         super.awake(withContext: context)
         
         if context != nil {
-            self.video = context as! Video
+            self.video = context as? Video
         }
         
         if self.video != nil {
@@ -32,32 +32,6 @@ class NowPlayingInterfaceController: WKInterfaceController {
         }
         
         self.statusLabel.setText("Searching video...")
-        
-        
-        /*XCDYouTubeClient.default().getVideoWithIdentifier(NowPlayingInterfaceController.video.id, completionHandler: { (video, error) in
-            if error == nil {
-                let videoURL = video?.streamURLs[XCDYouTubeVideoQuality.small240.rawValue]
-                print(videoURL)
-                self.statusLabel.setText("Loading video...")
-                
-                let destination: DownloadRequest.DownloadFileDestination = { _, _ in
-                    let fileURL = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("video.mp4")
-                    
-                    return (fileURL, [.removePreviousFile, .createIntermediateDirectories])
-                }
-                
-                Alamofire.download(videoURL!, to: destination).response { response in
-                    print(response)
-                    if response.destinationURL != nil {
-                        self.movie.setMovieURL(response.destinationURL!)
-                        self.statusLabel.setText("Tap to play!")
-                    }
-                }
-            } else {
-                print(error)
-            }
-        })*/
-        
         
         WatchSessionManager.sharedManager.getVideoURL(id: self.video.id) { videoURL in
 
@@ -83,15 +57,4 @@ class NowPlayingInterfaceController: WKInterfaceController {
         }
         
     }
-    
-    override func willActivate() {
-        super.willActivate()
-        
-    }
-    
-    override func didDeactivate() {
-        super.didDeactivate()
-        
-    }
-    
 }

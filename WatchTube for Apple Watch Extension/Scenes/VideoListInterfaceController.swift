@@ -24,7 +24,6 @@ class VideoListInterfaceController: WKInterfaceController {
         self.activityImage.setImageNamed("Activity")
         self.activityImage.startAnimatingWithImages(in: NSRange(location: 0, length: 30), duration: 1.0, repeatCount: 0)
         
-        
         if let dictionary = context as? Dictionary<String, Any> {
             if let action = dictionary["action"] as? String {
                 if action == "search" {
@@ -36,29 +35,10 @@ class VideoListInterfaceController: WKInterfaceController {
                         self.videoTableRow.setHidden(false)
                     }
                 }
-                if action == "playlist" {
-                    let playlistId = dictionary["playlistId"] as! String
-                    Video.getPlaylistVideos(playlistId: playlistId) { videos in
-                        self.videos = videos
-                        self.setupTable()
-                        self.activityImage.setHidden(true)
-                        self.videoTableRow.setHidden(false)
-                    }
-                }
             }
         }
     }
     
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
-    }
-    
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
-    }
-
     func setupTable() {
         videoTableRow.setNumberOfRows(videos.count, withRowType: "VideoRow")
         
@@ -71,7 +51,6 @@ class VideoListInterfaceController: WKInterfaceController {
     }
     
     override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
-            //WatchSessionManager.sharedManager.startVideo(id: self.videos[rowIndex].id)
-        self.pushController(withName: "StartStopInterfaceController", context: self.videos[rowIndex])
+        self.pushController(withName: "NowPlayingInterfaceController", context: self.videos[rowIndex])
     }
 }

@@ -10,7 +10,6 @@ import Foundation
 import WatchConnectivity
 import MediaPlayer
 import AVFoundation
-import GoogleSignIn
 import XCDYouTubeKit
 
 class iPhoneSessionManager: NSObject, WCSessionDelegate {
@@ -29,16 +28,9 @@ class iPhoneSessionManager: NSObject, WCSessionDelegate {
     
     func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
        
-        GIDSignIn.sharedInstance().delegate = self
-
         var replyValues = Dictionary<String, Any>()
 
         if let action = message["action"] as? String {
-            if action == "yoWakeUp" {
-                if !GIDSignIn.sharedInstance().hasAuthInKeychain() {
-                    iPhoneSessionManager.sharedManager.sendUserNotLoggedIn()
-                }
-            }
             if action == "getVideoURL" {
                 let id = message["id"] as! String
                 XCDYouTubeClient.default().getVideoWithIdentifier(id, completionHandler: { (video, error) in
@@ -57,26 +49,7 @@ class iPhoneSessionManager: NSObject, WCSessionDelegate {
             }
         }
         
-        replyValues["status"] = "iphone" as AnyObject
-    }
-    
-    func sendAccessToken(accessToken: String) {
-        let applicationData = ["action": "token",
-                               "accessToken": accessToken]
-        session?.sendMessage(applicationData, replyHandler: { (data) in
-            print(data)
-        }) { (error) in
-            print(error)
-        }
-    }
-    
-    func sendUserNotLoggedIn() {
-        let applicationData = ["action": "userNotLoggedIn"]
-        session?.sendMessage(applicationData, replyHandler: { (data) in
-            print(data)
-        }) { (error) in
-            print(error)
-        }
+        //replyValues["status"] = "iphone" as AnyObject
     }
     
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
@@ -88,22 +61,5 @@ class iPhoneSessionManager: NSObject, WCSessionDelegate {
     
     func sessionDidDeactivate(_ session: WCSession) {
         
-    }
-}
-
-extension iPhoneSessionManager: GIDSignInDelegate {
-    
-    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-        if (error == nil) {
-            let accessToken = user.authentication.accessToken
-            iPhoneSessionManager.sharedManager.sendAccessToken(accessToken: accessToken!)
-        } else {
-            print("\(error.localizedDescription)")
-        }
-    }
-    
-    func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
-        // Perform any operations when the user disconnects from app here.
-        // ...
     }
 }

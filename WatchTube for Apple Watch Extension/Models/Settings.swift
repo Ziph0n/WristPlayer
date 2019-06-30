@@ -9,6 +9,5 @@
 import Foundation
 
 struct preferencesKeys {
-    static let keywordsHistory = "keywordsHistory"
-    static let accessToken = "accessToken"
+    static let keywordsHistory = "keywordsHistoryy"
 }

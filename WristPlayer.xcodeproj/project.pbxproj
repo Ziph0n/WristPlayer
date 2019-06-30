@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0596EEFCC5A34E1F4F069E37 /* Pods_WristPlayer_for_Apple_Watch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76B0487E60EA40CBFE740C9A /* Pods_WristPlayer_for_Apple_Watch_Extension.framework */; };
-		5C00434A22C8FB160012AC59 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C00434922C8FB160012AC59 /* GoogleService-Info.plist */; };
 		5C1748321FF79BC4000DE209 /* Activity25@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C1748141FF79BC0000DE209 /* Activity25@2x.png */; };
 		5C1748331FF79BC4000DE209 /* Activity7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C1748151FF79BC0000DE209 /* Activity7@2x.png */; };
 		5C1748341FF79BC4000DE209 /* Activity10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C1748161FF79BC0000DE209 /* Activity10@2x.png */; };
@@ -39,11 +38,7 @@
 		5C17484D1FF79BC4000DE209 /* Activity4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C17482F1FF79BC3000DE209 /* Activity4@2x.png */; };
 		5C17484E1FF79BC4000DE209 /* Activity26@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C1748301FF79BC4000DE209 /* Activity26@2x.png */; };
 		5C17484F1FF79BC4000DE209 /* Activity15@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C1748311FF79BC4000DE209 /* Activity15@2x.png */; };
-		5C1748511FF7B795000DE209 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1748501FF7B795000DE209 /* AccountViewController.swift */; };
-		5C1748531FF7C00F000DE209 /* PlaylistListInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1748521FF7C00F000DE209 /* PlaylistListInterfaceController.swift */; };
-		5C1748551FF7C697000DE209 /* PlaylistRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1748541FF7C697000DE209 /* PlaylistRow.swift */; };
-		5C1748571FF7C6A3000DE209 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1748561FF7C6A3000DE209 /* Playlist.swift */; };
-		5C1748591FF7CC59000DE209 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1748581FF7CC59000DE209 /* User.swift */; };
+		5C1748511FF7B795000DE209 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1748501FF7B795000DE209 /* MainViewController.swift */; };
 		5C1906E91FF5365A00E7AD40 /* MainInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1906E81FF5365A00E7AD40 /* MainInterfaceController.swift */; };
 		5C1906F41FF5531600E7AD40 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1906F31FF5531600E7AD40 /* Video.swift */; };
 		5C1906F61FF5548C00E7AD40 /* VideoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1906F51FF5548C00E7AD40 /* VideoRow.swift */; };
@@ -51,9 +46,6 @@
 		5C225CCD1FF65DAF0014A853 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C225CCC1FF65DAF0014A853 /* WatchSessionManager.swift */; };
 		5C225CD11FF665E80014A853 /* iPhoneSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C225CD01FF665E80014A853 /* iPhoneSessionManager.swift */; };
 		5C225CD31FF66E980014A853 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C225CD21FF66E980014A853 /* Settings.swift */; };
-		5C3B803020149BCE0045491B /* HealthSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3B802E20149AC60045491B /* HealthSessionManager.swift */; };
-		5C3B803120149BCE0045491B /* StartStopInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3B802C2014958F0045491B /* StartStopInterfaceController.swift */; };
-		5CB63DBC2010FEE100E9332C /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CB63DBB2010FEE100E9332C /* HealthKit.framework */; };
 		5CB63DBF2010FF1500E9332C /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CB63DBE2010FF1500E9332C /* HealthKit.framework */; };
 		5CCC523E1FF4FA03004B12E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCC523D1FF4FA03004B12E4 /* AppDelegate.swift */; };
 		5CCC52431FF4FA03004B12E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CCC52411FF4FA03004B12E4 /* Main.storyboard */; };
@@ -136,8 +128,6 @@
 		5699DD6299FEAAA2594A634D /* Pods-WatchTube for Apple Watch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchTube for Apple Watch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchTube for Apple Watch/Pods-WatchTube for Apple Watch.debug.xcconfig"; sourceTree = "<group>"; };
 		57132618834042D799912854 /* Pods-WatchTubeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchTubeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchTubeTests/Pods-WatchTubeTests.release.xcconfig"; sourceTree = "<group>"; };
 		578E5570C4F335F6C7648256 /* Pods_WatchPlay_for_Apple_Watch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchPlay_for_Apple_Watch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C00434922C8FB160012AC59 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		5C0E5F071FF8449100094588 /* WatchTube.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WatchTube.entitlements; sourceTree = "<group>"; };
 		5C1748141FF79BC0000DE209 /* Activity25@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity25@2x.png"; sourceTree = "<group>"; };
 		5C1748151FF79BC0000DE209 /* Activity7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity7@2x.png"; sourceTree = "<group>"; };
 		5C1748161FF79BC0000DE209 /* Activity10@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity10@2x.png"; sourceTree = "<group>"; };
@@ -168,11 +158,7 @@
 		5C17482F1FF79BC3000DE209 /* Activity4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity4@2x.png"; sourceTree = "<group>"; };
 		5C1748301FF79BC4000DE209 /* Activity26@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity26@2x.png"; sourceTree = "<group>"; };
 		5C1748311FF79BC4000DE209 /* Activity15@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity15@2x.png"; sourceTree = "<group>"; };
-		5C1748501FF7B795000DE209 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
-		5C1748521FF7C00F000DE209 /* PlaylistListInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistListInterfaceController.swift; sourceTree = "<group>"; };
-		5C1748541FF7C697000DE209 /* PlaylistRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistRow.swift; sourceTree = "<group>"; };
-		5C1748561FF7C6A3000DE209 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
-		5C1748581FF7CC59000DE209 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5C1748501FF7B795000DE209 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		5C1906E81FF5365A00E7AD40 /* MainInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInterfaceController.swift; sourceTree = "<group>"; };
 		5C1906F31FF5531600E7AD40 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		5C1906F51FF5548C00E7AD40 /* VideoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRow.swift; sourceTree = "<group>"; };
@@ -180,10 +166,6 @@
 		5C225CCC1FF65DAF0014A853 /* WatchSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
 		5C225CD01FF665E80014A853 /* iPhoneSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneSessionManager.swift; sourceTree = "<group>"; };
 		5C225CD21FF66E980014A853 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
-		5C3B802C2014958F0045491B /* StartStopInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartStopInterfaceController.swift; sourceTree = "<group>"; };
-		5C3B802E20149AC60045491B /* HealthSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthSessionManager.swift; sourceTree = "<group>"; };
-		5CB63DBB2010FEE100E9332C /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
-		5CB63DBD2010FF1500E9332C /* WristPlayer for Apple Watch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WristPlayer for Apple Watch Extension.entitlements"; sourceTree = "<group>"; };
 		5CB63DBE2010FF1500E9332C /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.2.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		5CCC523A1FF4FA03004B12E4 /* WristPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WristPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CCC523D1FF4FA03004B12E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -250,7 +232,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				768CA78A4DF53284634DFA19 /* Pods_WristPlayer.framework in Frameworks */,
-				5CB63DBC2010FEE100E9332C /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,8 +298,6 @@
 				5CCC52701FF4FA3E004B12E4 /* VideoListInterfaceController.swift */,
 				5C1906E81FF5365A00E7AD40 /* MainInterfaceController.swift */,
 				5C1906F81FF5982B00E7AD40 /* NowPlayingInterfaceController.swift */,
-				5C1748521FF7C00F000DE209 /* PlaylistListInterfaceController.swift */,
-				5C3B802C2014958F0045491B /* StartStopInterfaceController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -329,19 +308,14 @@
 				5C1906F31FF5531600E7AD40 /* Video.swift */,
 				5C225CCC1FF65DAF0014A853 /* WatchSessionManager.swift */,
 				5C225CD21FF66E980014A853 /* Settings.swift */,
-				5C1748561FF7C6A3000DE209 /* Playlist.swift */,
-				5C1748581FF7CC59000DE209 /* User.swift */,
-				5C3B802E20149AC60045491B /* HealthSessionManager.swift */,
 			);
-			name = Models;
-			path = "New Group";
+			path = Models;
 			sourceTree = "<group>";
 		};
 		5C1906F71FF5549900E7AD40 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				5C1906F51FF5548C00E7AD40 /* VideoRow.swift */,
-				5C1748541FF7C697000DE209 /* PlaylistRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -349,7 +323,7 @@
 		5C225CCE1FF665C40014A853 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				5C1748501FF7B795000DE209 /* AccountViewController.swift */,
+				5C1748501FF7B795000DE209 /* MainViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -365,7 +339,6 @@
 		5CCC52311FF4FA03004B12E4 = {
 			isa = PBXGroup;
 			children = (
-				5CB63DBD2010FF1500E9332C /* WristPlayer for Apple Watch Extension.entitlements */,
 				5CCC523C1FF4FA03004B12E4 /* WatchTube */,
 				5CCC52511FF4FA03004B12E4 /* WatchTubeTests */,
 				5CCC52601FF4FA3E004B12E4 /* WatchTube for Apple Watch */,
@@ -390,11 +363,9 @@
 		5CCC523C1FF4FA03004B12E4 /* WatchTube */ = {
 			isa = PBXGroup;
 			children = (
-				5C0E5F071FF8449100094588 /* WatchTube.entitlements */,
 				5C225CCF1FF665D30014A853 /* Models */,
 				5C225CCE1FF665C40014A853 /* Scenes */,
 				5CCC523D1FF4FA03004B12E4 /* AppDelegate.swift */,
-				5C00434922C8FB160012AC59 /* GoogleService-Info.plist */,
 				5CCC52411FF4FA03004B12E4 /* Main.storyboard */,
 				5CCC52441FF4FA03004B12E4 /* Assets.xcassets */,
 				5CCC52461FF4FA03004B12E4 /* LaunchScreen.storyboard */,
@@ -479,7 +450,6 @@
 			isa = PBXGroup;
 			children = (
 				5CB63DBE2010FF1500E9332C /* HealthKit.framework */,
-				5CB63DBB2010FEE100E9332C /* HealthKit.framework */,
 				C1001801B59E0E2F1CE17FFC /* Pods_WatchTube.framework */,
 				AF4B5FAE0A0D503A2F5D21B6 /* Pods_WatchTube_for_Apple_Watch.framework */,
 				C5948CEC036F002FCC09D3DD /* Pods_WatchTube_for_Apple_Watch_Extension.framework */,
@@ -598,10 +568,10 @@
 								enabled = 1;
 							};
 							com.apple.HealthKit = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.Push = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -656,7 +626,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CCC52481FF4FA03004B12E4 /* LaunchScreen.storyboard in Resources */,
-				5C00434A22C8FB160012AC59 /* GoogleService-Info.plist in Resources */,
 				5CCC52451FF4FA03004B12E4 /* Assets.xcassets in Resources */,
 				5CCC52431FF4FA03004B12E4 /* Main.storyboard in Resources */,
 			);
@@ -730,7 +699,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/run\" a8263f826b5b1dfeb1e2c5eaee19c1964ebfcce8 a576780e9fc446d87d4f60f6e487b3cc9bab7873feedfb60e07e3e8e1704c00e";
+			shellScript = "
+";
 		};
 		79F861AE98011CF3C1E0FFCF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -854,7 +824,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C225CD11FF665E80014A853 /* iPhoneSessionManager.swift in Sources */,
-				5C1748511FF7B795000DE209 /* AccountViewController.swift in Sources */,
+				5C1748511FF7B795000DE209 /* MainViewController.swift in Sources */,
 				5CCC523E1FF4FA03004B12E4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -871,18 +841,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C3B803020149BCE0045491B /* HealthSessionManager.swift in Sources */,
-				5C3B803120149BCE0045491B /* StartStopInterfaceController.swift in Sources */,
-				5C1748531FF7C00F000DE209 /* PlaylistListInterfaceController.swift in Sources */,
 				5C1906E91FF5365A00E7AD40 /* MainInterfaceController.swift in Sources */,
-				5C1748551FF7C697000DE209 /* PlaylistRow.swift in Sources */,
 				5C1906F91FF5982B00E7AD40 /* NowPlayingInterfaceController.swift in Sources */,
 				5C225CD31FF66E980014A853 /* Settings.swift in Sources */,
 				5C1906F41FF5531600E7AD40 /* Video.swift in Sources */,
 				5CCC52731FF4FA3E004B12E4 /* ExtensionDelegate.swift in Sources */,
 				5C1906F61FF5548C00E7AD40 /* VideoRow.swift in Sources */,
-				5C1748591FF7CC59000DE209 /* User.swift in Sources */,
-				5C1748571FF7C6A3000DE209 /* Playlist.swift in Sources */,
 				5CCC52711FF4FA3E004B12E4 /* VideoListInterfaceController.swift in Sources */,
 				5C225CCD1FF65DAF0014A853 /* WatchSessionManager.swift in Sources */,
 			);
@@ -1053,7 +1017,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = WatchTube/WatchTube.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E7PYUL633W;
 				INFOPLIST_FILE = WatchTube/Info.plist;
@@ -1074,7 +1037,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = WatchTube/WatchTube.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E7PYUL633W;
 				INFOPLIST_FILE = WatchTube/Info.plist;
@@ -1130,7 +1092,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = "WristPlayer for Apple Watch Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E7PYUL633W;
 				INFOPLIST_FILE = "WatchTube for Apple Watch Extension/Info.plist";
@@ -1152,7 +1113,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = "WristPlayer for Apple Watch Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E7PYUL633W;
 				INFOPLIST_FILE = "WatchTube for Apple Watch Extension/Info.plist";

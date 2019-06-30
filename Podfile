@@ -7,12 +7,8 @@ target 'WristPlayer' do
 
   # Pods for WatchTube
 
-  pod 'GoogleSignIn'
   pod 'GoogleAPIClientForREST/YouTube'
   pod 'Alamofire'
-  pod 'Fabric'
-  pod 'Crashlytics'
-  #pod 'XCDYouTubeKit', :git => 'https://github.com/Ziph0n/XCDYouTubeKit.git'
   pod 'XCDYouTubeKit'
 
   target 'WristPlayerTests' do

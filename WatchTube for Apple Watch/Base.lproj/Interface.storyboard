@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3di-nC-4Ab">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3di-nC-4Ab">
     <device id="watch38" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13756"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
     </dependencies>
     <scenes>
         <!--Main Interface Controller-->
@@ -13,30 +14,12 @@
             <objects>
                 <controller title="Home" id="3di-nC-4Ab" userLabel="Main Interface Controller" customClass="MainInterfaceController" customModule="WristPlayer_for_Apple_Watch_Extension">
                     <items>
-                        <button width="1" alignment="left" title="Start Workout" id="WCD-w0-2zX">
-                            <color key="backgroundColor" red="0.019607843137254902" green="0.8784313725490196" blue="0.12549019607843137" alpha="0.38330765849999998" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <action selector="workoutButtonTapped" destination="3di-nC-4Ab" id="fTj-Dp-U5J"/>
-                            </connections>
-                        </button>
                         <button width="1" alignment="left" title="Search Video" id="QAb-cS-f2e">
                             <connections>
                                 <action selector="searchVideoButtonTapped" destination="3di-nC-4Ab" id="rUH-DG-1W0"/>
                             </connections>
                         </button>
-                        <button width="1" alignment="left" title="My Playlists" id="D7T-7Q-TDN">
-                            <connections>
-                                <action selector="myPlaylistsButtonTapped" destination="3di-nC-4Ab" id="sgQ-Kz-oxK"/>
-                            </connections>
-                        </button>
-                        <label alignment="center" verticalAlignment="bottom" text="Burned calories: 0" id="Brj-Qy-GVm">
-                            <fontDescription key="font" type="system" pointSize="12"/>
-                        </label>
                     </items>
-                    <connections>
-                        <outlet property="burnedCaloriesLabel" destination="Brj-Qy-GVm" id="GHi-On-R0D"/>
-                        <outlet property="workoutButton" destination="WCD-w0-2zX" id="5Ig-nD-fhv"/>
-                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="-212" y="288"/>
@@ -72,70 +55,6 @@
             </objects>
             <point key="canvasLocation" x="50" y="288"/>
         </scene>
-        <!--Playlist List Interface Controller-->
-        <scene sceneID="4fV-K9-P7w">
-            <objects>
-                <controller identifier="PlaylistListInterfaceController" title="My Playlists" id="ReF-JV-BK3" userLabel="Playlist List Interface Controller" customClass="PlaylistListInterfaceController" customModule="WristPlayer_for_Apple_Watch_Extension">
-                    <items>
-                        <table alignment="left" hidden="YES" id="Ynv-ZK-ayV" userLabel="Playlist Table Row">
-                            <items>
-                                <tableRow identifier="PlaylistRow" id="2PO-tV-YY2" userLabel="PlaylistRow" customClass="PlaylistRow" customModule="WristPlayer_for_Apple_Watch_Extension">
-                                    <group key="rootItem" width="1" alignment="left" id="xlu-0K-jua">
-                                        <items>
-                                            <label alignment="left" verticalAlignment="center" text="Label" id="3GL-y3-Crk">
-                                                <fontDescription key="font" type="system" pointSize="13"/>
-                                            </label>
-                                        </items>
-                                    </group>
-                                    <connections>
-                                        <outlet property="titleLabel" destination="3GL-y3-Crk" id="pKn-Qd-8FM"/>
-                                    </connections>
-                                </tableRow>
-                            </items>
-                        </table>
-                        <imageView alignment="center" verticalAlignment="center" image="Activity1" id="nVq-7K-eHh" userLabel="Activity Image"/>
-                        <label alignment="center" verticalAlignment="center" hidden="YES" text="Open WristPlayer on your iPhone and sign in with your Google account" textAlignment="center" numberOfLines="0" id="47B-EV-itj" userLabel="Not Logged In Label"/>
-                    </items>
-                    <connections>
-                        <outlet property="activityImage" destination="nVq-7K-eHh" id="vkq-d1-XHd"/>
-                        <outlet property="notLoggedInLabel" destination="47B-EV-itj" id="VZN-X4-mJT"/>
-                        <outlet property="playlistTableRow" destination="Ynv-ZK-ayV" id="VEy-eD-jO1"/>
-                    </connections>
-                </controller>
-            </objects>
-            <point key="canvasLocation" x="50" y="598"/>
-        </scene>
-        <!--Start Stop Interface Controller-->
-        <scene sceneID="kx8-34-kCq">
-            <objects>
-                <controller identifier="StartStopInterfaceController" title="Control" id="rnS-MK-MwL" userLabel="Start Stop Interface Controller" customClass="StartStopInterfaceController" customModule="WristPlayer_for_Apple_Watch_Extension">
-                    <items>
-                        <button width="1" alignment="left" title="Start video" id="qgp-kq-Q8A">
-                            <color key="backgroundColor" red="0.021545421810872979" green="0.8781169041450777" blue="0.12667170626329496" alpha="0.38330765845070425" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <action selector="startButtonTapped" destination="rnS-MK-MwL" id="h65-Do-Lvt"/>
-                            </connections>
-                        </button>
-                        <button width="1" alignment="left" title="Stop video" id="5vz-VU-lhm">
-                            <color key="backgroundColor" red="0.8781169041450777" green="0.0" blue="0.079620792009797603" alpha="0.38330765845070425" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <action selector="stopButtonTapped" destination="rnS-MK-MwL" id="3O3-Me-g8o"/>
-                            </connections>
-                        </button>
-                        <label width="136" alignment="left" text="Tap on Stop video once you're done watching videos" numberOfLines="0" id="3AW-qV-Tg9">
-                            <fontDescription key="font" type="system" pointSize="12"/>
-                        </label>
-                        <label alignment="center" verticalAlignment="bottom" text="Status: Not running" id="n9g-kM-kLB">
-                            <fontDescription key="font" type="system" pointSize="12"/>
-                        </label>
-                    </items>
-                    <connections>
-                        <outlet property="statusLabel" destination="n9g-kM-kLB" id="Wpm-rs-Smt"/>
-                    </connections>
-                </controller>
-            </objects>
-            <point key="canvasLocation" x="298" y="287"/>
-        </scene>
         <!--Now Playing Interface Controller-->
         <scene sceneID="8wu-9q-G55">
             <objects>
@@ -156,7 +75,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="544" y="288"/>
+            <point key="canvasLocation" x="325" y="288"/>
         </scene>
     </scenes>
 </document>

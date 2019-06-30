@@ -44,27 +44,4 @@ class Video {
             completion(videos)
         }
     }
-    
-    class func getPlaylistVideos(playlistId: String, completion: @escaping ([Video]) -> Void) {
-        Alamofire.request("https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=\(playlistId.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? "")&mine=true&access_token=\(User.getAccessToken()?.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? "")").responseJSON { response in
-            
-            var videos = [Video]()
-            if let json = response.result.value {
-                let response = json as! Dictionary<String, Any>
-                let items = response["items"] as! [[String: Any]]
-                for (_, item) in items.enumerated() {
-                    let videoDetails = item
-                    let snippet = videoDetails["snippet"] as! Dictionary<String, Any>
-                    let title = snippet["title"] as! String
-                    
-                    let resourceId = snippet["resourceId"] as! Dictionary<String, Any>
-                    let videoId = resourceId["videoId"] as! String
-                    
-                    let video = Video(id: videoId, title: title)
-                    videos.append(video)
-                }
-            }
-            completion(videos)
-        }
-    }
 }
