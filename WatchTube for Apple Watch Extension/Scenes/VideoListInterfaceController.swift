@@ -71,7 +71,7 @@ class VideoListInterfaceController: WKInterfaceController {
     }
     
     override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
-        WatchSessionManager.sharedManager.startVideo(id: videos[rowIndex].id)
-        self.pushController(withName: "NowPlayingInterfaceController", context: videos[rowIndex])
+            //WatchSessionManager.sharedManager.startVideo(id: self.videos[rowIndex].id)
+        self.pushController(withName: "StartStopInterfaceController", context: self.videos[rowIndex])
     }
 }

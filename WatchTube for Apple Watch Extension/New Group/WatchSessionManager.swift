@@ -29,13 +29,11 @@ class WatchSessionManager: NSObject, WCSessionDelegate {
             if action == "stop" {
                 DispatchQueue.main.async {
                     self.stopKeepingAlive()
-                    NowPlayingInterfaceController.isPlaying = false
                 }
             }
             if action == "start" {
                 DispatchQueue.main.async {
                     self.startKeepingAlive()
-                    NowPlayingInterfaceController.isPlaying = true
                 }
             }
             if action == "token" {
@@ -135,6 +133,19 @@ class WatchSessionManager: NSObject, WCSessionDelegate {
         let applicationData = ["action": "yoWakeUp"]
         session?.sendMessage(applicationData, replyHandler: { (data) in
             print(data)
+        }) { (error) in
+            print(error)
+        }
+    }
+    
+    func getVideoURL(id: String, completion: @escaping (String) -> ()) {
+        let applicationData =  ["action": "getVideoURL",
+                                "id": id]
+        session?.sendMessage(applicationData, replyHandler: { (data) in
+            if let videoURL = data["videoURL"] as? String {
+                print(videoURL)
+                completion(videoURL)
+            }
         }) { (error) in
             print(error)
         }

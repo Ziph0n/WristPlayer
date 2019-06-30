@@ -8,114 +8,90 @@
 
 import Foundation
 import WatchKit
+import Alamofire
 
-class NowPlayingInterfaceController: WKInterfaceController, WKCrownDelegate {
+class NowPlayingInterfaceController: WKInterfaceController {
     
     @IBOutlet var titleLabel: WKInterfaceLabel!
-    @IBOutlet var playImage: WKInterfaceImage!
-    @IBOutlet var slider: WKInterfaceSlider!
+    @IBOutlet var statusLabel: WKInterfaceLabel!
+    @IBOutlet var movie: WKInterfaceMovie!
     
-    static var playImage: WKInterfaceImage!
-    static var video: Video!
-    static var isPlaying = false {
-        didSet {
-            if NowPlayingInterfaceController.playImage != nil {
-                if NowPlayingInterfaceController.isPlaying {
-                    NowPlayingInterfaceController.playImage.setImage(#imageLiteral(resourceName: "Pause"))
-                } else {
-                    NowPlayingInterfaceController.playImage.setImage(#imageLiteral(resourceName: "Play"))
-                }
-            }
-        }
-    }
+    var video: Video!
     
-    var crownAccumulator = 0.0
-    var volume: Float? {
-        didSet {
-            self.slider.setValue(volume! * 100)
-            WatchSessionManager.sharedManager.setVolume(volume: volume!)
-        }
-    }
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
-        NowPlayingInterfaceController.playImage = self.playImage
-        
-        crownSequencer.delegate = self
-
         if context != nil {
-            NowPlayingInterfaceController.video = context as! Video
-            NowPlayingInterfaceController.isPlaying = true
+            self.video = context as! Video
         }
         
-        if NowPlayingInterfaceController.video != nil {
-            self.titleLabel.setText(NowPlayingInterfaceController.video.title)
+        if self.video != nil {
+            self.titleLabel.setText(self.video.title)
         } else {
             self.titleLabel.setText("Nothing is playing")
         }
         
-        if NowPlayingInterfaceController.isPlaying {
-            self.playImage.setImage(#imageLiteral(resourceName: "Pause"))
-        } else {
-            self.playImage.setImage(#imageLiteral(resourceName: "Play"))
+        self.statusLabel.setText("Searching video...")
+        
+        
+        /*XCDYouTubeClient.default().getVideoWithIdentifier(NowPlayingInterfaceController.video.id, completionHandler: { (video, error) in
+            if error == nil {
+                let videoURL = video?.streamURLs[XCDYouTubeVideoQuality.small240.rawValue]
+                print(videoURL)
+                self.statusLabel.setText("Loading video...")
+                
+                let destination: DownloadRequest.DownloadFileDestination = { _, _ in
+                    let fileURL = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("video.mp4")
+                    
+                    return (fileURL, [.removePreviousFile, .createIntermediateDirectories])
+                }
+                
+                Alamofire.download(videoURL!, to: destination).response { response in
+                    print(response)
+                    if response.destinationURL != nil {
+                        self.movie.setMovieURL(response.destinationURL!)
+                        self.statusLabel.setText("Tap to play!")
+                    }
+                }
+            } else {
+                print(error)
+            }
+        })*/
+        
+        
+        WatchSessionManager.sharedManager.getVideoURL(id: self.video.id) { videoURL in
+
+            self.statusLabel.setText("Loading video... 0%")
+
+            let destination: DownloadRequest.DownloadFileDestination = { _, _ in
+                let fileURL = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("video.mp4")
+
+                return (fileURL, [.removePreviousFile, .createIntermediateDirectories])
+            }
+            
+            Alamofire
+                .download(videoURL, to: destination).response { response in
+                    if response.destinationURL != nil {
+                        self.movie.setMovieURL(response.destinationURL!)
+                        self.statusLabel.setText("Tap to play!")
+                    }
+                }
+                .downloadProgress(closure: { (progress) in
+                    let percent = Int((round(100 * progress.fractionCompleted) / 100) * 100)
+                    self.statusLabel.setText("Loading video... \(percent)%")
+                })
         }
+        
     }
     
     override func willActivate() {
         super.willActivate()
         
-        WatchSessionManager.sharedManager.getiPhoneVolume() { volume in
-            self.volume = volume
-        }
+    }
+    
+    override func didDeactivate() {
+        super.didDeactivate()
         
-        crownSequencer.focus()
     }
     
-    @IBAction func playButtonTapped() {
-        if NowPlayingInterfaceController.video != nil {
-            if NowPlayingInterfaceController.isPlaying {
-                self.pausePlayer()
-            } else {
-                self.startPlayer()
-            }
-        }
-    }
-    
-    func setIsPlaying(isPlaying: Bool) {
-        NowPlayingInterfaceController.isPlaying = isPlaying
-        if isPlaying {
-            self.startPlayer()
-        } else {
-            self.pausePlayer()
-        }
-    }
-    
-    func startPlayer() {
-        self.playImage.setImage(#imageLiteral(resourceName: "Pause"))
-        WatchSessionManager.sharedManager.playVideo()
-        WatchSessionManager.sharedManager.startKeepingAlive()
-        NowPlayingInterfaceController.isPlaying = true
-    }
-    
-    func pausePlayer() {
-        self.playImage.setImage(#imageLiteral(resourceName: "Play"))
-        WatchSessionManager.sharedManager.pauseVideo()
-        NowPlayingInterfaceController.isPlaying = false
-    }
-    
-    func crownDidRotate(_ crownSequencer: WKCrownSequencer?, rotationalDelta: Double) {
-        crownAccumulator += rotationalDelta
-        
-        if crownAccumulator > 0.1 {
-            self.volume? += 0.05
-            crownAccumulator = 0.0
-        } else if crownAccumulator < -0.1 {
-            self.volume? -= 0.05
-            crownAccumulator = 0.0
-        }
-    }
-    
-    @IBAction func sliderValueDidChange(_ value: Float) {
-        self.volume? = value / 100
-    }
 }

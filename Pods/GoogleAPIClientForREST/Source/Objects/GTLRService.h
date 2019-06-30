@@ -100,6 +100,13 @@ extern NSString *const kGTLRServiceTicketParsingStartedNotification;
  */
 extern NSString *const kGTLRServiceTicketParsingStoppedNotification;
 
+/**
+ *  The header name used to send an Application's Bundle Identifier.
+ *  For more information on adding API restrictions see the docs:
+ *    https://cloud.google.com/docs/authentication/api-keys#api_key_restrictions
+ */
+extern NSString *const kXIosBundleIdHeader;
+
 @class GTLRServiceTicket;
 
 /**
@@ -264,8 +271,27 @@ typedef void (^GTLRServiceTestBlock)(GTLRServiceTicket *testTicket,
 
 /**
  *  Some services require a developer key for quotas and limits.
+ *
+ *  If you have enabled the iOS API Key Restriction, you will want
+ *  to manually set the @c APIKeyRestrictionBundleID property, or
+ *  use -setMainBundleIDRestrictionWithAPIKey: to set your API key
+ *  and set the restriction to the main bundle's bundle id.
  */
 @property(nonatomic, copy, nullable) NSString *APIKey;
+
+/**
+ *  The Bundle Identifier to use for the API key restriction. This will be
+ *  sent in an X-Ios-Bundle-Identifier header; for more information see
+ *  the API key documentation
+ *    https://cloud.google.com/docs/authentication/api-keys#api_key_restrictions
+ */
+@property(nonatomic, copy, nullable) NSString *APIKeyRestrictionBundleID;
+
+/**
+ *  Helper method to set the @c APIKey to the given value and set the
+ *  @c APIKeyRestrictionBundleID to the main bundle's bundle identifier.
+ */
+- (void)setMainBundleIDRestrictionWithAPIKey:(NSString *)apiKey;
 
 /**
  *  An authorizer adds user authentication headers to the request as needed.
@@ -422,12 +448,14 @@ typedef void (^GTLRServiceTestBlock)(GTLRServiceTicket *testTicket,
 #pragma mark Custom User Agents
 
 /**
- *  Applications needing an additional identifier in the server logs may specify one.
+ *  Applications needing an additional identifier in the server logs may specify one
+ *  through this property and it will be added to the existing UserAgent. It should
+ *  already be a valid identifier as no cleaning/validation is done.
  */
 @property(nonatomic, copy, nullable) NSString *userAgentAddition;
 
 /**
- *  A user-agent based on the application signature in the Info.plist settings.
+ *  A base user-agent based on the application signature in the Info.plist settings.
  *
  *  Most applications should not explicitly set this property.  Any string provided will
  *  be cleaned of inappropriate characters.
@@ -441,12 +469,21 @@ typedef void (^GTLRServiceTestBlock)(GTLRServiceTicket *testTicket,
 @property(nonatomic, readonly, nullable) NSString *requestUserAgent;
 
 /**
- *  A precise userAgent string identifying the application.  No cleaning of characters is done.
- *  Library-specific details will be appended.
+ *  A precise base userAgent string identifying the application.  No cleaning of characters
+ *  is done. Library-specific details will be appended.
  *
- *  @param userAgent A wire-ready use agent string.
+ *  @param userAgent A wire-ready user agent string.
  */
 - (void)setExactUserAgent:(nullable NSString *)userAgent;
+
+/**
+ *  A precise userAgent string to send on requests; no cleaning is done. When
+ *  set, requestUserAgent will be exactly this, no library or system information
+ *  will be auto added.
+ *
+ *  @param requestUserAgent A wire-ready user agent string.
+ */
+- (void)overrideRequestUserAgent:(nullable NSString *)requestUserAgent;
 
 /**
  *  Any additional URL query parameters for the queries executed by this service.
@@ -741,6 +778,11 @@ typedef void (^GTLRServiceTestBlock)(GTLRServiceTicket *testTicket,
  *  The API key used for the query requeat.
  */
 @property(atomic, readonly, nullable) NSString *APIKey;
+
+/**
+ *  The Bundle Identifier to use for the API key restriciton.
+ */
+@property(atomic, readonly, nullable) NSString *APIKeyRestrictionBundleID;
 
 #pragma mark Status
 

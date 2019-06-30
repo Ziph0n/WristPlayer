@@ -14,11 +14,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>GTMOAuth2.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>GTMSessionFetcher.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -29,32 +24,27 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>GoogleToolboxForMac.xcscheme</key>
+		<key>Pods-WristPlayer for Apple Watch Extension.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-WatchTube for Apple Watch Extension.xcscheme</key>
+		<key>Pods-WristPlayer for Apple Watch.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-WatchTube for Apple Watch.xcscheme</key>
+		<key>Pods-WristPlayer.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-WatchTube.xcscheme</key>
+		<key>Pods-WristPlayerTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-WatchTubeTests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>youtube-ios-player-helper.xcscheme</key>
+		<key>XCDYouTubeKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

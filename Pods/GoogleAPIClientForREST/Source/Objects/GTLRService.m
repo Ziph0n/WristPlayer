@@ -37,14 +37,14 @@
 #import "GTLRURITemplate.h"
 #import "GTLRUtilities.h"
 
-#import "GTMMIMEDocument.h"
-
 #if GTLR_USE_FRAMEWORK_IMPORTS
   #import <GTMSessionFetcher/GTMSessionFetcher.h>
   #import <GTMSessionFetcher/GTMSessionFetcherService.h>
+  #import <GTMSessionFetcher/GTMMIMEDocument.h>
 #else
   #import "GTMSessionFetcher.h"
   #import "GTMSessionFetcherService.h"
+  #import "GTMMIMEDocument.h"
 #endif  // GTLR_USE_FRAMEWORK_IMPORTS
 
 
@@ -63,6 +63,8 @@ NSString *const kGTLRServiceTicketStartedNotification = @"kGTLRServiceTicketStar
 NSString *const kGTLRServiceTicketStoppedNotification = @"kGTLRServiceTicketStoppedNotification";
 NSString *const kGTLRServiceTicketParsingStartedNotification = @"kGTLRServiceTicketParsingStartedNotification";
 NSString *const kGTLRServiceTicketParsingStoppedNotification = @"kGTLRServiceTicketParsingStoppedNotification";
+
+NSString *const kXIosBundleIdHeader = @"X-Ios-Bundle-Identifier";
 
 static NSString *const kDeveloperAPIQueryParamKey = @"key";
 
@@ -229,8 +231,8 @@ static NSDictionary *MergeDictionaries(NSDictionary *recessiveDict, NSDictionary
               statusString = _statusString;
 #if DEBUG
 - (NSString *)description {
-  return [NSString stringWithFormat:@"%@ %p: %@\n%zd %@\nheaders:%@\nJSON:%@\nerror:%@",
-          [self class], self, self.contentID, self.statusCode, self.statusString,
+  return [NSString stringWithFormat:@"%@ %p: %@\n%ld %@\nheaders:%@\nJSON:%@\nerror:%@",
+          [self class], self, self.contentID, (long)self.statusCode, self.statusString,
           self.headers, self.JSON, self.parseError];
 }
 #endif
@@ -251,6 +253,7 @@ static NSDictionary *MergeDictionaries(NSDictionary *recessiveDict, NSDictionary
 
 @implementation GTLRService {
   NSString *_userAgent;
+  NSString *_overrideUserAgent;
   NSDictionary *_serviceProperties;  // Properties retained for the convenience of the client app.
   NSUInteger _uploadChunkSize;       // Only applies to resumable chunked uploads.
 }
@@ -260,6 +263,7 @@ static NSDictionary *MergeDictionaries(NSDictionary *recessiveDict, NSDictionary
             allowInsecureQueries = _allowInsecureQueries,
             callbackQueue = _callbackQueue,
             APIKey = _apiKey,
+            APIKeyRestrictionBundleID = _apiKeyRestrictionBundleID,
             batchPath = _batchPath,
             dataWrapperRequired = _dataWrapperRequired,
             fetcherService = _fetcherService,
@@ -304,6 +308,10 @@ static NSDictionary *MergeDictionaries(NSDictionary *recessiveDict, NSDictionary
 }
 
 - (NSString *)requestUserAgent {
+  if (_overrideUserAgent != nil) {
+    return _overrideUserAgent;
+  }
+
   NSString *userAgent = self.userAgent;
   if (userAgent.length == 0) {
     // The service instance is missing an explicit user-agent; use the bundle ID
@@ -342,6 +350,11 @@ static NSDictionary *MergeDictionaries(NSDictionary *recessiveDict, NSDictionary
       userAgent, libraryString, libVersionString, systemString, customString];
   }
   return requestUserAgent;
+}
+
+- (void)setMainBundleIDRestrictionWithAPIKey:(NSString *)apiKey {
+  self.APIKey = apiKey;
+  self.APIKeyRestrictionBundleID = [[NSBundle mainBundle] bundleIdentifier];
 }
 
 - (NSMutableURLRequest *)requestForURL:(NSURL *)url
@@ -475,6 +488,10 @@ static NSDictionary *MergeDictionaries(NSDictionary *recessiveDict, NSDictionary
                                                 ETag:nil
                                           httpMethod:query.httpMethod
                                               ticket:nil];
+  NSString *apiRestriction = self.APIKeyRestrictionBundleID;
+  if ([apiRestriction length] > 0) {
+    [request setValue:apiRestriction forHTTPHeaderField:kXIosBundleIdHeader];
+  }
 
   NSDictionary *headers = self.additionalHTTPHeaders;
   for (NSString *key in headers) {
@@ -578,7 +595,22 @@ static NSDictionary *MergeDictionaries(NSDictionary *recessiveDict, NSDictionary
     }
   }
 
-  NSDictionary *additionalHeaders = executingQuery.additionalHTTPHeaders;
+  NSDictionary *additionalHeaders = nil;
+  NSString *restriction = self.APIKeyRestrictionBundleID;
+  if ([restriction length] > 0) {
+    additionalHeaders = @{ kXIosBundleIdHeader : restriction };
+  }
+
+  NSDictionary *queryAdditionalHeaders = executingQuery.additionalHTTPHeaders;
+  if (queryAdditionalHeaders) {
+    if (additionalHeaders) {
+      NSMutableDictionary *builder = [additionalHeaders mutableCopy];
+      [builder addEntriesFromDictionary:queryAdditionalHeaders];
+      additionalHeaders = builder;
+    } else {
+      additionalHeaders = queryAdditionalHeaders;
+    }
+  }
 
   NSURLRequest *request = [self objectRequestForURL:targetURL
                                              object:bodyObject
@@ -774,10 +806,9 @@ static NSDictionary *MergeDictionaries(NSDictionary *recessiveDict, NSDictionary
                 [NSJSONSerialization JSONObjectWithData:(NSData * _Nonnull)data
                                                 options:NSJSONReadingMutableContainers
                                                   error:&parseError];
-            if (parseError) {
-              // We could not parse the JSON payload
-              error = parseError;
-            } else {
+            // If the json parse worked, then extract potentially better
+            // information.
+            if (!parseError) {
               // HTTP Streaming defined by Google services is is an array
               // of requests and replies. This code never makes one of
               // these requests; but, some GET apis can actually be to
@@ -2253,6 +2284,10 @@ static NSDictionary *MergeDictionaries(NSDictionary *recessiveDict, NSDictionary
   [self setExactUserAgent:str];
 }
 
+- (void)overrideRequestUserAgent:(nullable NSString *)requestUserAgent {
+  _overrideUserAgent = [requestUserAgent copy];
+}
+
 #pragma mark -
 
 + (NSDictionary<NSString *, Class> *)kindStringToClassMap {
@@ -2417,6 +2452,7 @@ static NSDictionary *MergeDictionaries(NSDictionary *recessiveDict, NSDictionary
 }
 
 @synthesize APIKey = _apiKey,
+            APIKeyRestrictionBundleID = _apiKeyRestrictionBundleID,
             allowInsecureQueries = _allowInsecureQueries,
             authorizer = _authorizer,
             cancelled = _cancelled,
@@ -2495,6 +2531,7 @@ static NSDictionary *MergeDictionaries(NSDictionary *recessiveDict, NSDictionary
     _callbackGroup = dispatch_group_create();
 
     _apiKey = [service.APIKey copy];
+    _apiKeyRestrictionBundleID = [service.APIKeyRestrictionBundleID copy];
     _allowInsecureQueries = service.allowInsecureQueries;
 
 #if GTM_BACKGROUND_TASK_FETCHING
@@ -2511,6 +2548,11 @@ static NSDictionary *MergeDictionaries(NSDictionary *recessiveDict, NSDictionary
   if (_apiKey != nil) {
     devKeyInfo = [NSString stringWithFormat:@" devKey:%@", _apiKey];
   }
+  NSString *keyRestrictionInfo = @"";
+  if (_apiKeyRestrictionBundleID != nil) {
+    keyRestrictionInfo = [NSString stringWithFormat:@" restriction:%@",
+                          _apiKeyRestrictionBundleID];
+  }
 
   NSString *authorizerInfo = @"";
   id <GTMFetcherAuthorizationProtocol> authorizer = self.objectFetcher.authorizer;
@@ -2518,8 +2560,9 @@ static NSDictionary *MergeDictionaries(NSDictionary *recessiveDict, NSDictionary
     authorizerInfo = [NSString stringWithFormat:@" authorizer:%@", authorizer];
   }
 
-  return [NSString stringWithFormat:@"%@ %p: {service:%@%@%@ fetcher:%@ }",
-    [self class], self, _service, devKeyInfo, authorizerInfo, _objectFetcher];
+  return [NSString stringWithFormat:@"%@ %p: {service:%@%@%@%@ fetcher:%@ }",
+    [self class], self,
+    _service, devKeyInfo, keyRestrictionInfo, authorizerInfo, _objectFetcher];
 }
 
 - (void)postNotificationOnMainThreadWithName:(NSString *)name
@@ -2739,9 +2782,9 @@ static NSDictionary *MergeDictionaries(NSDictionary *recessiveDict, NSDictionary
     GTMSessionFetcherSendProgressBlock fetcherSentDataBlock = ^(int64_t bytesSent,
                                                                 int64_t totalBytesSent,
                                                                 int64_t totalBytesExpectedToSend) {
-      [_service invokeProgressCallbackForTicket:self
-                                 deliveredBytes:(unsigned long long)totalBytesSent
-                                     totalBytes:(unsigned long long)totalBytesExpectedToSend];
+      [self->_service invokeProgressCallbackForTicket:self
+                                       deliveredBytes:(unsigned long long)totalBytesSent
+                                           totalBytes:(unsigned long long)totalBytesExpectedToSend];
     };
 
     fetcher.sendProgressBlock = fetcherSentDataBlock;

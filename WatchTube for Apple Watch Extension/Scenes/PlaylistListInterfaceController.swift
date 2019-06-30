@@ -58,6 +58,7 @@ class PlaylistListInterfaceController: WKInterfaceController {
             }
             self.activityImage.setHidden(true)
             self.notLoggedInLabel.setHidden(false)
+            self.playlistTableRow.setHidden(true)
         }
     }
     
@@ -66,6 +67,7 @@ class PlaylistListInterfaceController: WKInterfaceController {
             self.playlists = playlists
             self.setupTable()
             self.activityImage.setHidden(true)
+            self.notLoggedInLabel.setHidden(true)
             self.playlistTableRow.setHidden(false)
         }
     }

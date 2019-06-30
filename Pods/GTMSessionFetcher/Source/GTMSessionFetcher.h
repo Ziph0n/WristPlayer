@@ -455,6 +455,7 @@ extern NSString *const kGTMSessionFetcherErrorDomain;
 // userInfo dictionary with key kGTMSessionFetcherStatusDataKey.
 extern NSString *const kGTMSessionFetcherStatusDomain;
 extern NSString *const kGTMSessionFetcherStatusDataKey;
+extern NSString *const kGTMSessionFetcherStatusDataContentTypeKey;
 
 // When a fetch fails with an error, these keys are included in the error userInfo
 // dictionary if retries were attempted.
@@ -630,7 +631,7 @@ NSData * GTM_NULLABLE_TYPE GTMDataFromInputStream(NSInputStream *inputStream, NS
 - (GTM_NULLABLE NSDate *)stoppedAllFetchersDate;
 
 // Methods for compatibility with the old GTMHTTPFetcher.
-@property(readonly, strong, GTM_NULLABLE) NSOperationQueue *delegateQueue;
+@property(atomic, readonly, strong, GTM_NULLABLE) NSOperationQueue *delegateQueue;
 
 @end  // @protocol GTMSessionFetcherServiceProtocol
 
@@ -652,25 +653,25 @@ NSData * GTM_NULLABLE_TYPE GTMDataFromInputStream(NSInputStream *inputStream, NS
 
 - (BOOL)isAuthorizedRequest:(NSURLRequest *)request;
 
-@property(strong, readonly, GTM_NULLABLE) NSString *userEmail;
+@property(atomic, strong, readonly, GTM_NULLABLE) NSString *userEmail;
 
 @optional
 
 // Indicate if authorization may be attempted. Even if this succeeds,
 // authorization may fail if the user's permissions have been revoked.
-@property(readonly) BOOL canAuthorize;
+@property(atomic, readonly) BOOL canAuthorize;
 
 // For development only, allow authorization of non-SSL requests, allowing
 // transmission of the bearer token unencrypted.
-@property(assign) BOOL shouldAuthorizeAllRequests;
+@property(atomic, assign) BOOL shouldAuthorizeAllRequests;
 
 - (void)authorizeRequest:(GTM_NULLABLE NSMutableURLRequest *)request
        completionHandler:(void (^)(NSError * GTM_NULLABLE_TYPE error))handler;
 
 #if GTM_USE_SESSION_FETCHER
-@property (weak, GTM_NULLABLE) id<GTMSessionFetcherServiceProtocol> fetcherService;
+@property(atomic, weak, GTM_NULLABLE) id<GTMSessionFetcherServiceProtocol> fetcherService;
 #else
-@property (weak, GTM_NULLABLE) id<GTMHTTPFetcherServiceProtocol> fetcherService;
+@property(atomic, weak, GTM_NULLABLE) id<GTMHTTPFetcherServiceProtocol> fetcherService;
 #endif
 
 - (BOOL)primeForRefresh;
@@ -727,19 +728,11 @@ NSData * GTM_NULLABLE_TYPE GTMDataFromInputStream(NSInputStream *inputStream, NS
 
 // The fetcher's request.  This may not be set after beginFetch has been invoked. The request
 // may change due to redirects.
-@property(strong, GTM_NULLABLE) NSURLRequest *request;
+@property(atomic, strong, GTM_NULLABLE) NSURLRequest *request;
 
 // Set a header field value on the request. Header field value changes will not
 // affect a fetch after the fetch has begun.
 - (void)setRequestValue:(GTM_NULLABLE NSString *)value forHTTPHeaderField:(NSString *)field;
-
-// The fetcher's request (deprecated.)
-//
-// Exposing a mutable object in the interface was convenient but a bad design decision due
-// to thread-safety requirements.  Clients should use the request property and
-// setRequestValue:forHTTPHeaderField: instead.
-@property(atomic, readonly, GTM_NULLABLE) NSMutableURLRequest *mutableRequest
-    GTMSESSION_DEPRECATE_ON_2016_SDKS("use 'request' or '-setRequestValue:forHTTPHeaderField:'");
 
 // Data used for resuming a download task.
 @property(atomic, readonly, GTM_NULLABLE) NSData *downloadResumeData;
@@ -826,7 +819,7 @@ NSData * GTM_NULLABLE_TYPE GTMDataFromInputStream(NSInputStream *inputStream, NS
 //   "Background Session Task state persistence"
 //   https://forums.developer.apple.com/thread/11554
 //
-@property(assign) BOOL useBackgroundSession;
+@property(atomic, assign) BOOL useBackgroundSession;
 
 // Indicates if the fetcher was started using a background session.
 @property(atomic, readonly, getter=isUsingBackgroundSession) BOOL usingBackgroundSession;
@@ -1246,7 +1239,11 @@ NSData * GTM_NULLABLE_TYPE GTMDataFromInputStream(NSInputStream *inputStream, NS
 // can catch those.
 
 #ifdef __OBJC__
-#if DEBUG
+// If asserts are entirely no-ops, the synchronization monitor is just a bunch
+// of counting code that doesn't report exceptional circumstances in any way.
+// Only build the synchronization monitor code if NS_BLOCK_ASSERTIONS is not
+// defined or asserts are being logged instead.
+#if DEBUG && (!defined(NS_BLOCK_ASSERTIONS) || GTMSESSION_ASSERT_AS_LOG)
   #define __GTMSessionMonitorSynchronizedVariableInner(varname, counter) \
       varname ## counter
   #define __GTMSessionMonitorSynchronizedVariable(varname, counter)  \

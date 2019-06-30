@@ -402,7 +402,7 @@ static NSMutableDictionary *DeepMutableCopyOfJSONDictionary(NSDictionary *initia
         const char *dynamicMarker = strstr(attr, ",D");
         if (dynamicMarker &&
             (dynamicMarker[2] == 0 || dynamicMarker[2] == ',' )) {
-          [array addObject:@(propName)];
+          [array addObject:(id _Nonnull)@(propName)];
         }
       }
       free(properties);
@@ -432,7 +432,7 @@ static NSMutableDictionary *DeepMutableCopyOfJSONDictionary(NSDictionary *initia
 - (NSString *)description {
   NSString *jsonDesc = [self JSONDescription];
 
-  NSString *str = [NSString stringWithFormat:@"%@ %p: {%@}",
+  NSString *str = [NSString stringWithFormat:@"%@ %p: %@",
                    [self class], self, jsonDesc];
   return str;
 }
@@ -442,10 +442,10 @@ static NSMutableDictionary *DeepMutableCopyOfJSONDictionary(NSDictionary *initia
   // Find the list of declared and otherwise known JSON keys for this class.
   NSArray *knownKeys = [[self class] allKnownKeys];
 
-  NSMutableString *descStr = [NSMutableString string];
+  NSMutableString *descStr = [NSMutableString stringWithString:@"{"];
 
   NSString *spacer = @"";
-  for (NSString *key in _json) {
+  for (NSString *key in [[_json allKeys] sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)]) {
     NSString *value = nil;
     // show question mark for JSON keys not supported by a declared property:
     //   foo?:"Hi mom."
@@ -456,7 +456,8 @@ static NSMutableDictionary *DeepMutableCopyOfJSONDictionary(NSDictionary *initia
     if ([rawValue isKindOfClass:[NSDictionary class]]) {
       // for dictionaries, show the list of keys:
       //   {key1,key2,key3}
-      NSString *subkeyList = [((NSDictionary *)rawValue).allKeys componentsJoinedByString:@","];
+      NSArray *subKeys = [((NSDictionary *)rawValue).allKeys sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
+      NSString *subkeyList = [subKeys componentsJoinedByString:@","];
       value = [NSString stringWithFormat:@"{%@}", subkeyList];
     } else if ([rawValue isKindOfClass:[NSArray class]]) {
       // for arrays, show the number of items in the array:
@@ -473,6 +474,7 @@ static NSMutableDictionary *DeepMutableCopyOfJSONDictionary(NSDictionary *initia
     [descStr appendFormat:@"%@%@%@:%@", spacer, key, qmark, value];
     spacer = @" ";
   }
+  [descStr appendString:@"}"];
   return descStr;
 }
 
@@ -601,7 +603,7 @@ static NSMutableDictionary *gArrayPropertyToClassMapCache = nil;
 - (NSString *)description {
   NSString *jsonDesc = @"";
   if (self.JSON.count > 0) {
-    jsonDesc = [NSString stringWithFormat:@"{%@}", [self JSONDescription]];
+    jsonDesc = [self JSONDescription];
   }
   return [NSString stringWithFormat:@"%@ %p: %tu bytes, contentType:%@ %@",
           [self class], self, self.data.length, self.contentType, jsonDesc];
@@ -649,6 +651,11 @@ static NSMutableDictionary *gArrayPropertyToClassMapCache = nil;
 
   [self setCacheChild:result forKey:cacheKey];
   return result;
+}
+
+- (NSString *)JSONDescription {
+  // Just like GTLRObject's handing of arrays, just return the count.
+  return [NSString stringWithFormat:@"[%tu]", self.JSON.count];
 }
 
 @end

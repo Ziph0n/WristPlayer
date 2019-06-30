@@ -21,17 +21,19 @@ class AccountViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        GIDSignIn.sharedInstance().uiDelegate = self
-        GIDSignIn.sharedInstance().delegate = self
-        
-        self.signOutButton.layer.cornerRadius = 10
+        self.loggedInView.isHidden = true
+        self.notLoggedInView.isHidden = true
+
+        self.signOutButton.layer.cornerRadius = 8
         self.signOutButton.layer.masksToBounds = true
-        
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        GIDSignIn.sharedInstance().uiDelegate = self
+        GIDSignIn.sharedInstance().delegate = self
         
         self.checkLoginStatus()
     }
@@ -42,8 +44,12 @@ class AccountViewController: UIViewController {
                 self.loggedInView.isHidden = false
                 self.notLoggedInView.isHidden = true
             }
-            let accessToken = GIDSignIn.sharedInstance().currentUser.authentication.accessToken
-            iPhoneSessionManager.sharedManager.sendAccessToken(accessToken: accessToken!)
+            if GIDSignIn.sharedInstance().currentUser != nil {
+                let accessToken = GIDSignIn.sharedInstance().currentUser.authentication.accessToken
+                if accessToken != nil || accessToken != "" {
+                    iPhoneSessionManager.sharedManager.sendAccessToken(accessToken: accessToken!)
+                }
+            }
         } else {
             DispatchQueue.main.async {
                 self.loggedInView.isHidden = true
@@ -53,10 +59,10 @@ class AccountViewController: UIViewController {
     }
     
     @IBAction func signOutButtonTapped(_ sender: Any) {
+        GIDSignIn.sharedInstance().signOut()
         GIDSignIn.sharedInstance().disconnect()
-        //self.loggedInView.isHidden = true
-        //self.notLoggedInView.isHidden = false
-        
+        self.loggedInView.isHidden = true
+        self.notLoggedInView.isHidden = false
     }
 }
 

@@ -11,6 +11,7 @@ import WatchConnectivity
 import MediaPlayer
 import AVFoundation
 import GoogleSignIn
+import XCDYouTubeKit
 
 class iPhoneSessionManager: NSObject, WCSessionDelegate {
     
@@ -27,70 +28,36 @@ class iPhoneSessionManager: NSObject, WCSessionDelegate {
     }
     
     func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
-        
+       
+        GIDSignIn.sharedInstance().delegate = self
+
+        var replyValues = Dictionary<String, Any>()
+
         if let action = message["action"] as? String {
-            if action == "startVideo" {
-                let id = message["id"] as! String
-                DispatchQueue.main.async {
-                    ViewController.loadVideo(id: id)
-                }
-            }
-            if action == "play" {
-                DispatchQueue.main.async {
-                    ViewController.playVideo()
-                }
-            }
-            if action == "pause" {
-                DispatchQueue.main.async {
-                    ViewController.pauseVideo()
-                }
-            }
-            if action == "getVolume" {
-                let volume = AVAudioSession.sharedInstance().outputVolume
-                var replyValues = Dictionary<String, Float>()
-                replyValues["volume"] = volume
-                replyHandler(replyValues)
-            }
-            if action == "setVolume" {
-                let volume = message["volume"] as! Float
-                DispatchQueue.main.async {
-                    (MPVolumeView().subviews.filter{NSStringFromClass($0.classForCoder) ==  "MPVolumeSlider"}.first as? UISlider)?.setValue(volume, animated: false)
-                }
-            }
             if action == "yoWakeUp" {
-                GIDSignIn.sharedInstance().clientID = "349820541673-eheg9h9maqsl8p7nl3h4q1lisknjb2cb.apps.googleusercontent.com"
-                let scope = "https://www.googleapis.com/auth/youtube.readonly"
-                let currentScopes = GIDSignIn.sharedInstance().scopes! as NSArray
-                GIDSignIn.sharedInstance().scopes = currentScopes.adding(scope)
-                
-                GIDSignIn.sharedInstance().signInSilently()
                 if !GIDSignIn.sharedInstance().hasAuthInKeychain() {
                     iPhoneSessionManager.sharedManager.sendUserNotLoggedIn()
                 }
             }
+            if action == "getVideoURL" {
+                let id = message["id"] as! String
+                XCDYouTubeClient.default().getVideoWithIdentifier(id, completionHandler: { (video, error) in
+                    if error == nil {
+                        var videoURL = video?.streamURLs[XCDYouTubeVideoQuality.small240.rawValue]
+                        if videoURL == nil {
+                            videoURL = video?.streamURLs[XCDYouTubeVideoQuality.medium360.rawValue]
+                        }
+                        replyValues["videoURL"] = videoURL?.absoluteString
+                        replyHandler(replyValues)
+                    } else {
+                        replyValues["error"] = error?.localizedDescription
+                        replyHandler(replyValues)
+                    }
+                })
+            }
         }
         
-        var replyValues = Dictionary<String, AnyObject>()
         replyValues["status"] = "iphone" as AnyObject
-        replyHandler(replyValues)
-    }
-    
-    func sendStopMessageToWatch() {
-        let applicationData = ["action": "stop"]
-        session?.sendMessage(applicationData, replyHandler: { (data) in
-            print(data)
-        }) { (error) in
-            print(error)
-        }
-    }
-    
-    func sendStartMessageToWatch() {
-        let applicationData = ["action": "start"]
-        session?.sendMessage(applicationData, replyHandler: { (data) in
-            print(data)
-        }) { (error) in
-            print(error)
-        }
     }
     
     func sendAccessToken(accessToken: String) {
@@ -113,7 +80,6 @@ class iPhoneSessionManager: NSObject, WCSessionDelegate {
     }
     
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-        
     }
     
     func sessionDidBecomeInactive(_ session: WCSession) {
@@ -122,5 +88,22 @@ class iPhoneSessionManager: NSObject, WCSessionDelegate {
     
     func sessionDidDeactivate(_ session: WCSession) {
         
+    }
+}
+
+extension iPhoneSessionManager: GIDSignInDelegate {
+    
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        if (error == nil) {
+            let accessToken = user.authentication.accessToken
+            iPhoneSessionManager.sharedManager.sendAccessToken(accessToken: accessToken!)
+        } else {
+            print("\(error.localizedDescription)")
+        }
+    }
+    
+    func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
+        // Perform any operations when the user disconnects from app here.
+        // ...
     }
 }

@@ -19,13 +19,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="nfE-Fq-adG">
-                                <rect key="frame" x="112.5" y="18" width="150" height="631"/>
+                                <rect key="frame" x="112.5" y="238" width="150" height="191"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="5Ys-7V-ZFM"/>
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.1058823529" green="0.1058823529" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.18428918719291687" green="0.1843278706073761" blue="0.18428674340248108" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="nfE-Fq-adG" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="0e5-yj-y5y"/>
                             <constraint firstItem="nfE-Fq-adG" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="c3U-1Y-JJZ"/>
@@ -39,6 +39,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Icon" width="584" height="631"/>
+        <image name="Icon" width="191" height="191"/>
     </resources>
 </document>
