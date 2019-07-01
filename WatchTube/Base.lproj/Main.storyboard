@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y3l-3Y-2b5">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="2av-Tm-Ynh">
+            <objects>
+                <viewController id="y3l-3Y-2b5" userLabel="Main View Controller" customClass="MainViewController" customModule="WristPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e74-Oy-Iej">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start a video from your Apple Watch" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UmT-6g-Abx">
+                                <rect key="frame" x="20" y="170" width="280" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="2DK-P6-G9p">
+                                <rect key="frame" x="110" y="50" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="ILT-qG-IV8"/>
+                                    <constraint firstAttribute="height" constant="100" id="fyA-0A-5eF"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18428918720000001" green="0.1843278706" blue="0.18428674340000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2DK-P6-G9p" firstAttribute="top" secondItem="e74-Oy-Iej" secondAttribute="top" constant="50" id="BM6-bJ-QCS"/>
+                            <constraint firstAttribute="trailing" secondItem="UmT-6g-Abx" secondAttribute="trailing" constant="20" id="OTI-lV-7Zo"/>
+                            <constraint firstItem="UmT-6g-Abx" firstAttribute="top" secondItem="2DK-P6-G9p" secondAttribute="bottom" constant="20" id="W8K-lF-xDr"/>
+                            <constraint firstItem="UmT-6g-Abx" firstAttribute="leading" secondItem="e74-Oy-Iej" secondAttribute="leading" constant="20" id="s8t-WG-DYO"/>
+                            <constraint firstItem="2DK-P6-G9p" firstAttribute="centerX" secondItem="e74-Oy-Iej" secondAttribute="centerX" id="vHk-z9-K2S"/>
+                            <constraint firstItem="UmT-6g-Abx" firstAttribute="centerX" secondItem="e74-Oy-Iej" secondAttribute="centerX" id="y4t-RX-k23"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8vp-t2-KvQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pdM-cR-vzV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="735" y="285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon" width="191" height="191"/>
+    </resources>
+</document>

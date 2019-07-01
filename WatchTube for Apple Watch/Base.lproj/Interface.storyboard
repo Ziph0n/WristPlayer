@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3di-nC-4Ab">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
+    </dependencies>
+    <scenes>
+        <!--Main Interface Controller-->
+        <scene sceneID="3zw-kU-4qT">
+            <objects>
+                <controller title="Home" id="3di-nC-4Ab" userLabel="Main Interface Controller" customClass="MainInterfaceController" customModule="WristPlayer_for_Apple_Watch_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Search Video" id="QAb-cS-f2e">
+                            <connections>
+                                <action selector="searchVideoButtonTapped" destination="3di-nC-4Ab" id="rUH-DG-1W0"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-212" y="288"/>
+        </scene>
+        <!--Video List Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="VideoListInterfaceController" title="Search" id="AgC-eL-Hgc" userLabel="Video List Interface Controller" customClass="VideoListInterfaceController" customModule="WristPlayer_for_Apple_Watch_Extension">
+                    <items>
+                        <table alignment="left" hidden="YES" id="drm-UP-5sF">
+                            <items>
+                                <tableRow identifier="VideoRow" id="dhr-vW-W5o" customClass="VideoRow" customModule="WristPlayer_for_Apple_Watch_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="2cj-fB-aRj">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="TbT-GJ-XVI">
+                                                <fontDescription key="font" type="system" pointSize="13"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="titleLabel" destination="TbT-GJ-XVI" id="QfP-yR-tn8"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <imageView alignment="center" verticalAlignment="center" image="Activity1" id="TOT-Og-Eb6" userLabel="Activity Image"/>
+                    </items>
+                    <connections>
+                        <outlet property="activityImage" destination="TOT-Og-Eb6" id="Hnw-Fb-wSr"/>
+                        <outlet property="videoTableRow" destination="drm-UP-5sF" id="hnC-j8-t6u"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="50" y="288"/>
+        </scene>
+        <!--Now Playing Interface Controller-->
+        <scene sceneID="8wu-9q-G55">
+            <objects>
+                <controller identifier="NowPlayingInterfaceController" title="Now Playing" id="wPJ-Mn-7xG" userLabel="Now Playing Interface Controller" customClass="NowPlayingInterfaceController" customModule="WristPlayer_for_Apple_Watch_Extension">
+                    <items>
+                        <label alignment="left" text="Label" id="BXF-dh-C8G">
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                        </label>
+                        <movie width="1" height="100" alignment="center" verticalAlignment="center" id="M2c-1q-BVl"/>
+                        <label alignment="center" verticalAlignment="bottom" text="Label" id="9yJ-lL-Onw">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="movie" destination="M2c-1q-BVl" id="fXf-mC-fgt"/>
+                        <outlet property="statusLabel" destination="9yJ-lL-Onw" id="XnZ-DZ-krV"/>
+                        <outlet property="titleLabel" destination="BXF-dh-C8G" id="mlS-Tv-BJd"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="325" y="288"/>
+        </scene>
+    </scenes>
+</document>

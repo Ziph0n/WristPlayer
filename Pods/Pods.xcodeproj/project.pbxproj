@@ -1,0 +1,2201 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		016D4F6D0512E0659937DB5D9A7C5384 /* Alamofire-watchOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DF8340B9F77884CA04C661CF6AB9EDF2 /* Alamofire-watchOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01CAEC5F6F9431E4D251A35A36F6A9EE /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2695439DF9DE94A1C0476218DBDD334 /* TaskDelegate.swift */; };
+		0281DB230A246653CBFC06716D26833C /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D8C6292DA5B2E9EA02188E9BC4E49A /* Request.swift */; };
+		03899CF747C84CABE43F22BE0284F01D /* GTMGatherInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D67204106E8C70B6D7FCCFC0EFCC8A /* GTMGatherInputStream.m */; };
+		07D39F7675781FA6CACCDE41F8290481 /* GTMSessionFetcherLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = 572CD94C9B89099E9F5BE1966BF0F168 /* GTMSessionFetcherLogging.m */; };
+		08C56FE1E351DEF27F64E929A10CA3C4 /* XCDYouTubePlayerScript.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5266C34E5856E169EEA46C93D11CB2 /* XCDYouTubePlayerScript.m */; };
+		0BD66FAA67A327E7DDD184F40EC99076 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A3DE5C4C990522337B604F0B8D2860 /* ParameterEncoding.swift */; };
+		0D6674070900D5F192743ECAB2DE7BC8 /* GTLRUploadParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA92D4ABFC5FCC70AB0190162835224 /* GTLRUploadParameters.m */; };
+		0E74897BA07A6F8C1456A56B2AB286BA /* GTLRYouTubeQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F0B20E12B0F531A64DFA6E2BE29BB9 /* GTLRYouTubeQuery.m */; };
+		0F502A4DBE7FE628666EAA44B66BAE69 /* GTMReadMonitorInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = B4BDFA47696826F742C407A2D0CA1773 /* GTMReadMonitorInputStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F7BDECDD56B33D440AE53E632594FA2 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A428C6907F9773C7B1799B842149A905 /* ResponseSerialization.swift */; };
+		10906E469619ED6546CDCA0B7C230305 /* GTLRQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = E8A77A61A22830053895FE0DA81D3978 /* GTLRQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10FD7EA188732F5941E24B99B53033E6 /* XCDYouTubeDashManifestXML.h in Headers */ = {isa = PBXBuildFile; fileRef = B28715E83C991118ED4517CF0FD26BA3 /* XCDYouTubeDashManifestXML.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		110B3C0542175DCC38E2A1644761640C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F84C3DD914CD2932D64F2BFA5A18DB /* Foundation.framework */; };
+		13D4ACAB3F0392D7263702403F4C4C77 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296ABA1D9F2856945E704440AFC74619 /* MultipartFormData.swift */; };
+		17199B87F1C7C5506D44912501B8D0B8 /* XCDYouTubeVideoWebpage.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A9851A0939B27AE811D39ED4B4049F /* XCDYouTubeVideoWebpage.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		188B367547E1195EE958840E6A68202B /* GTLRErrorObject.h in Headers */ = {isa = PBXBuildFile; fileRef = BB9B9A30744452A3997949B00189576F /* GTLRErrorObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A7E54673867905B524A68C12B8B8554 /* XCDYouTubeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED5CF32EAB350277280601EA39525C /* XCDYouTubeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CEEC89A4F7251BF7CB66D542BE37A40 /* GTLRYouTubeObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = A39896C34B38503B04BD6BD6D434984C /* GTLRYouTubeObjects.m */; };
+		1D1891E903F16144443AF70A131893F6 /* XCDYouTubeLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F81B93273D856B51E85241C2AF691E7 /* XCDYouTubeLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D671BB829B528418D0A7B2EC3C00729 /* Pods-WristPlayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D48E0B924F2CBD9A02ECA3A42C10922 /* Pods-WristPlayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E8061AF75BB244B85D6C552CF9F7BBB /* GTLRDuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 7714665CC489934B4E55F383690406BD /* GTLRDuration.m */; };
+		1FC5798CDD658747880B005B3ED3C839 /* GTLRDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = F92D5F1534CEFDA5B8C4916684236716 /* GTLRDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2219A34EBFF145DD779B8EF2A557FDB5 /* GTLRBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 13170FE12D9C2FD68A62F24D32BF560F /* GTLRBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		254499037C2EE64EE49958680B653628 /* Pods-WristPlayer for Apple Watch Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B621E154F1EBD96B00CB1306BA79C472 /* Pods-WristPlayer for Apple Watch Extension-dummy.m */; };
+		267A2564B0929FD287433F3A61F37150 /* XCDYouTubeOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = D6222D287C6E00861FFE42BC8A05AB3A /* XCDYouTubeOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29C5B7DBB496823436B831E5E1DD6F83 /* Pods-WristPlayer for Apple Watch Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C86DBB66554820308A587CCC48329736 /* Pods-WristPlayer for Apple Watch Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CFEDF31CAAF92B6553A65AD5868CEC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F84C3DD914CD2932D64F2BFA5A18DB /* Foundation.framework */; };
+		2D608AF83819B00F5CC3983071ED56E6 /* XCDYouTubeError.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FF09054139E8026CC10A23E869B47E3 /* XCDYouTubeError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E22C6B8A757198342411F50015C699B /* XCDYouTubeVideo.h in Headers */ = {isa = PBXBuildFile; fileRef = DC3784467485751A2DF6067D4A3DB51D /* XCDYouTubeVideo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E29F5857798E0E8B0131A0F308818A9 /* Pods-WristPlayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5890A5BB3F378A2AB9EBB9BCC9DC0134 /* Pods-WristPlayer-dummy.m */; };
+		2F3A7727F25809D20B4D5115D64F545A /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238AE55018BA0A9FA3FED18FA48E70C3 /* Alamofire.swift */; };
+		30FC709C5D26C1A4270BC520198F55E2 /* GTLRFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 25AE8D7808D4A03068545ECA4A344024 /* GTLRFramework.m */; };
+		343E29CAAEBC5DF5E54FD3C750BDF9CD /* GTMGatherInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A8E536EC6D1E5080C0E7C4F14870033 /* GTMGatherInputStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34CDE410CF3012DD8BDCBC6FC729C0CF /* GTMSessionFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D97EA109BB79299E6D6BD60AB04F60F /* GTMSessionFetcher.m */; };
+		35F34FC686D71775097A69C722AABD2E /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 745B8F42A6FD60D183EE93CDB7DF508E /* MediaPlayer.framework */; };
+		379CA93E144176482F6CB04EFA642D70 /* GTLRYouTubeService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1ED7839C14B52D0AD29EDA56B9830D /* GTLRYouTubeService.m */; };
+		3AB990FDF4FCA4090651180F1325B815 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369F173F3A6F120ACB9FAAB686A80C5 /* SessionDelegate.swift */; };
+		3B437264C89BDAC8162D7104E270A7D9 /* GTMSessionFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 449B6B6B002FCC6A074B7D05CBDC4BD8 /* GTMSessionFetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4051C248F47E83B7A999BAD5FEEEA0B2 /* GTLRUploadParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 99D436AF406A1EE0B6F53CD53309457C /* GTLRUploadParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		411804A3362997FF768A3CE053B79FC4 /* GTLRRuntimeCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CD37B71A0D5061585FB6A05F1A2F44 /* GTLRRuntimeCommon.m */; };
+		41332F651E512A12C89B140739B471B9 /* GTMSessionFetcherService.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FB38C465610E7CAF24E5E79543156E /* GTMSessionFetcherService.m */; };
+		430EDE050C5FA0B1550250E771ACF421 /* GTMSessionFetcher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0C49B9633BE742CE5E0F7639EA2F56 /* GTMSessionFetcher-dummy.m */; };
+		451FB27A7555760099E5B2C1AF2844C3 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3815D3F81DD7840CEAAFFDD4C1D1FE26 /* SessionManager.swift */; };
+		456F5AB16DE22E601CA5EB4200088DD0 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B4C5A6A36F30ECF04E340CED679841 /* AFError.swift */; };
+		495FE1474EB2181D16F1D6BCAB1CF2C6 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83244B90F9B1B9363C31A02D136AA15F /* Response.swift */; };
+		4C83C1F54714ACFB4B695E513A2BB1B3 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31CF0BCA234CB73B7140C1CC99F4015 /* Validation.swift */; };
+		4CE4A9C57F0DE9DF2CF65F63D68B6FEB /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238AE55018BA0A9FA3FED18FA48E70C3 /* Alamofire.swift */; };
+		50B4FBA281ABF2D5319EEED43A5BA124 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F84C3DD914CD2932D64F2BFA5A18DB /* Foundation.framework */; };
+		51BB577C6FDC9C270A58768E6B8772FD /* GTLRYouTubeQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E01DC8C19E3C742F1D34C44AD48E750 /* GTLRYouTubeQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5265B9F3C9E33516FBDB2B03F316009F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D268BFB42947C26128DC91F816E568A /* Foundation.framework */; };
+		544AEC685237239F59C7DF1C5EA9E1BF /* GTLRBatchQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = EE8D628394D5D578DC6C77C8EFE8E4B7 /* GTLRBatchQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		546323B71CA763DE815B4955EE3F2064 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0266943A74EBE7DFE6B3C3B58A1FE138 /* Result.swift */; };
+		574B69F695FAD857C8EE355FA24B9726 /* GTLRURITemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 53CD3A36F6147148F21473A6638AB16A /* GTLRURITemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5AD30826190C8028DAB9E26B0AB3B185 /* Pods-WristPlayer for Apple Watch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE46D641A3BA9B66C72B04A3EA9AFB1B /* Pods-WristPlayer for Apple Watch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B8E8FBCD971E0967BDF374C0937FA34 /* Pods-WristPlayerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA57ACD12E1AD5081C12F57F901B4E56 /* Pods-WristPlayerTests-dummy.m */; };
+		5D2617783219995A85E23C024ADBFCE9 /* GTLRUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCB2536437E1880DC7CAE56086F7CED /* GTLRUtilities.m */; };
+		5D997F70BD1F8F7441B68CAFCE18347C /* XCDYouTubeClient.h in Headers */ = {isa = PBXBuildFile; fileRef = AFE79C464DD82FE3A2B566CB145A8566 /* XCDYouTubeClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DC223206D9E0964E6D1E700896661BC /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B118B0A13D192CE62FD39BF63F0DC9E /* ServerTrustPolicy.swift */; };
+		6436B319FCF63B32B9EF1DF5A493B5F2 /* GTMSessionFetcherLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = FD208DD0A568220EEF7F2BDBA27A8499 /* GTMSessionFetcherLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65F21C201B2B6A9784E9786A306EE544 /* GTLRService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8405DC5739DB94CAD10604399C2C618F /* GTLRService.m */; };
+		670AB4D559C4E66CF0B60B27C0DE2646 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8465CFF792EFC83B6B474E1C98D13C /* DispatchQueue+Alamofire.swift */; };
+		6738D2AC4C0DE3E1E201E5E46C1B9E0D /* GTMSessionFetcher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 09EAF8AC18DC91C4579CD07F5469EFCD /* GTMSessionFetcher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6820FC9C4AEE3F77DD0E587E4600A9E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F84C3DD914CD2932D64F2BFA5A18DB /* Foundation.framework */; };
+		7061091B5CD4A3E6F29F7AB914AAF812 /* XCDYouTubeVideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6094B426B959F08925F83736D29E7990 /* XCDYouTubeVideoPlayerViewController.m */; };
+		7349D652A713323BB3E61B454F8A6734 /* GTLRURITemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B72703C31C9EF2C1CB92E04B0A39946 /* GTLRURITemplate.m */; };
+		746D97481FDFBED0C2A7357B1DDAC09E /* GTLRDateTime.h in Headers */ = {isa = PBXBuildFile; fileRef = B1C7D58DDCD3DF130B2A0A68CEB19A97 /* GTLRDateTime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		789937CAE14CAAB0A4336EADFF00D1D1 /* GTLRService.h in Headers */ = {isa = PBXBuildFile; fileRef = BC3CC68CE3FBFFB784541E2E171DD611 /* GTLRService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B82EB976584C783309E6AF6A98D91F4 /* XCDYouTubeVideoOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = D245FA7E33A917DFBD22A87030E3B8BB /* XCDYouTubeVideoOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C04C4E2957A8094EEBCDAC3BA3E5833 /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2DA0BEDCA84235ADEE3FE77307835D9 /* GTMSessionFetcher.framework */; };
+		805C68BD9CD215264E6E5A11B6F2E53B /* XCDYouTubeVideoOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA71ABC9F9DD4A24AF2BB9F72499A6D /* XCDYouTubeVideoOperation.m */; };
+		812D77568FBF1FE21C695BBA9A2999F8 /* GTLRQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A0F550F3E19CFF104CC5B63988076F /* GTLRQuery.m */; };
+		81DAFB0F2C1CF23CF06D1D257C10E7F9 /* GTLRBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4941B9EBA60A78740FC567E2672DA1 /* GTLRBase64.m */; };
+		82C72B35091073596FE61D069FFB8A80 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA22B4474D862F50F848A3791D064FB9 /* Timeline.swift */; };
+		844A835D0FE2DACB46A326605CE7C044 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F84C3DD914CD2932D64F2BFA5A18DB /* Foundation.framework */; };
+		870EE599BF9F28E1C2438E88F1397C8B /* XCDYouTubeVideoPlayerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 28E32BC9C58574FEC5B9146F7D1056C3 /* XCDYouTubeVideoPlayerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87E2026AD46BCFB62E2AB1F83137664F /* GoogleAPIClientForREST-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 50D3542D4C3CFE56A0AB456C473C972B /* GoogleAPIClientForREST-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		912A476FD85EECC920A508E12460EFB8 /* Alamofire-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5095A62C580180505BA0DA0E1F2F138 /* Alamofire-iOS-dummy.m */; };
+		91D45871DE32A3C1B2E845F54E9A2660 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D8C6292DA5B2E9EA02188E9BC4E49A /* Request.swift */; };
+		91EE37BBBD769070940BB36ACC4C14AA /* XCDYouTubeVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = F807E3506F5B6B5276C711E78029FFA9 /* XCDYouTubeVideo.m */; };
+		927763E928E901EC3A2FF1354E86E6A3 /* GTLRObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B7C068B132726A124BE34CCB36696C4 /* GTLRObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		955A1D441EEA29268E2FD19E3D20C7BB /* GTLRBatchQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 531D6E56B4D3119EBF7ABFC27D5973F5 /* GTLRBatchQuery.m */; };
+		9710AA8455D26EB1E65EC48EB73662E5 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2695439DF9DE94A1C0476218DBDD334 /* TaskDelegate.swift */; };
+		985A75B2F5386180AE1DD85E2AF430C7 /* GTLRUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 70C6CF265D318B77797BE91F640174E4 /* GTLRUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98EB0914754838B056FC2410E28436A1 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31CF0BCA234CB73B7140C1CC99F4015 /* Validation.swift */; };
+		9A0D8180A8542BD19E2AEF533626FD32 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83244B90F9B1B9363C31A02D136AA15F /* Response.swift */; };
+		9BE32B0788989125C980F047B79A7AAD /* GTLRDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = BC44BDDA2976ADF8199D429E60591FA0 /* GTLRDateTime.m */; };
+		9F8337E722A435CF2DE3829C25B9320D /* GTMReadMonitorInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E1060928FBA3DA74A66D04E94307B9 /* GTMReadMonitorInputStream.m */; };
+		A0E1AFB4104DD8C24BA35979E670F51F /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06833CFB97D530895E18E9F463C5B071 /* Notifications.swift */; };
+		A21CA0A1ABA69F4AF86620B7704122E9 /* GTLRYouTubeObjects.h in Headers */ = {isa = PBXBuildFile; fileRef = 78AF639D5144A677562A202672641D5B /* GTLRYouTubeObjects.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3007EA32DCAB1CA67795414671FF618 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3815D3F81DD7840CEAAFFDD4C1D1FE26 /* SessionManager.swift */; };
+		A4CAA381B50248056BDFB9AFBD8867C9 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B4C5A6A36F30ECF04E340CED679841 /* AFError.swift */; };
+		A638EEB3574E86FDE7740B94A57C8073 /* GTMSessionFetcherService.h in Headers */ = {isa = PBXBuildFile; fileRef = D05619691F74C11A27189F1888B3F59D /* GTMSessionFetcherService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8C7DBF2C475274E5F610971752B0183 /* Pods-WristPlayer for Apple Watch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 376874C37BAFAD28A13E674980530D65 /* Pods-WristPlayer for Apple Watch-dummy.m */; };
+		A90A39BB8DBC92E9652564B20B034F30 /* GTLRBatchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 8780DB84D1A48F158DC7FAF1AF7F6A31 /* GTLRBatchResult.m */; };
+		AB915BC13DE3AC6F2EE3AA252CCA7419 /* GTLRObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 211DA2A30D2A975F96D476CA9222489F /* GTLRObject.m */; };
+		AF3F0F8CD9986CC723C42009ECB2F234 /* GTLRFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = D7437135F94E72C9FEA5391E261F1F99 /* GTLRFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFA9BCA194B0E1ABFDED55E02B3153F5 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBCD8CDA2B5AC8D049375C3DDF62175 /* NetworkReachabilityManager.swift */; };
+		B0379AA8304042B716BCCEE856E2B10B /* GTLRBatchResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 42ADA76A9A41A65E60D3584E37B72E05 /* GTLRBatchResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B09052BABCEC6D71A0DE9C2041A43298 /* GTMMIMEDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B97F9C6AE44CF217F9BCA5956842C9 /* GTMMIMEDocument.m */; };
+		B13987597D329C4A66BD10D3B37AF243 /* GTLRYouTubeService.h in Headers */ = {isa = PBXBuildFile; fileRef = 916D5AD197ECD48EB255E1214B08BA6D /* GTLRYouTubeService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B272072FE002675F0E8F4D5CE86798CE /* XCDYouTubeVideo+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A87B406F029652373CFF78BADEC4509 /* XCDYouTubeVideo+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B4475FE96A5EB06ABC96CEA377C62B0C /* Alamofire-watchOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4E8E0EE8C2D0EFE95FAA25F5203F4 /* Alamofire-watchOS-dummy.m */; };
+		B79BACD36D59D28C042FA1FD9960A870 /* XCDYouTubeDashManifestXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 936F32A7F28910A6751290E6021109AC /* XCDYouTubeDashManifestXML.m */; };
+		B89A7E1971E34E4FA9300033D4D4CD0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D268BFB42947C26128DC91F816E568A /* Foundation.framework */; };
+		B9A18F681AD2922B038C57D3F59A1F68 /* XCDYouTubeClient.m in Sources */ = {isa = PBXBuildFile; fileRef = C735D243C12E1043FC461672227F4705 /* XCDYouTubeClient.m */; };
+		BDAB46BC41AD5311B50E69CC8A644C50 /* Pods-WristPlayerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A5D27AFB1EE4A3BE2EACE190CDD0CB0A /* Pods-WristPlayerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2D864241291BCA9563103E42CDDC361 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F84C3DD914CD2932D64F2BFA5A18DB /* Foundation.framework */; };
+		C3FB435E6D39F584C5D91AACE2CF7495 /* XCDYouTubeLogger+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = D01C644DE356BDD0377E23FA093C42E0 /* XCDYouTubeLogger+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C43A8B576632DEC4C93097380CEACAD3 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D17C7DBD1B3F527102853592D0F356 /* JavaScriptCore.framework */; };
+		C4C334EB1BFC4AA04EEFCEC5797F0BEB /* XCDYouTubeKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 44C08C48282857BE77AA6A74BA6BD879 /* XCDYouTubeKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C581285B8AB6D47A2BBC0F1FB0436437 /* Alamofire-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D1B3276C8C8137E3FEDB2518D0BA3C9D /* Alamofire-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6B9E73B20C867D11C52F1FF43D1908B /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369F173F3A6F120ACB9FAAB686A80C5 /* SessionDelegate.swift */; };
+		C7E530B3A0405BD8B338F9D3DB0978C8 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A3DE5C4C990522337B604F0B8D2860 /* ParameterEncoding.swift */; };
+		C8330F9824777E566F1433E757F0660E /* XCDYouTubePlayerScript.h in Headers */ = {isa = PBXBuildFile; fileRef = A9732032482A3C4D0A602ED89456F44C /* XCDYouTubePlayerScript.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CB6AAB6AC93A803302050B2E9941E34B /* XCDYouTubeVideoWebpage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8721A5F9BB5F2766711EFC4167B1DC7D /* XCDYouTubeVideoWebpage.m */; };
+		CBC5C371ADB7E052248D0B6DA03ADA6F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 472B126FA2CB1986F331286FC0FF83B4 /* Security.framework */; };
+		CDB3E8DCFC41F95C8BFF8DD55904C95F /* XCDYouTubeKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D8F5EC1C250C5A2DB8539813605FA99 /* XCDYouTubeKit-dummy.m */; };
+		CF51EC7A05D936CD262CE568AEF6458C /* GoogleAPIClientForREST-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF113044F35523BA94089EF9B3AA3C8 /* GoogleAPIClientForREST-dummy.m */; };
+		CFA02C840BFCE05BFFCB64E2E4C27ADF /* GTLRRuntimeCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 62D94EB41FCB6AB4BD497B8817EDCF13 /* GTLRRuntimeCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D51AEC216F7C66F82F6DF447426DE17B /* GTLRErrorObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D70607BA91543C7DC50261CFF91D44 /* GTLRErrorObject.m */; };
+		DF5B37AC9C457B5EFC992F4DA7441D23 /* GTMMIMEDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 78574DBA56E58D308397FCFF1B44B93E /* GTMMIMEDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0DF3A0ED5FAA2FE0C1E2396CBC4F968 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296ABA1D9F2856945E704440AFC74619 /* MultipartFormData.swift */; };
+		E2F9BFECBBEBDF515A49318C8AF36D74 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBCD8CDA2B5AC8D049375C3DDF62175 /* NetworkReachabilityManager.swift */; };
+		E47CF18C662B13E9B410BB0EC49FD271 /* XCDYouTubeLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D6FE36FE219B9435B28CB05DBF32BE /* XCDYouTubeLogger.m */; };
+		E9478B9C29741BB15C26529B33AD798D /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A428C6907F9773C7B1799B842149A905 /* ResponseSerialization.swift */; };
+		EA2DA37B7ED37959847875D89F6D3271 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA22B4474D862F50F848A3791D064FB9 /* Timeline.swift */; };
+		ECD78811CD2E9514F557FEE6E3BF73B5 /* GTLRDuration.h in Headers */ = {isa = PBXBuildFile; fileRef = 6093CA3780EB7CA97EABE31FDC190FAC /* GTLRDuration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECED8908D0D8031019377E51652955B4 /* GTMSessionUploadFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 87FF689DA3E0318B961305B584229A1D /* GTMSessionUploadFetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE822282C912F20733663B0E9FAEAD6B /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B118B0A13D192CE62FD39BF63F0DC9E /* ServerTrustPolicy.swift */; };
+		F197A795CA0D500CCA5351183EDAF6BD /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0266943A74EBE7DFE6B3C3B58A1FE138 /* Result.swift */; };
+		F2884C16786810D1B40F39DAFBCF4303 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06833CFB97D530895E18E9F463C5B071 /* Notifications.swift */; };
+		F84BCE3F6BE6FF27FF90B60B9D00876A /* GTMSessionUploadFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = E726DE2819A16CCD215D905D61A2D4E5 /* GTMSessionUploadFetcher.m */; };
+		FB7C990BC3792E881910EEF99191F8C9 /* GTLRYouTube.h in Headers */ = {isa = PBXBuildFile; fileRef = A94C9D6C585DC9BABA8408D4BC3BBDB6 /* GTLRYouTube.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC6BB17D15EC8A4D2134D858B3A7F415 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D268BFB42947C26128DC91F816E568A /* Foundation.framework */; };
+		FF0835B3ECDED1DE76455DE10A228B58 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8465CFF792EFC83B6B474E1C98D13C /* DispatchQueue+Alamofire.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2AE66D3DE461EC89BD41BDE1AEB05CDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D676E21115185671D7258A56944ABE98;
+			remoteInfo = GTMSessionFetcher;
+		};
+		683517C370972E90EE91FFEFB12E9837 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD8828BFC368157226E204A32CD5B6DE;
+			remoteInfo = "Alamofire-iOS";
+		};
+		A3C3DA6B2EFE20831CCEAB26A4C13D3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDBBAB8F50AA59FF1AE4006D391085D6;
+			remoteInfo = "Pods-WristPlayer";
+		};
+		ABED1F7DE061BFD51682065F546AB60F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C60A0DC53D93FE007BCBC2589A5EE400;
+			remoteInfo = XCDYouTubeKit;
+		};
+		B6AEAE8148338336DBF947F8C89FE960 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66F51BC925FD5FB829E8D422C690BDF0;
+			remoteInfo = "Alamofire-watchOS";
+		};
+		D289CD8101EA809B2328AE66425D2D49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7958E869B6C0073DB3025514393D7A3;
+			remoteInfo = GoogleAPIClientForREST;
+		};
+		DF61014D3C0169602C4E269F8682EE0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D676E21115185671D7258A56944ABE98;
+			remoteInfo = GTMSessionFetcher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0266943A74EBE7DFE6B3C3B58A1FE138 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		06833CFB97D530895E18E9F463C5B071 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		074F3E7E2D36A11E69E3640134673265 /* Pods-WristPlayerTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WristPlayerTests-Info.plist"; sourceTree = "<group>"; };
+		09B4C5A6A36F30ECF04E340CED679841 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		09EAF8AC18DC91C4579CD07F5469EFCD /* GTMSessionFetcher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GTMSessionFetcher-umbrella.h"; sourceTree = "<group>"; };
+		0F2CCA875618EB5A306A97ECB666B796 /* GoogleAPIClientForREST.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GoogleAPIClientForREST.modulemap; sourceTree = "<group>"; };
+		13170FE12D9C2FD68A62F24D32BF560F /* GTLRBase64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLRBase64.h; path = Source/Utilities/GTLRBase64.h; sourceTree = "<group>"; };
+		13FD7868B20301185ABF25F7E6EE0160 /* Alamofire-watchOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Alamofire-watchOS.xcconfig"; path = "../Alamofire-watchOS/Alamofire-watchOS.xcconfig"; sourceTree = "<group>"; };
+		151B3BE2C11B710931C9EF9808BE7684 /* Pods-WristPlayerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WristPlayerTests.modulemap"; sourceTree = "<group>"; };
+		167428D59D03AD78290A5651E9F3CA18 /* GTMSessionFetcher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GTMSessionFetcher-prefix.pch"; sourceTree = "<group>"; };
+		17B537221A889B8DAB73711B582533A1 /* Pods_WristPlayerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WristPlayerTests.framework; path = "Pods-WristPlayerTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18ED5CF32EAB350277280601EA39525C /* XCDYouTubeKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XCDYouTubeKit.h; path = XCDYouTubeKit/XCDYouTubeKit.h; sourceTree = "<group>"; };
+		19D70607BA91543C7DC50261CFF91D44 /* GTLRErrorObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLRErrorObject.m; path = Source/Objects/GTLRErrorObject.m; sourceTree = "<group>"; };
+		1A8E536EC6D1E5080C0E7C4F14870033 /* GTMGatherInputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMGatherInputStream.h; path = Source/GTMGatherInputStream.h; sourceTree = "<group>"; };
+		1B72703C31C9EF2C1CB92E04B0A39946 /* GTLRURITemplate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLRURITemplate.m; path = Source/Utilities/GTLRURITemplate.m; sourceTree = "<group>"; };
+		1DF49E06B78996C89EE909E620F1BB45 /* Pods_WristPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WristPlayer.framework; path = "Pods-WristPlayer.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ED4E8E0EE8C2D0EFE95FAA25F5203F4 /* Alamofire-watchOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Alamofire-watchOS-dummy.m"; path = "../Alamofire-watchOS/Alamofire-watchOS-dummy.m"; sourceTree = "<group>"; };
+		1FF09054139E8026CC10A23E869B47E3 /* XCDYouTubeError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XCDYouTubeError.h; path = XCDYouTubeKit/XCDYouTubeError.h; sourceTree = "<group>"; };
+		20A9851A0939B27AE811D39ED4B4049F /* XCDYouTubeVideoWebpage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XCDYouTubeVideoWebpage.h; path = XCDYouTubeKit/XCDYouTubeVideoWebpage.h; sourceTree = "<group>"; };
+		211DA2A30D2A975F96D476CA9222489F /* GTLRObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLRObject.m; path = Source/Objects/GTLRObject.m; sourceTree = "<group>"; };
+		21D7FB526FC4C8EF55640DD5F636CC44 /* XCDYouTubeKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCDYouTubeKit-prefix.pch"; sourceTree = "<group>"; };
+		238AE55018BA0A9FA3FED18FA48E70C3 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		23A3DE5C4C990522337B604F0B8D2860 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		23F84C3DD914CD2932D64F2BFA5A18DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		25AE8D7808D4A03068545ECA4A344024 /* GTLRFramework.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLRFramework.m; path = Source/Utilities/GTLRFramework.m; sourceTree = "<group>"; };
+		28E32BC9C58574FEC5B9146F7D1056C3 /* XCDYouTubeVideoPlayerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XCDYouTubeVideoPlayerViewController.h; path = XCDYouTubeKit/XCDYouTubeVideoPlayerViewController.h; sourceTree = "<group>"; };
+		296ABA1D9F2856945E704440AFC74619 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		2A87B406F029652373CFF78BADEC4509 /* XCDYouTubeVideo+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCDYouTubeVideo+Private.h"; path = "XCDYouTubeKit/XCDYouTubeVideo+Private.h"; sourceTree = "<group>"; };
+		2B118B0A13D192CE62FD39BF63F0DC9E /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		2B589804E748CEF8300F4FFE5D1DE8EE /* XCDYouTubeKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XCDYouTubeKit.xcconfig; sourceTree = "<group>"; };
+		2CF857A60EAEBEDB6E8507B3FFC33A07 /* GoogleAPIClientForREST-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleAPIClientForREST-prefix.pch"; sourceTree = "<group>"; };
+		2D268BFB42947C26128DC91F816E568A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		30DAFE20D2862CE44285C596D35DBA9C /* Pods-WristPlayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WristPlayer.modulemap"; sourceTree = "<group>"; };
+		35FB38C465610E7CAF24E5E79543156E /* GTMSessionFetcherService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcherService.m; path = Source/GTMSessionFetcherService.m; sourceTree = "<group>"; };
+		376874C37BAFAD28A13E674980530D65 /* Pods-WristPlayer for Apple Watch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WristPlayer for Apple Watch-dummy.m"; sourceTree = "<group>"; };
+		37A0F550F3E19CFF104CC5B63988076F /* GTLRQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLRQuery.m; path = Source/Objects/GTLRQuery.m; sourceTree = "<group>"; };
+		3815D3F81DD7840CEAAFFDD4C1D1FE26 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		3AAAE7FD799C6A8A87781E57FC03DB65 /* Pods_WristPlayer_for_Apple_Watch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WristPlayer_for_Apple_Watch_Extension.framework; path = "Pods-WristPlayer for Apple Watch Extension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BDB21D860A0E8676AE5A9C2D0F98B38 /* Alamofire-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-iOS-prefix.pch"; sourceTree = "<group>"; };
+		3D97EA109BB79299E6D6BD60AB04F60F /* GTMSessionFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcher.m; path = Source/GTMSessionFetcher.m; sourceTree = "<group>"; };
+		3EACA87F7B8BD528DFA8573A008C4540 /* Pods-WristPlayer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WristPlayer-Info.plist"; sourceTree = "<group>"; };
+		42ADA76A9A41A65E60D3584E37B72E05 /* GTLRBatchResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLRBatchResult.h; path = Source/Objects/GTLRBatchResult.h; sourceTree = "<group>"; };
+		43DA6DFAA898F949ACBD91D709EF13F8 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = "Alamofire-watchOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		449B6B6B002FCC6A074B7D05CBDC4BD8 /* GTMSessionFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcher.h; path = Source/GTMSessionFetcher.h; sourceTree = "<group>"; };
+		44C08C48282857BE77AA6A74BA6BD879 /* XCDYouTubeKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCDYouTubeKit-umbrella.h"; sourceTree = "<group>"; };
+		4658E1AD3E0430B89021D688E947033B /* Alamofire-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Alamofire-iOS.xcconfig"; sourceTree = "<group>"; };
+		46E1060928FBA3DA74A66D04E94307B9 /* GTMReadMonitorInputStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMReadMonitorInputStream.m; path = Source/GTMReadMonitorInputStream.m; sourceTree = "<group>"; };
+		472B126FA2CB1986F331286FC0FF83B4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		48D17C7DBD1B3F527102853592D0F356 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		4B76B03A6BBFDA0509C52899D12BB94F /* Pods-WristPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WristPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		4DE94438DE10D746C362FD479F961AC5 /* Pods-WristPlayer for Apple Watch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WristPlayer for Apple Watch.debug.xcconfig"; sourceTree = "<group>"; };
+		4E0C49B9633BE742CE5E0F7639EA2F56 /* GTMSessionFetcher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GTMSessionFetcher-dummy.m"; sourceTree = "<group>"; };
+		4E1ED7839C14B52D0AD29EDA56B9830D /* GTLRYouTubeService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLRYouTubeService.m; path = Source/GeneratedServices/YouTube/GTLRYouTubeService.m; sourceTree = "<group>"; };
+		5075F5AE88CBD0C5D9979CC99AD5E23F /* Pods-WristPlayer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WristPlayer-acknowledgements.plist"; sourceTree = "<group>"; };
+		50D3542D4C3CFE56A0AB456C473C972B /* GoogleAPIClientForREST-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleAPIClientForREST-umbrella.h"; sourceTree = "<group>"; };
+		50D8A24C95AB9941523AB470DCBD9E62 /* Alamofire-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Alamofire-iOS.modulemap"; sourceTree = "<group>"; };
+		52B97F9C6AE44CF217F9BCA5956842C9 /* GTMMIMEDocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMMIMEDocument.m; path = Source/GTMMIMEDocument.m; sourceTree = "<group>"; };
+		531D6E56B4D3119EBF7ABFC27D5973F5 /* GTLRBatchQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLRBatchQuery.m; path = Source/Objects/GTLRBatchQuery.m; sourceTree = "<group>"; };
+		53CD3A36F6147148F21473A6638AB16A /* GTLRURITemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLRURITemplate.h; path = Source/Utilities/GTLRURITemplate.h; sourceTree = "<group>"; };
+		572CD94C9B89099E9F5BE1966BF0F168 /* GTMSessionFetcherLogging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcherLogging.m; path = Source/GTMSessionFetcherLogging.m; sourceTree = "<group>"; };
+		5890A5BB3F378A2AB9EBB9BCC9DC0134 /* Pods-WristPlayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WristPlayer-dummy.m"; sourceTree = "<group>"; };
+		58DF246FBE0251A66E92176A60DF84BE /* Pods-WristPlayer for Apple Watch Extension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WristPlayer for Apple Watch Extension-Info.plist"; sourceTree = "<group>"; };
+		5D8F5EC1C250C5A2DB8539813605FA99 /* XCDYouTubeKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XCDYouTubeKit-dummy.m"; sourceTree = "<group>"; };
+		5E4E100C96ECADF8D48A1C16BB22454B /* Pods-WristPlayer for Apple Watch Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WristPlayer for Apple Watch Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5F2212034264C9876A5C15CF2552E021 /* Pods-WristPlayer for Apple Watch-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WristPlayer for Apple Watch-Info.plist"; sourceTree = "<group>"; };
+		6093CA3780EB7CA97EABE31FDC190FAC /* GTLRDuration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLRDuration.h; path = Source/Objects/GTLRDuration.h; sourceTree = "<group>"; };
+		6094B426B959F08925F83736D29E7990 /* XCDYouTubeVideoPlayerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XCDYouTubeVideoPlayerViewController.m; path = XCDYouTubeKit/XCDYouTubeVideoPlayerViewController.m; sourceTree = "<group>"; };
+		62D8C6292DA5B2E9EA02188E9BC4E49A /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		62D94EB41FCB6AB4BD497B8817EDCF13 /* GTLRRuntimeCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLRRuntimeCommon.h; path = Source/Objects/GTLRRuntimeCommon.h; sourceTree = "<group>"; };
+		6374760D0F3E890F5C968619AD7D5BD8 /* Pods-WristPlayer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WristPlayer-acknowledgements.markdown"; sourceTree = "<group>"; };
+		66EE3A2270447659F992C43F50B485B9 /* Pods-WristPlayerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WristPlayerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6A9CA054E9F84C4B90DA8BD31218504E /* Pods-WristPlayer for Apple Watch-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WristPlayer for Apple Watch-acknowledgements.plist"; sourceTree = "<group>"; };
+		6C4941B9EBA60A78740FC567E2672DA1 /* GTLRBase64.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLRBase64.m; path = Source/Utilities/GTLRBase64.m; sourceTree = "<group>"; };
+		6D48E0B924F2CBD9A02ECA3A42C10922 /* Pods-WristPlayer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WristPlayer-umbrella.h"; sourceTree = "<group>"; };
+		6E01DC8C19E3C742F1D34C44AD48E750 /* GTLRYouTubeQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLRYouTubeQuery.h; path = Source/GeneratedServices/YouTube/GTLRYouTubeQuery.h; sourceTree = "<group>"; };
+		6EF113044F35523BA94089EF9B3AA3C8 /* GoogleAPIClientForREST-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleAPIClientForREST-dummy.m"; sourceTree = "<group>"; };
+		70C6CF265D318B77797BE91F640174E4 /* GTLRUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLRUtilities.h; path = Source/Utilities/GTLRUtilities.h; sourceTree = "<group>"; };
+		70E105B8B8B02FB5EEB0BA33157ECD33 /* XCDYouTubeKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XCDYouTubeKit-Info.plist"; sourceTree = "<group>"; };
+		7384DFC9A8DE4F9B747DC153DDB348C7 /* Pods-WristPlayerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WristPlayerTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		745B8F42A6FD60D183EE93CDB7DF508E /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
+		7714665CC489934B4E55F383690406BD /* GTLRDuration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLRDuration.m; path = Source/Objects/GTLRDuration.m; sourceTree = "<group>"; };
+		78574DBA56E58D308397FCFF1B44B93E /* GTMMIMEDocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMMIMEDocument.h; path = Source/GTMMIMEDocument.h; sourceTree = "<group>"; };
+		78AF639D5144A677562A202672641D5B /* GTLRYouTubeObjects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLRYouTubeObjects.h; path = Source/GeneratedServices/YouTube/GTLRYouTubeObjects.h; sourceTree = "<group>"; };
+		7AA71ABC9F9DD4A24AF2BB9F72499A6D /* XCDYouTubeVideoOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XCDYouTubeVideoOperation.m; path = XCDYouTubeKit/XCDYouTubeVideoOperation.m; sourceTree = "<group>"; };
+		7EBCD8CDA2B5AC8D049375C3DDF62175 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		80D52648F0D0509725A53C48E21709E4 /* Pods-WristPlayer for Apple Watch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WristPlayer for Apple Watch Extension.release.xcconfig"; sourceTree = "<group>"; };
+		83244B90F9B1B9363C31A02D136AA15F /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		83985E90B6F9025C5783C1900D2DF471 /* Pods-WristPlayer for Apple Watch Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WristPlayer for Apple Watch Extension-acknowledgements.plist"; sourceTree = "<group>"; };
+		8405DC5739DB94CAD10604399C2C618F /* GTLRService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLRService.m; path = Source/Objects/GTLRService.m; sourceTree = "<group>"; };
+		842B7D6C4814D1257FF7380C8E0E4B92 /* XCDYouTubeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XCDYouTubeKit.framework; path = XCDYouTubeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8721A5F9BB5F2766711EFC4167B1DC7D /* XCDYouTubeVideoWebpage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XCDYouTubeVideoWebpage.m; path = XCDYouTubeKit/XCDYouTubeVideoWebpage.m; sourceTree = "<group>"; };
+		8780DB84D1A48F158DC7FAF1AF7F6A31 /* GTLRBatchResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLRBatchResult.m; path = Source/Objects/GTLRBatchResult.m; sourceTree = "<group>"; };
+		87FF689DA3E0318B961305B584229A1D /* GTMSessionUploadFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionUploadFetcher.h; path = Source/GTMSessionUploadFetcher.h; sourceTree = "<group>"; };
+		8B7C068B132726A124BE34CCB36696C4 /* GTLRObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLRObject.h; path = Source/Objects/GTLRObject.h; sourceTree = "<group>"; };
+		8BEC1FC6487E315925D8E424DE268697 /* GoogleAPIClientForREST-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GoogleAPIClientForREST-Info.plist"; sourceTree = "<group>"; };
+		8F81B93273D856B51E85241C2AF691E7 /* XCDYouTubeLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XCDYouTubeLogger.h; path = XCDYouTubeKit/XCDYouTubeLogger.h; sourceTree = "<group>"; };
+		916D5AD197ECD48EB255E1214B08BA6D /* GTLRYouTubeService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLRYouTubeService.h; path = Source/GeneratedServices/YouTube/GTLRYouTubeService.h; sourceTree = "<group>"; };
+		933920AA76AF5A7352E363715E58E2E2 /* Pods-WristPlayer for Apple Watch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WristPlayer for Apple Watch.release.xcconfig"; sourceTree = "<group>"; };
+		936F32A7F28910A6751290E6021109AC /* XCDYouTubeDashManifestXML.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XCDYouTubeDashManifestXML.m; path = XCDYouTubeKit/XCDYouTubeDashManifestXML.m; sourceTree = "<group>"; };
+		966AA42878212207687E9A2A4DBCD618 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = "Alamofire-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		974C2FF1E9F0A14D22E9C451B8A68737 /* Pods-WristPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WristPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		99D436AF406A1EE0B6F53CD53309457C /* GTLRUploadParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLRUploadParameters.h; path = Source/Objects/GTLRUploadParameters.h; sourceTree = "<group>"; };
+		99D67204106E8C70B6D7FCCFC0EFCC8A /* GTMGatherInputStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMGatherInputStream.m; path = Source/GTMGatherInputStream.m; sourceTree = "<group>"; };
+		9B8465CFF792EFC83B6B474E1C98D13C /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A19134B3D2486B721A116A986E7ECCC4 /* Pods-WristPlayer for Apple Watch Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WristPlayer for Apple Watch Extension.modulemap"; sourceTree = "<group>"; };
+		A39896C34B38503B04BD6BD6D434984C /* GTLRYouTubeObjects.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLRYouTubeObjects.m; path = Source/GeneratedServices/YouTube/GTLRYouTubeObjects.m; sourceTree = "<group>"; };
+		A428C6907F9773C7B1799B842149A905 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		A5D27AFB1EE4A3BE2EACE190CDD0CB0A /* Pods-WristPlayerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WristPlayerTests-umbrella.h"; sourceTree = "<group>"; };
+		A6965BE565D2ACDD572302C52B0014AD /* GTMSessionFetcher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GTMSessionFetcher.xcconfig; sourceTree = "<group>"; };
+		A7F0B20E12B0F531A64DFA6E2BE29BB9 /* GTLRYouTubeQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLRYouTubeQuery.m; path = Source/GeneratedServices/YouTube/GTLRYouTubeQuery.m; sourceTree = "<group>"; };
+		A94C9D6C585DC9BABA8408D4BC3BBDB6 /* GTLRYouTube.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLRYouTube.h; path = Source/GeneratedServices/YouTube/GTLRYouTube.h; sourceTree = "<group>"; };
+		A9732032482A3C4D0A602ED89456F44C /* XCDYouTubePlayerScript.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XCDYouTubePlayerScript.h; path = XCDYouTubeKit/XCDYouTubePlayerScript.h; sourceTree = "<group>"; };
+		AFE79C464DD82FE3A2B566CB145A8566 /* XCDYouTubeClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XCDYouTubeClient.h; path = XCDYouTubeKit/XCDYouTubeClient.h; sourceTree = "<group>"; };
+		B1C7D58DDCD3DF130B2A0A68CEB19A97 /* GTLRDateTime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLRDateTime.h; path = Source/Objects/GTLRDateTime.h; sourceTree = "<group>"; };
+		B1DAD53017D3B3BCB13AB4C973C29FB1 /* Alamofire-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-iOS-Info.plist"; sourceTree = "<group>"; };
+		B28715E83C991118ED4517CF0FD26BA3 /* XCDYouTubeDashManifestXML.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XCDYouTubeDashManifestXML.h; path = XCDYouTubeKit/XCDYouTubeDashManifestXML.h; sourceTree = "<group>"; };
+		B4BDFA47696826F742C407A2D0CA1773 /* GTMReadMonitorInputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMReadMonitorInputStream.h; path = Source/GTMReadMonitorInputStream.h; sourceTree = "<group>"; };
+		B4E7573D98A320CFEE65F9082B849B6D /* Alamofire-watchOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Alamofire-watchOS-prefix.pch"; path = "../Alamofire-watchOS/Alamofire-watchOS-prefix.pch"; sourceTree = "<group>"; };
+		B621E154F1EBD96B00CB1306BA79C472 /* Pods-WristPlayer for Apple Watch Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WristPlayer for Apple Watch Extension-dummy.m"; sourceTree = "<group>"; };
+		BA22B4474D862F50F848A3791D064FB9 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		BA57ACD12E1AD5081C12F57F901B4E56 /* Pods-WristPlayerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WristPlayerTests-dummy.m"; sourceTree = "<group>"; };
+		BB9B9A30744452A3997949B00189576F /* GTLRErrorObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLRErrorObject.h; path = Source/Objects/GTLRErrorObject.h; sourceTree = "<group>"; };
+		BC3CC68CE3FBFFB784541E2E171DD611 /* GTLRService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLRService.h; path = Source/Objects/GTLRService.h; sourceTree = "<group>"; };
+		BC44BDDA2976ADF8199D429E60591FA0 /* GTLRDateTime.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLRDateTime.m; path = Source/Objects/GTLRDateTime.m; sourceTree = "<group>"; };
+		BCD0A186A226A770A9AFC594F523E29C /* Pods-WristPlayerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WristPlayerTests.release.xcconfig"; sourceTree = "<group>"; };
+		BEA92D4ABFC5FCC70AB0190162835224 /* GTLRUploadParameters.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLRUploadParameters.m; path = Source/Objects/GTLRUploadParameters.m; sourceTree = "<group>"; };
+		C03EA7BDA7BDC7C247F713992D74757E /* GoogleAPIClientForREST.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleAPIClientForREST.xcconfig; sourceTree = "<group>"; };
+		C0540E8B5602B75F0B5E0919CDBBAE66 /* XCDYouTubeKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XCDYouTubeKit.modulemap; sourceTree = "<group>"; };
+		C1998E0D8085221AD87F89B614C10E52 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GTMSessionFetcher.framework; path = GTMSessionFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3CD37B71A0D5061585FB6A05F1A2F44 /* GTLRRuntimeCommon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLRRuntimeCommon.m; path = Source/Objects/GTLRRuntimeCommon.m; sourceTree = "<group>"; };
+		C5C1711EE5F0A9912B5962E37D6A1021 /* Pods-WristPlayer for Apple Watch Extension-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WristPlayer for Apple Watch Extension-frameworks.sh"; sourceTree = "<group>"; };
+		C735D243C12E1043FC461672227F4705 /* XCDYouTubeClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XCDYouTubeClient.m; path = XCDYouTubeKit/XCDYouTubeClient.m; sourceTree = "<group>"; };
+		C86DBB66554820308A587CCC48329736 /* Pods-WristPlayer for Apple Watch Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WristPlayer for Apple Watch Extension-umbrella.h"; sourceTree = "<group>"; };
+		D01C644DE356BDD0377E23FA093C42E0 /* XCDYouTubeLogger+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCDYouTubeLogger+Private.h"; path = "XCDYouTubeKit/XCDYouTubeLogger+Private.h"; sourceTree = "<group>"; };
+		D05619691F74C11A27189F1888B3F59D /* GTMSessionFetcherService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcherService.h; path = Source/GTMSessionFetcherService.h; sourceTree = "<group>"; };
+		D1B3276C8C8137E3FEDB2518D0BA3C9D /* Alamofire-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-iOS-umbrella.h"; sourceTree = "<group>"; };
+		D245FA7E33A917DFBD22A87030E3B8BB /* XCDYouTubeVideoOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XCDYouTubeVideoOperation.h; path = XCDYouTubeKit/XCDYouTubeVideoOperation.h; sourceTree = "<group>"; };
+		D31CF0BCA234CB73B7140C1CC99F4015 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		D369F173F3A6F120ACB9FAAB686A80C5 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		D5095A62C580180505BA0DA0E1F2F138 /* Alamofire-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-iOS-dummy.m"; sourceTree = "<group>"; };
+		D6222D287C6E00861FFE42BC8A05AB3A /* XCDYouTubeOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XCDYouTubeOperation.h; path = XCDYouTubeKit/XCDYouTubeOperation.h; sourceTree = "<group>"; };
+		D7437135F94E72C9FEA5391E261F1F99 /* GTLRFramework.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLRFramework.h; path = Source/Utilities/GTLRFramework.h; sourceTree = "<group>"; };
+		D8319BA67E97AD9BE13EF2718621B464 /* GTMSessionFetcher-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GTMSessionFetcher-Info.plist"; sourceTree = "<group>"; };
+		DC3784467485751A2DF6067D4A3DB51D /* XCDYouTubeVideo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XCDYouTubeVideo.h; path = XCDYouTubeKit/XCDYouTubeVideo.h; sourceTree = "<group>"; };
+		DF8340B9F77884CA04C661CF6AB9EDF2 /* Alamofire-watchOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Alamofire-watchOS-umbrella.h"; path = "../Alamofire-watchOS/Alamofire-watchOS-umbrella.h"; sourceTree = "<group>"; };
+		E0893386E85F17DA0DF00E7477D763A6 /* Alamofire-watchOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "Alamofire-watchOS.modulemap"; path = "../Alamofire-watchOS/Alamofire-watchOS.modulemap"; sourceTree = "<group>"; };
+		E2DA0BEDCA84235ADEE3FE77307835D9 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GTMSessionFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6EFD0B47A7B89E805ED51D88FCE05AD /* Pods-WristPlayer-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WristPlayer-frameworks.sh"; sourceTree = "<group>"; };
+		E726DE2819A16CCD215D905D61A2D4E5 /* GTMSessionUploadFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionUploadFetcher.m; path = Source/GTMSessionUploadFetcher.m; sourceTree = "<group>"; };
+		E8A77A61A22830053895FE0DA81D3978 /* GTLRQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLRQuery.h; path = Source/Objects/GTLRQuery.h; sourceTree = "<group>"; };
+		EC5266C34E5856E169EEA46C93D11CB2 /* XCDYouTubePlayerScript.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XCDYouTubePlayerScript.m; path = XCDYouTubeKit/XCDYouTubePlayerScript.m; sourceTree = "<group>"; };
+		EE8D628394D5D578DC6C77C8EFE8E4B7 /* GTLRBatchQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLRBatchQuery.h; path = Source/Objects/GTLRBatchQuery.h; sourceTree = "<group>"; };
+		F0E8951314B416533723D8BA1D491CCD /* Pods-WristPlayerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WristPlayerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F129469817A7AF210381D9E4BE850980 /* Pods-WristPlayer for Apple Watch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WristPlayer for Apple Watch.modulemap"; sourceTree = "<group>"; };
+		F2695439DF9DE94A1C0476218DBDD334 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		F321FE383B4AE18AC7B89482141E26F9 /* Pods-WristPlayer for Apple Watch-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WristPlayer for Apple Watch-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F4D128F1BB4BC58C0FAD1CFFD0858F1C /* Pods_WristPlayer_for_Apple_Watch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WristPlayer_for_Apple_Watch.framework; path = "Pods-WristPlayer for Apple Watch.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6662AEB9634B60CC139B1A519C05719 /* Alamofire-watchOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Alamofire-watchOS-Info.plist"; path = "../Alamofire-watchOS/Alamofire-watchOS-Info.plist"; sourceTree = "<group>"; };
+		F807E3506F5B6B5276C711E78029FFA9 /* XCDYouTubeVideo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XCDYouTubeVideo.m; path = XCDYouTubeKit/XCDYouTubeVideo.m; sourceTree = "<group>"; };
+		F92D5F1534CEFDA5B8C4916684236716 /* GTLRDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLRDefines.h; path = Source/GTLRDefines.h; sourceTree = "<group>"; };
+		F9D6FE36FE219B9435B28CB05DBF32BE /* XCDYouTubeLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XCDYouTubeLogger.m; path = XCDYouTubeKit/XCDYouTubeLogger.m; sourceTree = "<group>"; };
+		FA5ADFE9043C2C98352CE1BE97524E01 /* Pods-WristPlayer for Apple Watch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WristPlayer for Apple Watch Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		FD208DD0A568220EEF7F2BDBA27A8499 /* GTMSessionFetcherLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcherLogging.h; path = Source/GTMSessionFetcherLogging.h; sourceTree = "<group>"; };
+		FD519882861480B93B563B477CE1FA29 /* GoogleAPIClientForREST.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GoogleAPIClientForREST.framework; path = GoogleAPIClientForREST.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD9A41384CEAB82BD97DB154BD163B8A /* GTMSessionFetcher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GTMSessionFetcher.modulemap; sourceTree = "<group>"; };
+		FE46D641A3BA9B66C72B04A3EA9AFB1B /* Pods-WristPlayer for Apple Watch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WristPlayer for Apple Watch-umbrella.h"; sourceTree = "<group>"; };
+		FFCB2536437E1880DC7CAE56086F7CED /* GTLRUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLRUtilities.m; path = Source/Utilities/GTLRUtilities.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		152219B0468DDEDC15A7E8759DF2FB2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC6BB17D15EC8A4D2134D858B3A7F415 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DC4569924E03A7048CF502169D3C1E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2D864241291BCA9563103E42CDDC361 /* Foundation.framework in Frameworks */,
+				CBC5C371ADB7E052248D0B6DA03ADA6F /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51C49E6511B1FE5314E69AD783B2DF18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6820FC9C4AEE3F77DD0E587E4600A9E9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69EED893BD53F1B871AD3A5A7AEC6561 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B89A7E1971E34E4FA9300033D4D4CD0E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88112056A4E7E04B3F138241BE783D69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50B4FBA281ABF2D5319EEED43A5BA124 /* Foundation.framework in Frameworks */,
+				C43A8B576632DEC4C93097380CEACAD3 /* JavaScriptCore.framework in Frameworks */,
+				35F34FC686D71775097A69C722AABD2E /* MediaPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98FCE79AE7B12EABF65523A64CBB6677 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				110B3C0542175DCC38E2A1644761640C /* Foundation.framework in Frameworks */,
+				7C04C4E2957A8094EEBCDAC3BA3E5833 /* GTMSessionFetcher.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BEE43F267A7346FC003785786F1C78C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844A835D0FE2DACB46A326605CE7C044 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1CE1AB68594BFAE57498B96E9EA1EF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5265B9F3C9E33516FBDB2B03F316009F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAFDF16C02CBD3FE2AF30995CCBD82EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CFEDF31CAAF92B6553A65AD5868CEC7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18E9C76A5D29CFCCEB97576DD5E74485 /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				2D268BFB42947C26128DC91F816E568A /* Foundation.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
+		1A549F6B78EBBC972B2F5F058AB99606 /* YouTube */ = {
+			isa = PBXGroup;
+			children = (
+				A94C9D6C585DC9BABA8408D4BC3BBDB6 /* GTLRYouTube.h */,
+				78AF639D5144A677562A202672641D5B /* GTLRYouTubeObjects.h */,
+				A39896C34B38503B04BD6BD6D434984C /* GTLRYouTubeObjects.m */,
+				6E01DC8C19E3C742F1D34C44AD48E750 /* GTLRYouTubeQuery.h */,
+				A7F0B20E12B0F531A64DFA6E2BE29BB9 /* GTLRYouTubeQuery.m */,
+				916D5AD197ECD48EB255E1214B08BA6D /* GTLRYouTubeService.h */,
+				4E1ED7839C14B52D0AD29EDA56B9830D /* GTLRYouTubeService.m */,
+			);
+			name = YouTube;
+			sourceTree = "<group>";
+		};
+		1B494BBF4A9876C5BE556177F551F7D9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F2CCA875618EB5A306A97ECB666B796 /* GoogleAPIClientForREST.modulemap */,
+				C03EA7BDA7BDC7C247F713992D74757E /* GoogleAPIClientForREST.xcconfig */,
+				6EF113044F35523BA94089EF9B3AA3C8 /* GoogleAPIClientForREST-dummy.m */,
+				8BEC1FC6487E315925D8E424DE268697 /* GoogleAPIClientForREST-Info.plist */,
+				2CF857A60EAEBEDB6E8507B3FFC33A07 /* GoogleAPIClientForREST-prefix.pch */,
+				50D3542D4C3CFE56A0AB456C473C972B /* GoogleAPIClientForREST-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GoogleAPIClientForREST";
+			sourceTree = "<group>";
+		};
+		20F067BACE697CD96091568A892A83E7 /* XCDYouTubeKit */ = {
+			isa = PBXGroup;
+			children = (
+				AFE79C464DD82FE3A2B566CB145A8566 /* XCDYouTubeClient.h */,
+				C735D243C12E1043FC461672227F4705 /* XCDYouTubeClient.m */,
+				B28715E83C991118ED4517CF0FD26BA3 /* XCDYouTubeDashManifestXML.h */,
+				936F32A7F28910A6751290E6021109AC /* XCDYouTubeDashManifestXML.m */,
+				1FF09054139E8026CC10A23E869B47E3 /* XCDYouTubeError.h */,
+				18ED5CF32EAB350277280601EA39525C /* XCDYouTubeKit.h */,
+				8F81B93273D856B51E85241C2AF691E7 /* XCDYouTubeLogger.h */,
+				F9D6FE36FE219B9435B28CB05DBF32BE /* XCDYouTubeLogger.m */,
+				D01C644DE356BDD0377E23FA093C42E0 /* XCDYouTubeLogger+Private.h */,
+				D6222D287C6E00861FFE42BC8A05AB3A /* XCDYouTubeOperation.h */,
+				A9732032482A3C4D0A602ED89456F44C /* XCDYouTubePlayerScript.h */,
+				EC5266C34E5856E169EEA46C93D11CB2 /* XCDYouTubePlayerScript.m */,
+				DC3784467485751A2DF6067D4A3DB51D /* XCDYouTubeVideo.h */,
+				F807E3506F5B6B5276C711E78029FFA9 /* XCDYouTubeVideo.m */,
+				2A87B406F029652373CFF78BADEC4509 /* XCDYouTubeVideo+Private.h */,
+				D245FA7E33A917DFBD22A87030E3B8BB /* XCDYouTubeVideoOperation.h */,
+				7AA71ABC9F9DD4A24AF2BB9F72499A6D /* XCDYouTubeVideoOperation.m */,
+				28E32BC9C58574FEC5B9146F7D1056C3 /* XCDYouTubeVideoPlayerViewController.h */,
+				6094B426B959F08925F83736D29E7990 /* XCDYouTubeVideoPlayerViewController.m */,
+				20A9851A0939B27AE811D39ED4B4049F /* XCDYouTubeVideoWebpage.h */,
+				8721A5F9BB5F2766711EFC4167B1DC7D /* XCDYouTubeVideoWebpage.m */,
+				7181252A5512C5E10FF45B3FB6DB4E8C /* Support Files */,
+			);
+			name = XCDYouTubeKit;
+			path = XCDYouTubeKit;
+			sourceTree = "<group>";
+		};
+		467B2A04D67B54045D3D082D7A9880D9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				13170FE12D9C2FD68A62F24D32BF560F /* GTLRBase64.h */,
+				6C4941B9EBA60A78740FC567E2672DA1 /* GTLRBase64.m */,
+				EE8D628394D5D578DC6C77C8EFE8E4B7 /* GTLRBatchQuery.h */,
+				531D6E56B4D3119EBF7ABFC27D5973F5 /* GTLRBatchQuery.m */,
+				42ADA76A9A41A65E60D3584E37B72E05 /* GTLRBatchResult.h */,
+				8780DB84D1A48F158DC7FAF1AF7F6A31 /* GTLRBatchResult.m */,
+				B1C7D58DDCD3DF130B2A0A68CEB19A97 /* GTLRDateTime.h */,
+				BC44BDDA2976ADF8199D429E60591FA0 /* GTLRDateTime.m */,
+				F92D5F1534CEFDA5B8C4916684236716 /* GTLRDefines.h */,
+				6093CA3780EB7CA97EABE31FDC190FAC /* GTLRDuration.h */,
+				7714665CC489934B4E55F383690406BD /* GTLRDuration.m */,
+				BB9B9A30744452A3997949B00189576F /* GTLRErrorObject.h */,
+				19D70607BA91543C7DC50261CFF91D44 /* GTLRErrorObject.m */,
+				D7437135F94E72C9FEA5391E261F1F99 /* GTLRFramework.h */,
+				25AE8D7808D4A03068545ECA4A344024 /* GTLRFramework.m */,
+				8B7C068B132726A124BE34CCB36696C4 /* GTLRObject.h */,
+				211DA2A30D2A975F96D476CA9222489F /* GTLRObject.m */,
+				E8A77A61A22830053895FE0DA81D3978 /* GTLRQuery.h */,
+				37A0F550F3E19CFF104CC5B63988076F /* GTLRQuery.m */,
+				62D94EB41FCB6AB4BD497B8817EDCF13 /* GTLRRuntimeCommon.h */,
+				C3CD37B71A0D5061585FB6A05F1A2F44 /* GTLRRuntimeCommon.m */,
+				BC3CC68CE3FBFFB784541E2E171DD611 /* GTLRService.h */,
+				8405DC5739DB94CAD10604399C2C618F /* GTLRService.m */,
+				99D436AF406A1EE0B6F53CD53309457C /* GTLRUploadParameters.h */,
+				BEA92D4ABFC5FCC70AB0190162835224 /* GTLRUploadParameters.m */,
+				53CD3A36F6147148F21473A6638AB16A /* GTLRURITemplate.h */,
+				1B72703C31C9EF2C1CB92E04B0A39946 /* GTLRURITemplate.m */,
+				70C6CF265D318B77797BE91F640174E4 /* GTLRUtilities.h */,
+				FFCB2536437E1880DC7CAE56086F7CED /* GTLRUtilities.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		4801F19CFC15B5671B40E79EB281F0B3 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				23F84C3DD914CD2932D64F2BFA5A18DB /* Foundation.framework */,
+				48D17C7DBD1B3F527102853592D0F356 /* JavaScriptCore.framework */,
+				745B8F42A6FD60D183EE93CDB7DF508E /* MediaPlayer.framework */,
+				472B126FA2CB1986F331286FC0FF83B4 /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		55573F42C16795339D04587BE3E5D712 /* Pods-WristPlayer for Apple Watch */ = {
+			isa = PBXGroup;
+			children = (
+				F129469817A7AF210381D9E4BE850980 /* Pods-WristPlayer for Apple Watch.modulemap */,
+				F321FE383B4AE18AC7B89482141E26F9 /* Pods-WristPlayer for Apple Watch-acknowledgements.markdown */,
+				6A9CA054E9F84C4B90DA8BD31218504E /* Pods-WristPlayer for Apple Watch-acknowledgements.plist */,
+				376874C37BAFAD28A13E674980530D65 /* Pods-WristPlayer for Apple Watch-dummy.m */,
+				5F2212034264C9876A5C15CF2552E021 /* Pods-WristPlayer for Apple Watch-Info.plist */,
+				FE46D641A3BA9B66C72B04A3EA9AFB1B /* Pods-WristPlayer for Apple Watch-umbrella.h */,
+				4DE94438DE10D746C362FD479F961AC5 /* Pods-WristPlayer for Apple Watch.debug.xcconfig */,
+				933920AA76AF5A7352E363715E58E2E2 /* Pods-WristPlayer for Apple Watch.release.xcconfig */,
+			);
+			name = "Pods-WristPlayer for Apple Watch";
+			path = "Target Support Files/Pods-WristPlayer for Apple Watch";
+			sourceTree = "<group>";
+		};
+		568BF8D6188BBF5E9D6C84AFD24DEB23 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				50D8A24C95AB9941523AB470DCBD9E62 /* Alamofire-iOS.modulemap */,
+				4658E1AD3E0430B89021D688E947033B /* Alamofire-iOS.xcconfig */,
+				D5095A62C580180505BA0DA0E1F2F138 /* Alamofire-iOS-dummy.m */,
+				B1DAD53017D3B3BCB13AB4C973C29FB1 /* Alamofire-iOS-Info.plist */,
+				3BDB21D860A0E8676AE5A9C2D0F98B38 /* Alamofire-iOS-prefix.pch */,
+				D1B3276C8C8137E3FEDB2518D0BA3C9D /* Alamofire-iOS-umbrella.h */,
+				E0893386E85F17DA0DF00E7477D763A6 /* Alamofire-watchOS.modulemap */,
+				13FD7868B20301185ABF25F7E6EE0160 /* Alamofire-watchOS.xcconfig */,
+				1ED4E8E0EE8C2D0EFE95FAA25F5203F4 /* Alamofire-watchOS-dummy.m */,
+				F6662AEB9634B60CC139B1A519C05719 /* Alamofire-watchOS-Info.plist */,
+				B4E7573D98A320CFEE65F9082B849B6D /* Alamofire-watchOS-prefix.pch */,
+				DF8340B9F77884CA04C661CF6AB9EDF2 /* Alamofire-watchOS-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire-iOS";
+			sourceTree = "<group>";
+		};
+		617B3205ABF86774D5ABF2CA022547A6 /* GoogleAPIClientForREST */ = {
+			isa = PBXGroup;
+			children = (
+				467B2A04D67B54045D3D082D7A9880D9 /* Core */,
+				1B494BBF4A9876C5BE556177F551F7D9 /* Support Files */,
+				1A549F6B78EBBC972B2F5F058AB99606 /* YouTube */,
+			);
+			name = GoogleAPIClientForREST;
+			path = GoogleAPIClientForREST;
+			sourceTree = "<group>";
+		};
+		62DC307B5EB545F51EC94FEB361678D4 /* Pods-WristPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				151B3BE2C11B710931C9EF9808BE7684 /* Pods-WristPlayerTests.modulemap */,
+				66EE3A2270447659F992C43F50B485B9 /* Pods-WristPlayerTests-acknowledgements.markdown */,
+				7384DFC9A8DE4F9B747DC153DDB348C7 /* Pods-WristPlayerTests-acknowledgements.plist */,
+				BA57ACD12E1AD5081C12F57F901B4E56 /* Pods-WristPlayerTests-dummy.m */,
+				074F3E7E2D36A11E69E3640134673265 /* Pods-WristPlayerTests-Info.plist */,
+				A5D27AFB1EE4A3BE2EACE190CDD0CB0A /* Pods-WristPlayerTests-umbrella.h */,
+				F0E8951314B416533723D8BA1D491CCD /* Pods-WristPlayerTests.debug.xcconfig */,
+				BCD0A186A226A770A9AFC594F523E29C /* Pods-WristPlayerTests.release.xcconfig */,
+			);
+			name = "Pods-WristPlayerTests";
+			path = "Target Support Files/Pods-WristPlayerTests";
+			sourceTree = "<group>";
+		};
+		6F54198AE30B35D3FA621DBE79AC2D68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43DA6DFAA898F949ACBD91D709EF13F8 /* Alamofire.framework */,
+				966AA42878212207687E9A2A4DBCD618 /* Alamofire.framework */,
+				FD519882861480B93B563B477CE1FA29 /* GoogleAPIClientForREST.framework */,
+				C1998E0D8085221AD87F89B614C10E52 /* GTMSessionFetcher.framework */,
+				1DF49E06B78996C89EE909E620F1BB45 /* Pods_WristPlayer.framework */,
+				F4D128F1BB4BC58C0FAD1CFFD0858F1C /* Pods_WristPlayer_for_Apple_Watch.framework */,
+				3AAAE7FD799C6A8A87781E57FC03DB65 /* Pods_WristPlayer_for_Apple_Watch_Extension.framework */,
+				17B537221A889B8DAB73711B582533A1 /* Pods_WristPlayerTests.framework */,
+				842B7D6C4814D1257FF7380C8E0E4B92 /* XCDYouTubeKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7181252A5512C5E10FF45B3FB6DB4E8C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0540E8B5602B75F0B5E0919CDBBAE66 /* XCDYouTubeKit.modulemap */,
+				2B589804E748CEF8300F4FFE5D1DE8EE /* XCDYouTubeKit.xcconfig */,
+				5D8F5EC1C250C5A2DB8539813605FA99 /* XCDYouTubeKit-dummy.m */,
+				70E105B8B8B02FB5EEB0BA33157ECD33 /* XCDYouTubeKit-Info.plist */,
+				21D7FB526FC4C8EF55640DD5F636CC44 /* XCDYouTubeKit-prefix.pch */,
+				44C08C48282857BE77AA6A74BA6BD879 /* XCDYouTubeKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/XCDYouTubeKit";
+			sourceTree = "<group>";
+		};
+		7ACED6F6072317CF94160BEB758EAFE1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD9A41384CEAB82BD97DB154BD163B8A /* GTMSessionFetcher.modulemap */,
+				A6965BE565D2ACDD572302C52B0014AD /* GTMSessionFetcher.xcconfig */,
+				4E0C49B9633BE742CE5E0F7639EA2F56 /* GTMSessionFetcher-dummy.m */,
+				D8319BA67E97AD9BE13EF2718621B464 /* GTMSessionFetcher-Info.plist */,
+				167428D59D03AD78290A5651E9F3CA18 /* GTMSessionFetcher-prefix.pch */,
+				09EAF8AC18DC91C4579CD07F5469EFCD /* GTMSessionFetcher-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GTMSessionFetcher";
+			sourceTree = "<group>";
+		};
+		859275357FECC95F551B30DD3593DADA /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				09B4C5A6A36F30ECF04E340CED679841 /* AFError.swift */,
+				238AE55018BA0A9FA3FED18FA48E70C3 /* Alamofire.swift */,
+				9B8465CFF792EFC83B6B474E1C98D13C /* DispatchQueue+Alamofire.swift */,
+				296ABA1D9F2856945E704440AFC74619 /* MultipartFormData.swift */,
+				7EBCD8CDA2B5AC8D049375C3DDF62175 /* NetworkReachabilityManager.swift */,
+				06833CFB97D530895E18E9F463C5B071 /* Notifications.swift */,
+				23A3DE5C4C990522337B604F0B8D2860 /* ParameterEncoding.swift */,
+				62D8C6292DA5B2E9EA02188E9BC4E49A /* Request.swift */,
+				83244B90F9B1B9363C31A02D136AA15F /* Response.swift */,
+				A428C6907F9773C7B1799B842149A905 /* ResponseSerialization.swift */,
+				0266943A74EBE7DFE6B3C3B58A1FE138 /* Result.swift */,
+				2B118B0A13D192CE62FD39BF63F0DC9E /* ServerTrustPolicy.swift */,
+				D369F173F3A6F120ACB9FAAB686A80C5 /* SessionDelegate.swift */,
+				3815D3F81DD7840CEAAFFDD4C1D1FE26 /* SessionManager.swift */,
+				F2695439DF9DE94A1C0476218DBDD334 /* TaskDelegate.swift */,
+				BA22B4474D862F50F848A3791D064FB9 /* Timeline.swift */,
+				D31CF0BCA234CB73B7140C1CC99F4015 /* Validation.swift */,
+				568BF8D6188BBF5E9D6C84AFD24DEB23 /* Support Files */,
+			);
+			name = Alamofire;
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		92DD99F49248593DAABD6C9D61AB9BF3 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				449B6B6B002FCC6A074B7D05CBDC4BD8 /* GTMSessionFetcher.h */,
+				3D97EA109BB79299E6D6BD60AB04F60F /* GTMSessionFetcher.m */,
+				FD208DD0A568220EEF7F2BDBA27A8499 /* GTMSessionFetcherLogging.h */,
+				572CD94C9B89099E9F5BE1966BF0F168 /* GTMSessionFetcherLogging.m */,
+				D05619691F74C11A27189F1888B3F59D /* GTMSessionFetcherService.h */,
+				35FB38C465610E7CAF24E5E79543156E /* GTMSessionFetcherService.m */,
+				87FF689DA3E0318B961305B584229A1D /* GTMSessionUploadFetcher.h */,
+				E726DE2819A16CCD215D905D61A2D4E5 /* GTMSessionUploadFetcher.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		963D85FEFEDCFFBDD15AA89CE4359DA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2DA0BEDCA84235ADEE3FE77307835D9 /* GTMSessionFetcher.framework */,
+				4801F19CFC15B5671B40E79EB281F0B3 /* iOS */,
+				18E9C76A5D29CFCCEB97576DD5E74485 /* watchOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A93F0892373BF5041D64F8E2BC9FBB13 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E57E1BB8F463FA8C0E06255B5E6D0398 /* Pods-WristPlayer */,
+				55573F42C16795339D04587BE3E5D712 /* Pods-WristPlayer for Apple Watch */,
+				E2A185DBC46A36BED09D45BF4CC4FD80 /* Pods-WristPlayer for Apple Watch Extension */,
+				62DC307B5EB545F51EC94FEB361678D4 /* Pods-WristPlayerTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CC33B2C8A954D05A4108CE3A113759F0 /* GTMSessionFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				92DD99F49248593DAABD6C9D61AB9BF3 /* Core */,
+				DE019290769B05C2BEBFC856C8AC29F2 /* Full */,
+				7ACED6F6072317CF94160BEB758EAFE1 /* Support Files */,
+			);
+			name = GTMSessionFetcher;
+			path = GTMSessionFetcher;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				963D85FEFEDCFFBDD15AA89CE4359DA8 /* Frameworks */,
+				F48F0A59C56325D5E49E207A104F36F2 /* Pods */,
+				6F54198AE30B35D3FA621DBE79AC2D68 /* Products */,
+				A93F0892373BF5041D64F8E2BC9FBB13 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DE019290769B05C2BEBFC856C8AC29F2 /* Full */ = {
+			isa = PBXGroup;
+			children = (
+				1A8E536EC6D1E5080C0E7C4F14870033 /* GTMGatherInputStream.h */,
+				99D67204106E8C70B6D7FCCFC0EFCC8A /* GTMGatherInputStream.m */,
+				78574DBA56E58D308397FCFF1B44B93E /* GTMMIMEDocument.h */,
+				52B97F9C6AE44CF217F9BCA5956842C9 /* GTMMIMEDocument.m */,
+				B4BDFA47696826F742C407A2D0CA1773 /* GTMReadMonitorInputStream.h */,
+				46E1060928FBA3DA74A66D04E94307B9 /* GTMReadMonitorInputStream.m */,
+			);
+			name = Full;
+			sourceTree = "<group>";
+		};
+		E2A185DBC46A36BED09D45BF4CC4FD80 /* Pods-WristPlayer for Apple Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A19134B3D2486B721A116A986E7ECCC4 /* Pods-WristPlayer for Apple Watch Extension.modulemap */,
+				5E4E100C96ECADF8D48A1C16BB22454B /* Pods-WristPlayer for Apple Watch Extension-acknowledgements.markdown */,
+				83985E90B6F9025C5783C1900D2DF471 /* Pods-WristPlayer for Apple Watch Extension-acknowledgements.plist */,
+				B621E154F1EBD96B00CB1306BA79C472 /* Pods-WristPlayer for Apple Watch Extension-dummy.m */,
+				C5C1711EE5F0A9912B5962E37D6A1021 /* Pods-WristPlayer for Apple Watch Extension-frameworks.sh */,
+				58DF246FBE0251A66E92176A60DF84BE /* Pods-WristPlayer for Apple Watch Extension-Info.plist */,
+				C86DBB66554820308A587CCC48329736 /* Pods-WristPlayer for Apple Watch Extension-umbrella.h */,
+				FA5ADFE9043C2C98352CE1BE97524E01 /* Pods-WristPlayer for Apple Watch Extension.debug.xcconfig */,
+				80D52648F0D0509725A53C48E21709E4 /* Pods-WristPlayer for Apple Watch Extension.release.xcconfig */,
+			);
+			name = "Pods-WristPlayer for Apple Watch Extension";
+			path = "Target Support Files/Pods-WristPlayer for Apple Watch Extension";
+			sourceTree = "<group>";
+		};
+		E57E1BB8F463FA8C0E06255B5E6D0398 /* Pods-WristPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				30DAFE20D2862CE44285C596D35DBA9C /* Pods-WristPlayer.modulemap */,
+				6374760D0F3E890F5C968619AD7D5BD8 /* Pods-WristPlayer-acknowledgements.markdown */,
+				5075F5AE88CBD0C5D9979CC99AD5E23F /* Pods-WristPlayer-acknowledgements.plist */,
+				5890A5BB3F378A2AB9EBB9BCC9DC0134 /* Pods-WristPlayer-dummy.m */,
+				E6EFD0B47A7B89E805ED51D88FCE05AD /* Pods-WristPlayer-frameworks.sh */,
+				3EACA87F7B8BD528DFA8573A008C4540 /* Pods-WristPlayer-Info.plist */,
+				6D48E0B924F2CBD9A02ECA3A42C10922 /* Pods-WristPlayer-umbrella.h */,
+				4B76B03A6BBFDA0509C52899D12BB94F /* Pods-WristPlayer.debug.xcconfig */,
+				974C2FF1E9F0A14D22E9C451B8A68737 /* Pods-WristPlayer.release.xcconfig */,
+			);
+			name = "Pods-WristPlayer";
+			path = "Target Support Files/Pods-WristPlayer";
+			sourceTree = "<group>";
+		};
+		F48F0A59C56325D5E49E207A104F36F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				859275357FECC95F551B30DD3593DADA /* Alamofire */,
+				617B3205ABF86774D5ABF2CA022547A6 /* GoogleAPIClientForREST */,
+				CC33B2C8A954D05A4108CE3A113759F0 /* GTMSessionFetcher */,
+				20F067BACE697CD96091568A892A83E7 /* XCDYouTubeKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1DA17A25544C4728D4BD212A7394986A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C581285B8AB6D47A2BBC0F1FB0436437 /* Alamofire-iOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E45A5BD346DE755668D01D35EF3E929 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D671BB829B528418D0A7B2EC3C00729 /* Pods-WristPlayer-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		924E5478006A87D5E13941CCB12BA3F9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				016D4F6D0512E0659937DB5D9A7C5384 /* Alamofire-watchOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9799A30841A6027DDC6AA99AB6669CE0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87E2026AD46BCFB62E2AB1F83137664F /* GoogleAPIClientForREST-umbrella.h in Headers */,
+				2219A34EBFF145DD779B8EF2A557FDB5 /* GTLRBase64.h in Headers */,
+				544AEC685237239F59C7DF1C5EA9E1BF /* GTLRBatchQuery.h in Headers */,
+				B0379AA8304042B716BCCEE856E2B10B /* GTLRBatchResult.h in Headers */,
+				746D97481FDFBED0C2A7357B1DDAC09E /* GTLRDateTime.h in Headers */,
+				1FC5798CDD658747880B005B3ED3C839 /* GTLRDefines.h in Headers */,
+				ECD78811CD2E9514F557FEE6E3BF73B5 /* GTLRDuration.h in Headers */,
+				188B367547E1195EE958840E6A68202B /* GTLRErrorObject.h in Headers */,
+				AF3F0F8CD9986CC723C42009ECB2F234 /* GTLRFramework.h in Headers */,
+				927763E928E901EC3A2FF1354E86E6A3 /* GTLRObject.h in Headers */,
+				10906E469619ED6546CDCA0B7C230305 /* GTLRQuery.h in Headers */,
+				CFA02C840BFCE05BFFCB64E2E4C27ADF /* GTLRRuntimeCommon.h in Headers */,
+				789937CAE14CAAB0A4336EADFF00D1D1 /* GTLRService.h in Headers */,
+				4051C248F47E83B7A999BAD5FEEEA0B2 /* GTLRUploadParameters.h in Headers */,
+				574B69F695FAD857C8EE355FA24B9726 /* GTLRURITemplate.h in Headers */,
+				985A75B2F5386180AE1DD85E2AF430C7 /* GTLRUtilities.h in Headers */,
+				FB7C990BC3792E881910EEF99191F8C9 /* GTLRYouTube.h in Headers */,
+				A21CA0A1ABA69F4AF86620B7704122E9 /* GTLRYouTubeObjects.h in Headers */,
+				51BB577C6FDC9C270A58768E6B8772FD /* GTLRYouTubeQuery.h in Headers */,
+				B13987597D329C4A66BD10D3B37AF243 /* GTLRYouTubeService.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD7D03E18330E3976C3340659561F939 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AD30826190C8028DAB9E26B0AB3B185 /* Pods-WristPlayer for Apple Watch-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA793721A1EA2E617F42A2C870498805 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29C5B7DBB496823436B831E5E1DD6F83 /* Pods-WristPlayer for Apple Watch Extension-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C573AF4D9C92FEA936095D1DE0E7F7FC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D997F70BD1F8F7441B68CAFCE18347C /* XCDYouTubeClient.h in Headers */,
+				10FD7EA188732F5941E24B99B53033E6 /* XCDYouTubeDashManifestXML.h in Headers */,
+				2D608AF83819B00F5CC3983071ED56E6 /* XCDYouTubeError.h in Headers */,
+				C4C334EB1BFC4AA04EEFCEC5797F0BEB /* XCDYouTubeKit-umbrella.h in Headers */,
+				1A7E54673867905B524A68C12B8B8554 /* XCDYouTubeKit.h in Headers */,
+				C3FB435E6D39F584C5D91AACE2CF7495 /* XCDYouTubeLogger+Private.h in Headers */,
+				1D1891E903F16144443AF70A131893F6 /* XCDYouTubeLogger.h in Headers */,
+				267A2564B0929FD287433F3A61F37150 /* XCDYouTubeOperation.h in Headers */,
+				C8330F9824777E566F1433E757F0660E /* XCDYouTubePlayerScript.h in Headers */,
+				B272072FE002675F0E8F4D5CE86798CE /* XCDYouTubeVideo+Private.h in Headers */,
+				2E22C6B8A757198342411F50015C699B /* XCDYouTubeVideo.h in Headers */,
+				7B82EB976584C783309E6AF6A98D91F4 /* XCDYouTubeVideoOperation.h in Headers */,
+				870EE599BF9F28E1C2438E88F1397C8B /* XCDYouTubeVideoPlayerViewController.h in Headers */,
+				17199B87F1C7C5506D44912501B8D0B8 /* XCDYouTubeVideoWebpage.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C86B48773A8B59B9985F0C9086C51420 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDAB46BC41AD5311B50E69CC8A644C50 /* Pods-WristPlayerTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAD1EFBB0A62ECF5D006CBD708F75516 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				343E29CAAEBC5DF5E54FD3C750BDF9CD /* GTMGatherInputStream.h in Headers */,
+				DF5B37AC9C457B5EFC992F4DA7441D23 /* GTMMIMEDocument.h in Headers */,
+				0F502A4DBE7FE628666EAA44B66BAE69 /* GTMReadMonitorInputStream.h in Headers */,
+				6738D2AC4C0DE3E1E201E5E46C1B9E0D /* GTMSessionFetcher-umbrella.h in Headers */,
+				3B437264C89BDAC8162D7104E270A7D9 /* GTMSessionFetcher.h in Headers */,
+				6436B319FCF63B32B9EF1DF5A493B5F2 /* GTMSessionFetcherLogging.h in Headers */,
+				A638EEB3574E86FDE7740B94A57C8073 /* GTMSessionFetcherService.h in Headers */,
+				ECED8908D0D8031019377E51652955B4 /* GTMSessionUploadFetcher.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1C6091A89F8F706BC381A8483D220902 /* Pods-WristPlayer for Apple Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CF3CC5CF288B2E0200032B112E28D11 /* Build configuration list for PBXNativeTarget "Pods-WristPlayer for Apple Watch" */;
+			buildPhases = (
+				AD7D03E18330E3976C3340659561F939 /* Headers */,
+				8F93BE381C0C49D15718148A3EF2D2E3 /* Sources */,
+				C1CE1AB68594BFAE57498B96E9EA1EF3 /* Frameworks */,
+				5126931E4D25D860E2CE275A8DE3969B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-WristPlayer for Apple Watch";
+			productName = "Pods-WristPlayer for Apple Watch";
+			productReference = F4D128F1BB4BC58C0FAD1CFFD0858F1C /* Pods_WristPlayer_for_Apple_Watch.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		66F51BC925FD5FB829E8D422C690BDF0 /* Alamofire-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E61069F691B31002ED13C26F610A6144 /* Build configuration list for PBXNativeTarget "Alamofire-watchOS" */;
+			buildPhases = (
+				924E5478006A87D5E13941CCB12BA3F9 /* Headers */,
+				4F26B3D9FD1CB8F709BE24709C1C79B5 /* Sources */,
+				152219B0468DDEDC15A7E8759DF2FB2F /* Frameworks */,
+				F98B8366BD5F971AECCBE2D0B878D65B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Alamofire-watchOS";
+			productName = "Alamofire-watchOS";
+			productReference = 43DA6DFAA898F949ACBD91D709EF13F8 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6833EA92AC83C334B661BDD124AE75B4 /* Pods-WristPlayer for Apple Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AB39FF3E688BB8EF33BEEA878D1726D /* Build configuration list for PBXNativeTarget "Pods-WristPlayer for Apple Watch Extension" */;
+			buildPhases = (
+				BA793721A1EA2E617F42A2C870498805 /* Headers */,
+				975978DFBD60D6D94D6780505220B7B1 /* Sources */,
+				69EED893BD53F1B871AD3A5A7AEC6561 /* Frameworks */,
+				AFE89F195634D0014AE75D6C3A08DF45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13460F1E7E6587FA57F6AA58BA307E1C /* PBXTargetDependency */,
+			);
+			name = "Pods-WristPlayer for Apple Watch Extension";
+			productName = "Pods-WristPlayer for Apple Watch Extension";
+			productReference = 3AAAE7FD799C6A8A87781E57FC03DB65 /* Pods_WristPlayer_for_Apple_Watch_Extension.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7E26290A9685F8BAA0D8839B31240101 /* Pods-WristPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C84C32516773EB1AB94FA7647B406B7 /* Build configuration list for PBXNativeTarget "Pods-WristPlayerTests" */;
+			buildPhases = (
+				C86B48773A8B59B9985F0C9086C51420 /* Headers */,
+				26AB7B9BE8ED5ECA1DD67E0A20A6F2CE /* Sources */,
+				CAFDF16C02CBD3FE2AF30995CCBD82EC /* Frameworks */,
+				67BFC9DFEA1880EC8B744F40FB211BCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				724637DF4616FA68C10707DDBBBD604E /* PBXTargetDependency */,
+			);
+			name = "Pods-WristPlayerTests";
+			productName = "Pods-WristPlayerTests";
+			productReference = 17B537221A889B8DAB73711B582533A1 /* Pods_WristPlayerTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C60A0DC53D93FE007BCBC2589A5EE400 /* XCDYouTubeKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2F5681C6BA391E599119253FECF6484 /* Build configuration list for PBXNativeTarget "XCDYouTubeKit" */;
+			buildPhases = (
+				C573AF4D9C92FEA936095D1DE0E7F7FC /* Headers */,
+				034D3A48C660F57E41913C2AAAEA6C15 /* Sources */,
+				88112056A4E7E04B3F138241BE783D69 /* Frameworks */,
+				ECA4FC65C2AD02BD3A8E445F3E5DAB7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XCDYouTubeKit;
+			productName = XCDYouTubeKit;
+			productReference = 842B7D6C4814D1257FF7380C8E0E4B92 /* XCDYouTubeKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D676E21115185671D7258A56944ABE98 /* GTMSessionFetcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E14E640EA2839E4BD512CDF0D9B1665 /* Build configuration list for PBXNativeTarget "GTMSessionFetcher" */;
+			buildPhases = (
+				CAD1EFBB0A62ECF5D006CBD708F75516 /* Headers */,
+				4D75C8D29F347792E3297F647F09B783 /* Sources */,
+				1DC4569924E03A7048CF502169D3C1E5 /* Frameworks */,
+				8B95709299E299EBD36FC402A0DD066A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GTMSessionFetcher;
+			productName = GTMSessionFetcher;
+			productReference = C1998E0D8085221AD87F89B614C10E52 /* GTMSessionFetcher.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D7958E869B6C0073DB3025514393D7A3 /* GoogleAPIClientForREST */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE32065B2FDE5D03E14B3E6262D55A59 /* Build configuration list for PBXNativeTarget "GoogleAPIClientForREST" */;
+			buildPhases = (
+				9799A30841A6027DDC6AA99AB6669CE0 /* Headers */,
+				80EB534FE7D1CDBA69684F3BA6CE27E4 /* Sources */,
+				98FCE79AE7B12EABF65523A64CBB6677 /* Frameworks */,
+				9FC6FD66119CE86619814D6460B5BD30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B60C16F85090A3A984569D00C01C4FE2 /* PBXTargetDependency */,
+			);
+			name = GoogleAPIClientForREST;
+			productName = GoogleAPIClientForREST;
+			productReference = FD519882861480B93B563B477CE1FA29 /* GoogleAPIClientForREST.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FD8828BFC368157226E204A32CD5B6DE /* Alamofire-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E65E740C96442990E6E9CDF05EE3EFEF /* Build configuration list for PBXNativeTarget "Alamofire-iOS" */;
+			buildPhases = (
+				1DA17A25544C4728D4BD212A7394986A /* Headers */,
+				22F0F0797A0F8589B712179A239E44F0 /* Sources */,
+				51C49E6511B1FE5314E69AD783B2DF18 /* Frameworks */,
+				C3F35C916725EA4118F0150CF661682F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Alamofire-iOS";
+			productName = "Alamofire-iOS";
+			productReference = 966AA42878212207687E9A2A4DBCD618 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FDBBAB8F50AA59FF1AE4006D391085D6 /* Pods-WristPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E79AEC8EEB0F4F2E4700E9B3A557EF3 /* Build configuration list for PBXNativeTarget "Pods-WristPlayer" */;
+			buildPhases = (
+				2E45A5BD346DE755668D01D35EF3E929 /* Headers */,
+				E3A63906E1AB53C8EF5E9A1078D8DB55 /* Sources */,
+				9BEE43F267A7346FC003785786F1C78C /* Frameworks */,
+				BA0BB7B25460B2AF61E47E5EE8AA62C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7EA0F092F94CDD14EFEF53D2603BD73E /* PBXTargetDependency */,
+				820AA709CDC2C6A2E871907BA15EC460 /* PBXTargetDependency */,
+				8720F931447BF1CD7611F90DFFFE9703 /* PBXTargetDependency */,
+				2C65186905D77D176244013932BA1D40 /* PBXTargetDependency */,
+			);
+			name = "Pods-WristPlayer";
+			productName = "Pods-WristPlayer";
+			productReference = 1DF49E06B78996C89EE909E620F1BB45 /* Pods_WristPlayer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 6F54198AE30B35D3FA621DBE79AC2D68 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD8828BFC368157226E204A32CD5B6DE /* Alamofire-iOS */,
+				66F51BC925FD5FB829E8D422C690BDF0 /* Alamofire-watchOS */,
+				D7958E869B6C0073DB3025514393D7A3 /* GoogleAPIClientForREST */,
+				D676E21115185671D7258A56944ABE98 /* GTMSessionFetcher */,
+				FDBBAB8F50AA59FF1AE4006D391085D6 /* Pods-WristPlayer */,
+				1C6091A89F8F706BC381A8483D220902 /* Pods-WristPlayer for Apple Watch */,
+				6833EA92AC83C334B661BDD124AE75B4 /* Pods-WristPlayer for Apple Watch Extension */,
+				7E26290A9685F8BAA0D8839B31240101 /* Pods-WristPlayerTests */,
+				C60A0DC53D93FE007BCBC2589A5EE400 /* XCDYouTubeKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5126931E4D25D860E2CE275A8DE3969B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67BFC9DFEA1880EC8B744F40FB211BCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B95709299E299EBD36FC402A0DD066A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FC6FD66119CE86619814D6460B5BD30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFE89F195634D0014AE75D6C3A08DF45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA0BB7B25460B2AF61E47E5EE8AA62C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3F35C916725EA4118F0150CF661682F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA4FC65C2AD02BD3A8E445F3E5DAB7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F98B8366BD5F971AECCBE2D0B878D65B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		034D3A48C660F57E41913C2AAAEA6C15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9A18F681AD2922B038C57D3F59A1F68 /* XCDYouTubeClient.m in Sources */,
+				B79BACD36D59D28C042FA1FD9960A870 /* XCDYouTubeDashManifestXML.m in Sources */,
+				CDB3E8DCFC41F95C8BFF8DD55904C95F /* XCDYouTubeKit-dummy.m in Sources */,
+				E47CF18C662B13E9B410BB0EC49FD271 /* XCDYouTubeLogger.m in Sources */,
+				08C56FE1E351DEF27F64E929A10CA3C4 /* XCDYouTubePlayerScript.m in Sources */,
+				91EE37BBBD769070940BB36ACC4C14AA /* XCDYouTubeVideo.m in Sources */,
+				805C68BD9CD215264E6E5A11B6F2E53B /* XCDYouTubeVideoOperation.m in Sources */,
+				7061091B5CD4A3E6F29F7AB914AAF812 /* XCDYouTubeVideoPlayerViewController.m in Sources */,
+				CB6AAB6AC93A803302050B2E9941E34B /* XCDYouTubeVideoWebpage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22F0F0797A0F8589B712179A239E44F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				456F5AB16DE22E601CA5EB4200088DD0 /* AFError.swift in Sources */,
+				912A476FD85EECC920A508E12460EFB8 /* Alamofire-iOS-dummy.m in Sources */,
+				4CE4A9C57F0DE9DF2CF65F63D68B6FEB /* Alamofire.swift in Sources */,
+				670AB4D559C4E66CF0B60B27C0DE2646 /* DispatchQueue+Alamofire.swift in Sources */,
+				13D4ACAB3F0392D7263702403F4C4C77 /* MultipartFormData.swift in Sources */,
+				AFA9BCA194B0E1ABFDED55E02B3153F5 /* NetworkReachabilityManager.swift in Sources */,
+				F2884C16786810D1B40F39DAFBCF4303 /* Notifications.swift in Sources */,
+				0BD66FAA67A327E7DDD184F40EC99076 /* ParameterEncoding.swift in Sources */,
+				91D45871DE32A3C1B2E845F54E9A2660 /* Request.swift in Sources */,
+				9A0D8180A8542BD19E2AEF533626FD32 /* Response.swift in Sources */,
+				E9478B9C29741BB15C26529B33AD798D /* ResponseSerialization.swift in Sources */,
+				546323B71CA763DE815B4955EE3F2064 /* Result.swift in Sources */,
+				EE822282C912F20733663B0E9FAEAD6B /* ServerTrustPolicy.swift in Sources */,
+				3AB990FDF4FCA4090651180F1325B815 /* SessionDelegate.swift in Sources */,
+				A3007EA32DCAB1CA67795414671FF618 /* SessionManager.swift in Sources */,
+				01CAEC5F6F9431E4D251A35A36F6A9EE /* TaskDelegate.swift in Sources */,
+				82C72B35091073596FE61D069FFB8A80 /* Timeline.swift in Sources */,
+				98EB0914754838B056FC2410E28436A1 /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26AB7B9BE8ED5ECA1DD67E0A20A6F2CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B8E8FBCD971E0967BDF374C0937FA34 /* Pods-WristPlayerTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D75C8D29F347792E3297F647F09B783 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03899CF747C84CABE43F22BE0284F01D /* GTMGatherInputStream.m in Sources */,
+				B09052BABCEC6D71A0DE9C2041A43298 /* GTMMIMEDocument.m in Sources */,
+				9F8337E722A435CF2DE3829C25B9320D /* GTMReadMonitorInputStream.m in Sources */,
+				430EDE050C5FA0B1550250E771ACF421 /* GTMSessionFetcher-dummy.m in Sources */,
+				34CDE410CF3012DD8BDCBC6FC729C0CF /* GTMSessionFetcher.m in Sources */,
+				07D39F7675781FA6CACCDE41F8290481 /* GTMSessionFetcherLogging.m in Sources */,
+				41332F651E512A12C89B140739B471B9 /* GTMSessionFetcherService.m in Sources */,
+				F84BCE3F6BE6FF27FF90B60B9D00876A /* GTMSessionUploadFetcher.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F26B3D9FD1CB8F709BE24709C1C79B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4CAA381B50248056BDFB9AFBD8867C9 /* AFError.swift in Sources */,
+				B4475FE96A5EB06ABC96CEA377C62B0C /* Alamofire-watchOS-dummy.m in Sources */,
+				2F3A7727F25809D20B4D5115D64F545A /* Alamofire.swift in Sources */,
+				FF0835B3ECDED1DE76455DE10A228B58 /* DispatchQueue+Alamofire.swift in Sources */,
+				E0DF3A0ED5FAA2FE0C1E2396CBC4F968 /* MultipartFormData.swift in Sources */,
+				E2F9BFECBBEBDF515A49318C8AF36D74 /* NetworkReachabilityManager.swift in Sources */,
+				A0E1AFB4104DD8C24BA35979E670F51F /* Notifications.swift in Sources */,
+				C7E530B3A0405BD8B338F9D3DB0978C8 /* ParameterEncoding.swift in Sources */,
+				0281DB230A246653CBFC06716D26833C /* Request.swift in Sources */,
+				495FE1474EB2181D16F1D6BCAB1CF2C6 /* Response.swift in Sources */,
+				0F7BDECDD56B33D440AE53E632594FA2 /* ResponseSerialization.swift in Sources */,
+				F197A795CA0D500CCA5351183EDAF6BD /* Result.swift in Sources */,
+				5DC223206D9E0964E6D1E700896661BC /* ServerTrustPolicy.swift in Sources */,
+				C6B9E73B20C867D11C52F1FF43D1908B /* SessionDelegate.swift in Sources */,
+				451FB27A7555760099E5B2C1AF2844C3 /* SessionManager.swift in Sources */,
+				9710AA8455D26EB1E65EC48EB73662E5 /* TaskDelegate.swift in Sources */,
+				EA2DA37B7ED37959847875D89F6D3271 /* Timeline.swift in Sources */,
+				4C83C1F54714ACFB4B695E513A2BB1B3 /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80EB534FE7D1CDBA69684F3BA6CE27E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF51EC7A05D936CD262CE568AEF6458C /* GoogleAPIClientForREST-dummy.m in Sources */,
+				81DAFB0F2C1CF23CF06D1D257C10E7F9 /* GTLRBase64.m in Sources */,
+				955A1D441EEA29268E2FD19E3D20C7BB /* GTLRBatchQuery.m in Sources */,
+				A90A39BB8DBC92E9652564B20B034F30 /* GTLRBatchResult.m in Sources */,
+				9BE32B0788989125C980F047B79A7AAD /* GTLRDateTime.m in Sources */,
+				1E8061AF75BB244B85D6C552CF9F7BBB /* GTLRDuration.m in Sources */,
+				D51AEC216F7C66F82F6DF447426DE17B /* GTLRErrorObject.m in Sources */,
+				30FC709C5D26C1A4270BC520198F55E2 /* GTLRFramework.m in Sources */,
+				AB915BC13DE3AC6F2EE3AA252CCA7419 /* GTLRObject.m in Sources */,
+				812D77568FBF1FE21C695BBA9A2999F8 /* GTLRQuery.m in Sources */,
+				411804A3362997FF768A3CE053B79FC4 /* GTLRRuntimeCommon.m in Sources */,
+				65F21C201B2B6A9784E9786A306EE544 /* GTLRService.m in Sources */,
+				0D6674070900D5F192743ECAB2DE7BC8 /* GTLRUploadParameters.m in Sources */,
+				7349D652A713323BB3E61B454F8A6734 /* GTLRURITemplate.m in Sources */,
+				5D2617783219995A85E23C024ADBFCE9 /* GTLRUtilities.m in Sources */,
+				1CEEC89A4F7251BF7CB66D542BE37A40 /* GTLRYouTubeObjects.m in Sources */,
+				0E74897BA07A6F8C1456A56B2AB286BA /* GTLRYouTubeQuery.m in Sources */,
+				379CA93E144176482F6CB04EFA642D70 /* GTLRYouTubeService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F93BE381C0C49D15718148A3EF2D2E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8C7DBF2C475274E5F610971752B0183 /* Pods-WristPlayer for Apple Watch-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		975978DFBD60D6D94D6780505220B7B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				254499037C2EE64EE49958680B653628 /* Pods-WristPlayer for Apple Watch Extension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3A63906E1AB53C8EF5E9A1078D8DB55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E29F5857798E0E8B0131A0F308818A9 /* Pods-WristPlayer-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13460F1E7E6587FA57F6AA58BA307E1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire-watchOS";
+			target = 66F51BC925FD5FB829E8D422C690BDF0 /* Alamofire-watchOS */;
+			targetProxy = B6AEAE8148338336DBF947F8C89FE960 /* PBXContainerItemProxy */;
+		};
+		2C65186905D77D176244013932BA1D40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XCDYouTubeKit;
+			target = C60A0DC53D93FE007BCBC2589A5EE400 /* XCDYouTubeKit */;
+			targetProxy = ABED1F7DE061BFD51682065F546AB60F /* PBXContainerItemProxy */;
+		};
+		724637DF4616FA68C10707DDBBBD604E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-WristPlayer";
+			target = FDBBAB8F50AA59FF1AE4006D391085D6 /* Pods-WristPlayer */;
+			targetProxy = A3C3DA6B2EFE20831CCEAB26A4C13D3B /* PBXContainerItemProxy */;
+		};
+		7EA0F092F94CDD14EFEF53D2603BD73E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire-iOS";
+			target = FD8828BFC368157226E204A32CD5B6DE /* Alamofire-iOS */;
+			targetProxy = 683517C370972E90EE91FFEFB12E9837 /* PBXContainerItemProxy */;
+		};
+		820AA709CDC2C6A2E871907BA15EC460 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GTMSessionFetcher;
+			target = D676E21115185671D7258A56944ABE98 /* GTMSessionFetcher */;
+			targetProxy = DF61014D3C0169602C4E269F8682EE0A /* PBXContainerItemProxy */;
+		};
+		8720F931447BF1CD7611F90DFFFE9703 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleAPIClientForREST;
+			target = D7958E869B6C0073DB3025514393D7A3 /* GoogleAPIClientForREST */;
+			targetProxy = D289CD8101EA809B2328AE66425D2D49 /* PBXContainerItemProxy */;
+		};
+		B60C16F85090A3A984569D00C01C4FE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GTMSessionFetcher;
+			target = D676E21115185671D7258A56944ABE98 /* GTMSessionFetcher */;
+			targetProxy = 2AE66D3DE461EC89BD41BDE1AEB05CDE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0C9754F0436F67480851B6A11A352EF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		1485F97B3C1481B6467A6EF5F3EFB24D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		2313F5A2A38D2A58E4FD4E32F49BCB92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4658E1AD3E0430B89021D688E947033B /* Alamofire-iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire-iOS/Alamofire-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire-iOS/Alamofire-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire-iOS/Alamofire-iOS.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2795E852E8DC3C7EA83ABA5C7709E73F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B76B03A6BBFDA0509C52899D12BB94F /* Pods-WristPlayer.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WristPlayer/Pods-WristPlayer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WristPlayer/Pods-WristPlayer.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		29A20AD83FD2E2F5A363809F12B83519 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13FD7868B20301185ABF25F7E6EE0160 /* Alamofire-watchOS.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire-watchOS/Alamofire-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire-watchOS/Alamofire-watchOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire-watchOS/Alamofire-watchOS.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		2EBF5D087D13D9334007C9B7D5050316 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13FD7868B20301185ABF25F7E6EE0160 /* Alamofire-watchOS.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire-watchOS/Alamofire-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire-watchOS/Alamofire-watchOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire-watchOS/Alamofire-watchOS.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		3CF8F739114B0A12B243E36AFDF1DC21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0E8951314B416533723D8BA1D491CCD /* Pods-WristPlayerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WristPlayerTests/Pods-WristPlayerTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WristPlayerTests/Pods-WristPlayerTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		43A55D3D2CAC5FF86FF0ACE2471A761A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6965BE565D2ACDD572302C52B0014AD /* GTMSessionFetcher.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GTMSessionFetcher/GTMSessionFetcher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GTMSessionFetcher/GTMSessionFetcher-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GTMSessionFetcher/GTMSessionFetcher.modulemap";
+				PRODUCT_MODULE_NAME = GTMSessionFetcher;
+				PRODUCT_NAME = GTMSessionFetcher;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4D864827DF71FD26E0D32CF9056773FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C03EA7BDA7BDC7C247F713992D74757E /* GoogleAPIClientForREST.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleAPIClientForREST/GoogleAPIClientForREST-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GoogleAPIClientForREST/GoogleAPIClientForREST-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GoogleAPIClientForREST/GoogleAPIClientForREST.modulemap";
+				PRODUCT_MODULE_NAME = GoogleAPIClientForREST;
+				PRODUCT_NAME = GoogleAPIClientForREST;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7AD4B8D539D76A1FAE18B38D874A677B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 933920AA76AF5A7352E363715E58E2E2 /* Pods-WristPlayer for Apple Watch.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WristPlayer for Apple Watch/Pods-WristPlayer for Apple Watch-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WristPlayer for Apple Watch/Pods-WristPlayer for Apple Watch.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		8206064F527424518996A28D849E1BFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B589804E748CEF8300F4FFE5D1DE8EE /* XCDYouTubeKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XCDYouTubeKit/XCDYouTubeKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XCDYouTubeKit/XCDYouTubeKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XCDYouTubeKit/XCDYouTubeKit.modulemap";
+				PRODUCT_MODULE_NAME = XCDYouTubeKit;
+				PRODUCT_NAME = XCDYouTubeKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DFA1ADCF8318BBDB383991B9DE76042 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DE94438DE10D746C362FD479F961AC5 /* Pods-WristPlayer for Apple Watch.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WristPlayer for Apple Watch/Pods-WristPlayer for Apple Watch-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WristPlayer for Apple Watch/Pods-WristPlayer for Apple Watch.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		9F7BF24C5838ACCBB735E12D69AF76F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4658E1AD3E0430B89021D688E947033B /* Alamofire-iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire-iOS/Alamofire-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire-iOS/Alamofire-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire-iOS/Alamofire-iOS.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AC1EA264672415CD5059A90D0D9D71B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C03EA7BDA7BDC7C247F713992D74757E /* GoogleAPIClientForREST.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleAPIClientForREST/GoogleAPIClientForREST-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GoogleAPIClientForREST/GoogleAPIClientForREST-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GoogleAPIClientForREST/GoogleAPIClientForREST.modulemap";
+				PRODUCT_MODULE_NAME = GoogleAPIClientForREST;
+				PRODUCT_NAME = GoogleAPIClientForREST;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B3F14AA45F62D62014BA875DE1858B83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCD0A186A226A770A9AFC594F523E29C /* Pods-WristPlayerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WristPlayerTests/Pods-WristPlayerTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WristPlayerTests/Pods-WristPlayerTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DD78E6AD270A23181E2D895461B65F4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA5ADFE9043C2C98352CE1BE97524E01 /* Pods-WristPlayer for Apple Watch Extension.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WristPlayer for Apple Watch Extension/Pods-WristPlayer for Apple Watch Extension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WristPlayer for Apple Watch Extension/Pods-WristPlayer for Apple Watch Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		DDFB901294094F26E15F8A8C1C8D232B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80D52648F0D0509725A53C48E21709E4 /* Pods-WristPlayer for Apple Watch Extension.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WristPlayer for Apple Watch Extension/Pods-WristPlayer for Apple Watch Extension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WristPlayer for Apple Watch Extension/Pods-WristPlayer for Apple Watch Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		E2CA28300BC68B7D9A07346E7EE13851 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6965BE565D2ACDD572302C52B0014AD /* GTMSessionFetcher.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GTMSessionFetcher/GTMSessionFetcher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GTMSessionFetcher/GTMSessionFetcher-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GTMSessionFetcher/GTMSessionFetcher.modulemap";
+				PRODUCT_MODULE_NAME = GTMSessionFetcher;
+				PRODUCT_NAME = GTMSessionFetcher;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F020EE9230B6727D02758B250E1A9142 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B589804E748CEF8300F4FFE5D1DE8EE /* XCDYouTubeKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XCDYouTubeKit/XCDYouTubeKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XCDYouTubeKit/XCDYouTubeKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XCDYouTubeKit/XCDYouTubeKit.modulemap";
+				PRODUCT_MODULE_NAME = XCDYouTubeKit;
+				PRODUCT_NAME = XCDYouTubeKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FA8217C0C1067A3100BCE9459882F17B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 974C2FF1E9F0A14D22E9C451B8A68737 /* Pods-WristPlayer.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WristPlayer/Pods-WristPlayer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WristPlayer/Pods-WristPlayer.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C9754F0436F67480851B6A11A352EF7 /* Debug */,
+				1485F97B3C1481B6467A6EF5F3EFB24D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C84C32516773EB1AB94FA7647B406B7 /* Build configuration list for PBXNativeTarget "Pods-WristPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CF8F739114B0A12B243E36AFDF1DC21 /* Debug */,
+				B3F14AA45F62D62014BA875DE1858B83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CF3CC5CF288B2E0200032B112E28D11 /* Build configuration list for PBXNativeTarget "Pods-WristPlayer for Apple Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DFA1ADCF8318BBDB383991B9DE76042 /* Debug */,
+				7AD4B8D539D76A1FAE18B38D874A677B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E14E640EA2839E4BD512CDF0D9B1665 /* Build configuration list for PBXNativeTarget "GTMSessionFetcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2CA28300BC68B7D9A07346E7EE13851 /* Debug */,
+				43A55D3D2CAC5FF86FF0ACE2471A761A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AB39FF3E688BB8EF33BEEA878D1726D /* Build configuration list for PBXNativeTarget "Pods-WristPlayer for Apple Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD78E6AD270A23181E2D895461B65F4B /* Debug */,
+				DDFB901294094F26E15F8A8C1C8D232B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E79AEC8EEB0F4F2E4700E9B3A557EF3 /* Build configuration list for PBXNativeTarget "Pods-WristPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2795E852E8DC3C7EA83ABA5C7709E73F /* Debug */,
+				FA8217C0C1067A3100BCE9459882F17B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2F5681C6BA391E599119253FECF6484 /* Build configuration list for PBXNativeTarget "XCDYouTubeKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F020EE9230B6727D02758B250E1A9142 /* Debug */,
+				8206064F527424518996A28D849E1BFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE32065B2FDE5D03E14B3E6262D55A59 /* Build configuration list for PBXNativeTarget "GoogleAPIClientForREST" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D864827DF71FD26E0D32CF9056773FA /* Debug */,
+				AC1EA264672415CD5059A90D0D9D71B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E61069F691B31002ED13C26F610A6144 /* Build configuration list for PBXNativeTarget "Alamofire-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EBF5D087D13D9334007C9B7D5050316 /* Debug */,
+				29A20AD83FD2E2F5A363809F12B83519 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E65E740C96442990E6E9CDF05EE3EFEF /* Build configuration list for PBXNativeTarget "Alamofire-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2313F5A2A38D2A58E4FD4E32F49BCB92 /* Debug */,
+				9F7BF24C5838ACCBB735E12D69AF76F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
