@@ -6,9 +6,7 @@ Note: An iPhone, while not physically used, is still needed nearby.
 
 # Installation
 
- * Clone this repostory and install WristPlayer with Xcode
-
- * Or download [WristPlayer.ipa](https://github.com/Ziph0n/WristPlayer/releases/tag/v1.0) and install it with Cydia Impactor (not sure how well Cydia Impactor handles Apple Watch applications. If it doesn't work, use the first method)
+ Clone this repostory and install WristPlayer with Xcode
  
  # Help
 
